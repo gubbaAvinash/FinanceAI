@@ -1,0 +1,78 @@
+{
+  "basePath" : "${rest.topGainersLosers.basepath}",
+  "paths" : {
+    "/topGainersLosers" : {
+      "x-WM-BASE_PATH" : "/topGainersLosers",
+      "x-WM-TAG" : "topGainersLosers",
+      "x-WM-RELATIVE_PATH" : "",
+      "get" : {
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "operationId" : "topGainersLosers_topGainersLosers_invoke",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "x-WM-IS_LIST" : true,
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Response.RootResponseROOTEntryItem"
+              }
+            },
+            "description" : "Success"
+          }
+        },
+        "tags" : [ "topGainersLosers" ],
+        "consumes" : [ "application/json" ]
+      },
+      "x-WM-COMPLETE_PATH" : "${rest.topGainersLosers.scheme}://${rest.topGainersLosers.host}${rest.topGainersLosers.basepath}/topGainersLosers"
+    }
+  },
+  "host" : "${rest.topGainersLosers.host}",
+  "schemes" : [ "${rest.topGainersLosers.scheme}" ],
+  "definitions" : {
+    "Response.RootResponseROOTEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "topGainersLosers.Response.RootResponseROOTEntryItem",
+      "x-WM-TAGS" : [ "topGainersLosers" ],
+      "required" : [ "dailyChange", "scriptName", "weeklyChange" ],
+      "properties" : {
+        "dailyChange" : {
+          "type" : "string"
+        },
+        "scriptName" : {
+          "type" : "string"
+        },
+        "weeklyChange" : {
+          "type" : "string"
+        }
+      }
+    },
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "topGainersLosers.RootResponse",
+      "x-WM-TAGS" : [ "topGainersLosers" ],
+      "required" : [ "RootResponseROOT" ],
+      "properties" : {
+        "RootResponseROOT" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.RootResponseROOTEntryItem"
+          }
+        }
+      }
+    }
+  },
+  "swagger" : "2.0",
+  "info" : {
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "x-WM-API_ID" : "159c5012-ff47-4cf9-97a2-8675a39cdf87",
+    "x-WM-SERVICE_ID" : "onwavemaker",
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "version" : "2.0",
+    "x-WM-USE_WITH_CREDENTIALS" : false
+  },
+  "tags" : [ {
+    "name" : "topGainersLosers"
+  } ]
+}

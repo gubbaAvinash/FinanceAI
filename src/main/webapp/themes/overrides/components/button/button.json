@@ -1,0 +1,16 @@
+{
+  "btn" : {
+    "primary" : {
+      "outlined" : {
+        "border" : {
+          "color" : {
+            "value" : "{color.darklightbg.value}"
+          }
+        },
+        "background" : {
+          "value" : "#FFFFFF1A"
+        }
+      }
+    }
+  }
+}

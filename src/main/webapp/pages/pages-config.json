@@ -1,0 +1,175 @@
+[ {
+  "name" : "AIAssistant",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "AI_Dashboard",
+  "type" : "PARTIAL",
+  "params" : [ {
+    "name" : "cleanedDataTableArr",
+    "type" : "string"
+  }, {
+    "name" : "nestedDefaultTableArr",
+    "type" : "string"
+  }, {
+    "name" : "cleanedDefaultTableArr",
+    "type" : "string"
+  }, {
+    "name" : "nestedDataTableArr",
+    "type" : "string"
+  }, {
+    "name" : "defaultTableCaption",
+    "type" : "string"
+  }, {
+    "name" : "dataTableCaption",
+    "type" : "string"
+  } ]
+}, {
+  "name" : "AI_bot__Zero_state__1",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Common",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Dashboard",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Header642175698",
+  "type" : "HEADER",
+  "params" : [ ]
+}, {
+  "name" : "Header642175816",
+  "type" : "HEADER",
+  "params" : [ ]
+}, {
+  "name" : "Header642175856",
+  "type" : "HEADER",
+  "params" : [ ]
+}, {
+  "name" : "Header642175896",
+  "type" : "HEADER",
+  "params" : [ ]
+}, {
+  "name" : "Login",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Main",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Main_Container",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Main_Container_1",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Partial_DynamicDataTable",
+  "type" : "PARTIAL",
+  "params" : [ {
+    "name" : "content",
+    "type" : "string"
+  }, {
+    "name" : "nestedObjData",
+    "type" : "string"
+  }, {
+    "name" : "caption",
+    "type" : "string"
+  } ]
+}, {
+  "name" : "Partial_Nested_Dynamic_Table",
+  "type" : "PARTIAL",
+  "params" : [ {
+    "name" : "content",
+    "type" : "string"
+  } ]
+}, {
+  "name" : "advancedTimeline",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "annotationsChart",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "barRaceChart",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "candlestickChart",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "dexChart",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "footer",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "header",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "heatMapChart",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "largestFlowTrades",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "leftnav",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "lineChart",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "multiLineChart",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "performanceReportChart",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "revenueChart",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "rightnav",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "sectorPerformance",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "sectorRotation",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "testContainerPartial",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "topFlow",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "topnav",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "treasuryYield",
+  "type" : "PARTIAL",
+  "params" : [ ]
+} ]

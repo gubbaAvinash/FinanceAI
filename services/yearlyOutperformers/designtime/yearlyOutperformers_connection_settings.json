@@ -1,0 +1,26 @@
+{
+  "endpointAddress" : "https://mockoonapi.onwavemaker.com/kx/yearlyOutperformers",
+  "method" : "GET",
+  "headers" : { },
+  "redirectEnabled" : true,
+  "requestBody" : "",
+  "queryParams" : { },
+  "authDetails" : null,
+  "contentType" : "application/json",
+  "multiParamInfoList" : [ ],
+  "urlBasePath" : "/kx",
+  "sampleHttpResponseDetails" : {
+    "statusCode" : 200,
+    "headers" : {
+      "Date" : [ "Thu, 31 Jul 2025 11:42:20 GMT" ],
+      "Content-Type" : [ "application/json; charset=utf-8" ],
+      "Content-Length" : [ "9013" ],
+      "Connection" : [ "keep-alive" ],
+      "Access-Control-Allow-Origin" : [ "*" ],
+      "Access-Control-Allow-Methods" : [ "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS" ],
+      "Access-Control-Allow-Headers" : [ "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With" ]
+    },
+    "responseBody" : "[{\"2000\":\"57.8\",\"2001\":\"60.6\",\"2002\":\"67.8\",\"2003\":\"69.8\",\"2004\":\"74.7\",\"2005\":\"84.3\",\"2006\":\"88.4\",\"2007\":\"86.4\",\"2008\":\"92.4\",\"2009\":\"97.6\",\"2010\":\"104.1\",\"2011\":\"112.7\",\"2012\":\"113.6\",\"2013\":\"117.4\",\"2014\":\"129.2\",\"2015\":\"132.9\",\"2016\":\"137.3\",\"2017\":\"137.4\",\"2018\":\"145.9\",\"2019\":\"146.2\",\"2020\":\"154.2\",\"2021\":\"158.0\",\"2022\":\"165.9\",\"2023\":\"168.7\",\"2024\":\"176.7\",\"2025\":\"178.7\",\"scriptCode\":\"NVDA\",\"scriptName\":\"NVIDIA\"}]",
+    "convertedResponse" : null
+  }
+}

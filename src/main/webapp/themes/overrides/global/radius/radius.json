@@ -1,0 +1,25 @@
+{
+	"radius": {
+		"xl": {
+			"value": "28px"
+		},
+		"xs": {
+			"value": "4px"
+		},
+		"pill": {
+			"value": "1000px"
+		},
+		"lg": {
+			"value": "16px"
+		},
+		"md": {
+			"value": "12px"
+		},
+		"none": {
+			"value": "0px"
+		},
+		"sm": {
+			"value": "8px"
+		}
+	}
+}

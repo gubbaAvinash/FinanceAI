@@ -1,0 +1,6 @@
+{
+  "id" : "heatMap",
+  "type" : "RestService",
+  "title" : "heatMap",
+  "mockEnabled" : false
+}

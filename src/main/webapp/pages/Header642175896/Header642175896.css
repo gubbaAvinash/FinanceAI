@@ -1,0 +1,13 @@
+#header642175896-642175896 {
+    align-items: center;
+    align-self: stretch;
+    background: var(--wm-color-headerbg);
+    display: flex;
+    flex-shrink: 0;
+    height: 64px;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-right: 24px;
+    padding-bottom: 0px;
+    padding-left: 24px;
+}

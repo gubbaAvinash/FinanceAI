@@ -1,0 +1,143 @@
+{
+  "fileScanned": "Dashboard.html",
+  "changesRequired": [
+    {
+      "fileName": "Dashboard.html",
+      "selectorTried": [
+        "button[name=\"buttonAA\"]",
+        "wm-button[name=\"buttonAA\"]"
+      ],
+      "ruleId": "button-name",
+      "name": "buttonAA",
+      "tag": "button",
+      "description": "Ensure buttons have discernible text",
+      "oldSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"mi mi-more-vert fa-2x\" name=\"buttonAA\"></wm-button>",
+      "newSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"mi mi-more-vert fa-2x\" name=\"buttonAA\" aria-label=\"buttonAA\"></wm-button>"
+    },
+    {
+      "fileName": "Dashboard.html",
+      "selectorTried": [
+        "button[name=\"buttonRemove\"]",
+        "wm-button[name=\"buttonRemove\"]"
+      ],
+      "ruleId": "button-name",
+      "name": "buttonRemove",
+      "tag": "button",
+      "description": "Ensure buttons have discernible text",
+      "oldSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"fa fa-minus-circle fa-2x\" name=\"buttonRemove\" on-click=\"buttonRemoveClick($event, widget, item, currentItemWidgets)\"></wm-button>",
+      "newSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"fa fa-minus-circle fa-2x\" name=\"buttonRemove\" on-click=\"buttonRemoveClick($event, widget, item, currentItemWidgets)\" aria-label=\"buttonRemove\"></wm-button>"
+    },
+    {
+      "fileName": "Dashboard.html",
+      "selectorTried": [
+        "button[name=\"buttonAA\"]",
+        "wm-button[name=\"buttonAA\"]"
+      ],
+      "ruleId": "button-name",
+      "name": "buttonAA",
+      "tag": "button",
+      "description": "Ensure buttons have discernible text",
+      "oldSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"mi mi-more-vert fa-2x\" name=\"buttonAA\"></wm-button>",
+      "newSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"mi mi-more-vert fa-2x\" name=\"buttonAA\" aria-label=\"buttonAA\"></wm-button>"
+    },
+    {
+      "fileName": "Dashboard.html",
+      "selectorTried": [
+        "button[name=\"buttonRemove\"]",
+        "wm-button[name=\"buttonRemove\"]"
+      ],
+      "ruleId": "button-name",
+      "name": "buttonRemove",
+      "tag": "button",
+      "description": "Ensure buttons have discernible text",
+      "oldSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"fa fa-minus-circle fa-2x\" name=\"buttonRemove\" on-click=\"buttonRemoveClick($event, widget, item, currentItemWidgets)\"></wm-button>",
+      "newSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"fa fa-minus-circle fa-2x\" name=\"buttonRemove\" on-click=\"buttonRemoveClick($event, widget, item, currentItemWidgets)\" aria-label=\"buttonRemove\"></wm-button>"
+    },
+    {
+      "fileName": "Dashboard.html",
+      "selectorTried": [
+        "button[name=\"buttonAA\"]",
+        "wm-button[name=\"buttonAA\"]"
+      ],
+      "ruleId": "button-name",
+      "name": "buttonAA",
+      "tag": "button",
+      "description": "Ensure buttons have discernible text",
+      "oldSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"mi mi-more-vert fa-2x\" name=\"buttonAA\"></wm-button>",
+      "newSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"mi mi-more-vert fa-2x\" name=\"buttonAA\" aria-label=\"buttonAA\"></wm-button>"
+    },
+    {
+      "fileName": "Dashboard.html",
+      "selectorTried": [
+        "button[name=\"buttonRemove\"]",
+        "wm-button[name=\"buttonRemove\"]"
+      ],
+      "ruleId": "button-name",
+      "name": "buttonRemove",
+      "tag": "button",
+      "description": "Ensure buttons have discernible text",
+      "oldSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"fa fa-minus-circle fa-2x\" name=\"buttonRemove\" on-click=\"buttonRemoveClick($event, widget, item, currentItemWidgets)\"></wm-button>",
+      "newSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"fa fa-minus-circle fa-2x\" name=\"buttonRemove\" on-click=\"buttonRemoveClick($event, widget, item, currentItemWidgets)\" aria-label=\"buttonRemove\"></wm-button>"
+    },
+    {
+      "fileName": "Dashboard.html",
+      "selectorTried": [
+        "button[name=\"buttonAdd\"]",
+        "wm-button[name=\"buttonAdd\"]"
+      ],
+      "ruleId": "button-name",
+      "name": "buttonAdd",
+      "tag": "button",
+      "description": "Ensure buttons have discernible text",
+      "oldSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"fa fa-plus-circle fa-2x\" name=\"buttonAdd\" on-click=\"buttonAddClick($event, widget, item, currentItemWidgets)\"></wm-button>",
+      "newSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"fa fa-plus-circle fa-2x\" name=\"buttonAdd\" on-click=\"buttonAddClick($event, widget, item, currentItemWidgets)\" aria-label=\"buttonAdd\"></wm-button>"
+    },
+    {
+      "fileName": "Dashboard.html",
+      "selectorTried": [
+        "button[name=\"buttonAdd\"]",
+        "wm-button[name=\"buttonAdd\"]"
+      ],
+      "ruleId": "button-name",
+      "name": "buttonAdd",
+      "tag": "button",
+      "description": "Ensure buttons have discernible text",
+      "oldSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"fa fa-plus-circle fa-2x\" name=\"buttonAdd\" on-click=\"buttonAddClick($event, widget, item, currentItemWidgets)\"></wm-button>",
+      "newSnippet": "<wm-button type=\"button\" class=\"btn-transparent\" iconclass=\"fa fa-plus-circle fa-2x\" name=\"buttonAdd\" on-click=\"buttonAddClick($event, widget, item, currentItemWidgets)\" aria-label=\"buttonAdd\"></wm-button>"
+    }
+  ],
+  "notFound": [
+    {
+      "fileName": "Dashboard.html",
+      "name": "fullScreenButton",
+      "tag": "button",
+      "mappedTag": "wm-button",
+      "ruleId": "button-name",
+      "description": "Ensure buttons have discernible text"
+    },
+    {
+      "fileName": "Dashboard.html",
+      "name": "fullScreenButton",
+      "tag": "button",
+      "mappedTag": "wm-button",
+      "ruleId": "button-name",
+      "description": "Ensure buttons have discernible text"
+    },
+    {
+      "fileName": "Dashboard.html",
+      "name": "fullScreenButton",
+      "tag": "button",
+      "mappedTag": "wm-button",
+      "ruleId": "button-name",
+      "description": "Ensure buttons have discernible text"
+    },
+    {
+      "fileName": "Dashboard.html",
+      "name": "viewport",
+      "tag": "meta",
+      "mappedTag": null,
+      "ruleId": "meta-viewport",
+      "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming"
+    }
+  ]
+}

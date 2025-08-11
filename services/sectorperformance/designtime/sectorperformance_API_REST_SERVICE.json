@@ -1,0 +1,136 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "x-WM-API_ID" : "e8c29c73-8b08-4564-a98e-2c881062e4fe",
+    "x-WM-SERVICE_ID" : "onwavemaker",
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-USE_WITH_CREDENTIALS" : false,
+    "version" : "2.0"
+  },
+  "host" : "mockoonapi.onwavemaker.com",
+  "basePath" : "",
+  "tags" : [ {
+    "name" : "sectorperformance"
+  } ],
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/sectorperformance/sectorperformance" : {
+      "get" : {
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "tags" : [ "sectorperformance" ],
+        "operationId" : "sectorperformance_invoke",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/RootResponse"
+            }
+          }
+        }
+      },
+      "x-WM-BASE_PATH" : "/sectorperformance/sectorperformance",
+      "x-WM-TAG" : "sectorperformance",
+      "x-WM-RELATIVE_PATH" : "",
+      "x-WM-COMPLETE_PATH" : "${rest.sectorperformance.scheme}://${rest.sectorperformance.host}${rest.sectorperformance.basepath}/sectorperformance"
+    }
+  },
+  "definitions" : {
+    "Response.performance" : {
+      "required" : [ "fiveYear", "lastMonth", "lastWeek", "tenYear", "threeYear", "today", "yearToDate" ],
+      "properties" : {
+        "yearToDate" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "fiveYear" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "today" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "lastMonth" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "lastWeek" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "threeYear" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "tenYear" : {
+          "type" : "number",
+          "format" : "double"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "sectorperformance.Response.performance",
+      "x-WM-TAGS" : [ "sectorperformance" ]
+    },
+    "Response.indicesEntryItem" : {
+      "required" : [ "name", "script", "value" ],
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "script" : {
+          "type" : "string"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "sectorperformance.Response.indicesEntryItem",
+      "x-WM-TAGS" : [ "sectorperformance" ]
+    },
+    "RootResponse" : {
+      "required" : [ "asOfDate", "indices", "market", "sectorPerformance" ],
+      "properties" : {
+        "market" : {
+          "type" : "string"
+        },
+        "indices" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.indicesEntryItem"
+          }
+        },
+        "sectorPerformance" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.sectorPerformanceEntryItem"
+          }
+        },
+        "asOfDate" : {
+          "type" : "string"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "sectorperformance.RootResponse",
+      "x-WM-TAGS" : [ "sectorperformance" ]
+    },
+    "Response.sectorPerformanceEntryItem" : {
+      "required" : [ "performance", "sector" ],
+      "properties" : {
+        "performance" : {
+          "$ref" : "#/definitions/Response.performance"
+        },
+        "sector" : {
+          "type" : "string"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "sectorperformance.Response.sectorPerformanceEntryItem",
+      "x-WM-TAGS" : [ "sectorperformance" ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+
+    #main_container_1-642175990 {height:100%;width:100%;min-height:100vh;}
+  
+    #frame_2147211227-642176003 {background:url(resources/images/imagelists/frame_2147211227-642176003.png) transparent    no-repeat;padding:24px;width:500px;background-size:cover;}
+  
+    #assistant_header-642176877 {width:452px;}
+  
+    #frame_2147211226-642176007 {height:746px;width:452px;}
+  
+    #assistant_content-642176008 {width:439px;}
+  
+    #frame_2147211209-642176010 {background:var(--State-Layers-On-Secondary-Opacity-16, rgba(255, 255, 255, 0.64));border-radius:2px;height:44px;}
+  
+    #suggestions_header-642176018 {width:309px;}
+  
+    #suggestions_buttons_container-642176020 {align-items:center;align-self:stretch;display:flex;gap:8px;}
+  
+    #dashboard_container-642176024 {height:858px;}
+  
+    #back_to_dashboard_container-642176026 {border-bottom:1px solid var(--Schemes-Outline-Variant, #DDD);}
+  
+    #metrics_container-642176037 {height:124px;}
+  
+    #pve_ratio_container-642176038 {border:1px solid var(--Schemes-Outline, #E5E7EB);border-radius:2px;padding:12px;}
+  
+    #eps_container-642176049 {border:1px solid var(--Schemes-Outline, #E5E7EB);border-radius:2px;padding:12px;}
+  
+    #dividend_yield_container-642176060 {border:1px solid var(--Schemes-Outline, #E5E7EB);border-radius:2px;padding:12px;}
+  
+    #market_cap_container-642176071 {border:1px solid var(--Schemes-Outline, #E5E7EB);border-radius:2px;padding:12px;}
+  
+    #background_border_shadow-642176082 {border:1px solid var(--Schemes-Outline, #E5E7EB);border-radius:2px;height:509px;padding:18px;}
+  

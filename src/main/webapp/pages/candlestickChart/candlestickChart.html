@@ -1,0 +1,19 @@
+<wm-partial name="partial1">
+    <wm-container name="container3" style="display: flex" show="false">
+        <wm-composite name="composite3">
+            <wm-label class="col-md-3 control-label" notag="true" name="label3" caption="VMAP"></wm-label>
+            <wm-container class="col-md-9" name="container4">
+                <wm-checkbox caption="Toggle" type="toggle" name="toggle3"
+                    on-change="toggle3Change($event, widget, newVal, oldVal)"></wm-checkbox>
+            </wm-container>
+        </wm-composite>
+        <wm-composite name="composite3">
+            <wm-label class="col-md-3 control-label" notag="true" name="label3" caption="EMA"></wm-label>
+            <wm-container class="col-md-9" name="container4">
+                <wm-checkbox caption="Toggle" type="toggle" name="toggle4"
+                    on-change="toggle4Change($event, widget, newVal, oldVal)" datavalue="true"></wm-checkbox>
+            </wm-container>
+        </wm-composite>
+    </wm-container>
+    <div id="vwapChart" style="height: 500px; min-width: 600px;"></div>
+</wm-partial>

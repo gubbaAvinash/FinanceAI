@@ -1,0 +1,22 @@
+<wm-page name="mainpage" pagetitle="Main">
+    <wm-header content="header" name="header" height="auto"></wm-header>
+    <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
+    <wm-content name="content">
+        <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav" navtype="rail" animation="slide-over">
+        </wm-left-panel>
+        <wm-page-content columnwidth="10" name="mainContent">
+            <!-- <wm-container name="container1" content="heatMapChart"></wm-container> -->
+            <wm-composite name="composite2">
+                <wm-label class="col-md-3 control-label" notag="true" name="label2"
+                    caption="bind:(Variables.stv.dataSet | filter :{'name' : 'aa'})[0].value"></wm-label>
+                <wm-container class="col-md-9" name="container2_1">
+                    <wm-checkboxset height="auto" name="checkboxset1"
+                        dataset="bind:&quot;treasuryYieldCurve,sectorPerformance,heatMapChart,sectorRotation,topFlow&quot;"
+                        datafield="All Fields" datavalue="treasuryYieldCurve,sectorPerformance,heatMapChart">
+                    </wm-checkboxset>
+                </wm-container>
+            </wm-composite>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer name="footer" content="footer"></wm-footer>
+</wm-page>

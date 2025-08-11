@@ -1,0 +1,114 @@
+{
+  "basePath" : "${rest.sectorRotation.basepath}",
+  "paths" : {
+    "/sectorRotation" : {
+      "x-WM-BASE_PATH" : "/sectorRotation",
+      "x-WM-TAG" : "sectorRotation",
+      "x-WM-RELATIVE_PATH" : "",
+      "get" : {
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "operationId" : "sectorRotation_sectorRotation_invoke",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "x-WM-IS_LIST" : true,
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Response.RootResponseROOTEntryItem"
+              }
+            },
+            "description" : "Success"
+          }
+        },
+        "tags" : [ "sectorRotation" ],
+        "consumes" : [ "application/json" ]
+      },
+      "x-WM-COMPLETE_PATH" : "${rest.sectorRotation.scheme}://${rest.sectorRotation.host}${rest.sectorRotation.basepath}/sectorRotation"
+    }
+  },
+  "host" : "${rest.sectorRotation.host}",
+  "schemes" : [ "${rest.sectorRotation.scheme}" ],
+  "definitions" : {
+    "Response.change" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "sectorRotation.Response.change",
+      "x-WM-TAGS" : [ "sectorRotation" ],
+      "required" : [ "07-16-2025", "07-17-2025", "07-18-2025", "07-21-2025", "07-22-2025", "07-23-2025", "07-24-2025", "07-25-2025" ],
+      "properties" : {
+        "07-18-2025" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "07-22-2025" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "07-25-2025" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "07-16-2025" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "07-24-2025" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "07-17-2025" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "07-23-2025" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "07-21-2025" : {
+          "format" : "int32",
+          "type" : "integer"
+        }
+      }
+    },
+    "Response.RootResponseROOTEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "sectorRotation.Response.RootResponseROOTEntryItem",
+      "x-WM-TAGS" : [ "sectorRotation" ],
+      "required" : [ "change", "name" ],
+      "properties" : {
+        "change" : {
+          "$ref" : "#/definitions/Response.change"
+        },
+        "name" : {
+          "type" : "string"
+        }
+      }
+    },
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "sectorRotation.RootResponse",
+      "x-WM-TAGS" : [ "sectorRotation" ],
+      "required" : [ "RootResponseROOT" ],
+      "properties" : {
+        "RootResponseROOT" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.RootResponseROOTEntryItem"
+          }
+        }
+      }
+    }
+  },
+  "swagger" : "2.0",
+  "info" : {
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "x-WM-API_ID" : "b5648129-d2f6-491d-b1c8-210fec0ee899",
+    "x-WM-SERVICE_ID" : "onwavemaker",
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "version" : "2.0",
+    "x-WM-USE_WITH_CREDENTIALS" : false
+  },
+  "tags" : [ {
+    "name" : "sectorRotation"
+  } ]
+}

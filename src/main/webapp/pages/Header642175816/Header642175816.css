@@ -1,0 +1,12 @@
+#header642175816-642175816 {
+    align-items: center;
+    align-self: stretch;
+    background: var(--wm-color-headerbg);
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-right: 24px;
+    padding-bottom: 0px;
+    padding-left: 24px;
+}

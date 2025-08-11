@@ -1,0 +1,56 @@
+{
+  "stvData" : {
+    "_id" : "wm-stvData-wm.Variable-1753281764985",
+    "name" : "stvData",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ ],
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "stvGetPromptResponse" : {
+    "_id" : "wm-stvGetPromptResponse-wm.ServiceVariable-1753293081482",
+    "name" : "stvGetPromptResponse",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "isList" : false,
+      "target" : "RequestBody",
+      "value" : "{\"requestId\": \"\"}",
+      "type" : "promptResponse.RootRequest"
+    } ],
+    "type" : "promptResponse.RootResponse",
+    "service" : "promptResponse",
+    "operation" : "invoke",
+    "operationId" : "promptResponse_invoke",
+    "operationType" : "post",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "onSuccess" : "stvGetPromptResponseonSuccess(variable, data, options)",
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "promptResponse"
+  },
+  "stvPrompt" : {
+    "_id" : "wm-stvPrompt-wm.Variable-1753273837172",
+    "name" : "stvPrompt",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "prompt" : ""
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  }
+}

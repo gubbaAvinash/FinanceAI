@@ -1,0 +1,10 @@
+<wm-partial>
+    <wm-composite name="composite1">
+        <wm-container class="col-md-9" name="container1">
+            <wm-label class="col-md-1 control-label" notag="true" name="label1" caption="Pie"></wm-label>
+            <wm-checkbox caption="Toggle" type="toggle" name="toggle1" on-click="toggle1Click($event, widget)"
+                checkedvalue="true" uncheckedvalue="false" datavalue="true"></wm-checkbox>
+        </wm-container>
+    </wm-composite>
+    <div id="container" style="width: 500px; height: 500px;"></div>
+</wm-partial>

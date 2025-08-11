@@ -1,0 +1,26 @@
+{
+  "endpointAddress" : "https://mockoonapi.onwavemaker.com/kx/scriptInfo/{scriptName}",
+  "method" : "POST",
+  "headers" : { },
+  "redirectEnabled" : true,
+  "requestBody" : "{\"requestId\": \"\"}",
+  "queryParams" : { },
+  "authDetails" : null,
+  "contentType" : "application/json",
+  "multiParamInfoList" : [ ],
+  "urlBasePath" : "/kx",
+  "sampleHttpResponseDetails" : {
+    "statusCode" : 200,
+    "headers" : {
+      "Date" : [ "Wed, 23 Jul 2025 17:48:28 GMT" ],
+      "Content-Type" : [ "application/json; charset=utf-8" ],
+      "Content-Length" : [ "6395" ],
+      "Connection" : [ "keep-alive" ],
+      "Access-Control-Allow-Origin" : [ "*" ],
+      "Access-Control-Allow-Methods" : [ "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS" ],
+      "Access-Control-Allow-Headers" : [ "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With" ]
+    },
+    "responseBody" : "{\"symbol\":\"AAPL\",\"companyName\":\"Apple Inc.\",\"currency\":\"USD\",\"lastUpdated\":\"2025-07-18T14:00:00Z\",\"defaultChart\":\"lineChart\",\"short-answer\":\"Apple is financially strong and continues to innovate in hardware, services, and emerging technologies like AI and mixed reality. It maintains high margins and strong investor confidence.\",\"long-answer\":\"Apple Inc. remains one of the most valuable companies in the world in 2025. With annual revenue reaching 400.3 billion USD and net income of 105.5 billion USD, its financial performance is robust. The company benefits from a loyal customer base and a well-integrated ecosystem of products and services, including iPhones, Macs, wearables, and digital content platforms. Its market capitalization stands at 3.1 trillion USD, and its return on equity is exceptionally high at 152.3 percent. Free cash flow is consistently strong, supporting both innovation and shareholder returns. Apple is expanding its presence in AI, mixed reality, and health tech, signaling strategic growth into new frontiers. With consistent R&D investment and brand dominance, its long-term outlook remains positive.\",\"metrics\":[{\"name\":\"P/E Ratio\",\"value\":28.5,\"display\":true}],\"data-table\":{\"resultTitle\":\"Income Statement\",\"data\":[{\"Year\":\"2020\",\"Revenue\":\"383.3B\",\"Net Income\":\"96.9B\",\"EPS\":\"6.13\",\"Operating Margin\":\"29.5%\"}]},\"candlestickChart\":{\"data\":[{\"date\":\"2023-01\",\"open\":145.3,\"high\":152.9,\"low\":144.1,\"close\":150.45}]},\"lineChart\":{\"thisweek\":[{\"time\":\"2025-07-14\",\"price\":192.45}],\"weeklyData\":[{\"date\":\"2025-07-12\",\"close\":196.05}],\"monthlyData\":[{\"month\":\"2025-07\",\"averageClose\":193.85}],\"yearlyData\":{\"3Year\":[{\"year\":\"2023\",\"averageClose\":165.2}],\"5Year\":[{\"year\":\"2021\",\"averageClose\":135.8}],\"10Year\":[{\"year\":\"2016\",\"averageClose\":95.4}]}}}",
+    "convertedResponse" : null
+  }
+}

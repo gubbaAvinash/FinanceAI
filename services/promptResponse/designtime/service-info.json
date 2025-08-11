@@ -1,0 +1,6 @@
+{
+  "id" : "promptResponse",
+  "type" : "RestService",
+  "title" : "promptResponse",
+  "mockEnabled" : false
+}

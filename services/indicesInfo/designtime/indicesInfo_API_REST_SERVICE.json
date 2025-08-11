@@ -1,0 +1,102 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "x-WM-API_ID" : "0489e811-ec0a-4c51-a90e-8b7201e2cb10",
+    "x-WM-SERVICE_ID" : "onwavemaker",
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-USE_WITH_CREDENTIALS" : false,
+    "version" : "2.0"
+  },
+  "host" : "mockoonapi.onwavemaker.com",
+  "basePath" : "",
+  "tags" : [ {
+    "name" : "RestServiceVirtualController",
+    "description" : "Rest service swagger documentation"
+  } ],
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/indicesInfo/indicesInfo" : {
+      "get" : {
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "tags" : [ "RestServiceVirtualController" ],
+        "operationId" : "indicesInfo_RestServiceVirtualController-invoke",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/RootResponse"
+            }
+          }
+        }
+      },
+      "x-WM-BASE_PATH" : "/indicesInfo/indicesInfo",
+      "x-WM-TAG" : "RestServiceVirtualController",
+      "x-WM-RELATIVE_PATH" : "",
+      "x-WM-COMPLETE_PATH" : "${rest.indicesInfo.scheme}://${rest.indicesInfo.host}${rest.indicesInfo.basepath}/indicesInfo"
+    }
+  },
+  "definitions" : {
+    "Response.indicesEntryItem" : {
+      "required" : [ "change", "last_updated", "logo", "name", "percent_change", "ticker", "value" ],
+      "properties" : {
+        "ticker" : {
+          "type" : "string"
+        },
+        "last_updated" : {
+          "type" : "string"
+        },
+        "change" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "logo" : {
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "string"
+        },
+        "percent_change" : {
+          "type" : "string"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "indicesInfo.Response.indicesEntryItem",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ]
+    },
+    "RootResponse" : {
+      "required" : [ "asOf", "indices", "market", "refresh_interval", "source", "unit" ],
+      "properties" : {
+        "market" : {
+          "type" : "string"
+        },
+        "unit" : {
+          "type" : "string"
+        },
+        "indices" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.indicesEntryItem"
+          }
+        },
+        "refresh_interval" : {
+          "type" : "string"
+        },
+        "asOf" : {
+          "type" : "string"
+        },
+        "source" : {
+          "type" : "string"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "indicesInfo.RootResponse",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ]
+    }
+  }
+}

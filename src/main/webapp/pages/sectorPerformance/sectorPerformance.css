@@ -1,0 +1,55 @@
+/* #sectorPerformance {
+    padding-bottom: 30px;
+} */
+
+
+
+
+.sector-radio .app-radio .caption::after,
+.sector-radio .app-radio .caption::before {
+    display: none !important;
+}
+
+.sector-radio input {
+    position: absolute;
+    left: 0px !important;
+    border: none !important;
+    opacity: 0.3 !important;
+    border-radius: 0 !important;
+    background-color: rgb(203 203 203) !important;
+    height: 36px !important;
+}
+
+.sector-radio .active input {
+    background-color: rgb(59 80 233) !important;
+}
+
+.sector-radio .app-radio .caption {
+    padding-left: 0 !important;
+    margin: 0;
+    /* font-size: 12px !important; */
+    padding-top: 7px !important;
+    min-width: 40px;
+}
+
+.sector-radio li {
+    width: 40px !important;
+}
+
+.sector-radio {
+    gap: 16px !important;
+}
+
+
+
+.sector-radio li .app-radioset-label {
+    width: 100%;
+    text-align: center;
+}
+
+.fullScreen-btn {
+    background: transparent;
+    padding: 0px;
+    /* margin: 0px; */
+    border: transparent;
+}

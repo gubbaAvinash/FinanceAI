@@ -1,0 +1,86 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "x-WM-API_ID" : "3d471191-07b4-4455-a766-1215f9ab4377",
+    "x-WM-SERVICE_ID" : "onwavemaker",
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-USE_WITH_CREDENTIALS" : false,
+    "version" : "2.0"
+  },
+  "host" : "mockoonapi.onwavemaker.com",
+  "basePath" : "",
+  "tags" : [ {
+    "name" : "heatMap"
+  } ],
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/heatMap/heatMap" : {
+      "get" : {
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "tags" : [ "heatMap" ],
+        "operationId" : "heatMap_invoke",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "x-WM-IS_LIST" : true,
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Response.RootResponseROOTEntryItem"
+              }
+            }
+          }
+        }
+      },
+      "x-WM-BASE_PATH" : "/heatMap/heatMap",
+      "x-WM-TAG" : "heatMap",
+      "x-WM-RELATIVE_PATH" : "",
+      "x-WM-COMPLETE_PATH" : "${rest.heatMap.scheme}://${rest.heatMap.host}${rest.heatMap.basepath}/heatMap"
+    }
+  },
+  "definitions" : {
+    "Response.RootResponseROOTEntryItem" : {
+      "required" : [ "colorValue", "id", "name", "parent", "value" ],
+      "properties" : {
+        "parent" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "colorValue" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "heatMap.Response.RootResponseROOTEntryItem",
+      "x-WM-TAGS" : [ "heatMap" ]
+    },
+    "RootResponse" : {
+      "required" : [ "RootResponseROOT" ],
+      "properties" : {
+        "RootResponseROOT" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.RootResponseROOTEntryItem"
+          }
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "heatMap.RootResponse",
+      "x-WM-TAGS" : [ "heatMap" ]
+    }
+  }
+}

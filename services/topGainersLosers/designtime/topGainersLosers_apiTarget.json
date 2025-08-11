@@ -1,0 +1,78 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "x-WM-API_ID" : "159c5012-ff47-4cf9-97a2-8675a39cdf87",
+    "x-WM-SERVICE_ID" : "onwavemaker",
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-USE_WITH_CREDENTIALS" : false,
+    "version" : "2.0"
+  },
+  "host" : "mockoonapi.onwavemaker.com",
+  "basePath" : "/kx",
+  "tags" : [ {
+    "name" : "topGainersLosers"
+  } ],
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/topGainersLosers" : {
+      "get" : {
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "tags" : [ "topGainersLosers" ],
+        "operationId" : "topGainersLosers_topGainersLosers_invoke",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "x-WM-IS_LIST" : true,
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Response.RootResponseROOTEntryItem"
+              }
+            }
+          }
+        }
+      },
+      "x-WM-BASE_PATH" : "/topGainersLosers",
+      "x-WM-TAG" : "topGainersLosers",
+      "x-WM-RELATIVE_PATH" : "",
+      "x-WM-COMPLETE_PATH" : "${rest.topGainersLosers.scheme}://${rest.topGainersLosers.host}${rest.topGainersLosers.basepath}/topGainersLosers"
+    }
+  },
+  "definitions" : {
+    "Response.RootResponseROOTEntryItem" : {
+      "required" : [ "dailyChange", "scriptName", "weeklyChange" ],
+      "properties" : {
+        "dailyChange" : {
+          "type" : "string"
+        },
+        "scriptName" : {
+          "type" : "string"
+        },
+        "weeklyChange" : {
+          "type" : "string"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "topGainersLosers.Response.RootResponseROOTEntryItem",
+      "x-WM-TAGS" : [ "topGainersLosers" ]
+    },
+    "RootResponse" : {
+      "required" : [ "RootResponseROOT" ],
+      "properties" : {
+        "RootResponseROOT" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.RootResponseROOTEntryItem"
+          }
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "topGainersLosers.RootResponse",
+      "x-WM-TAGS" : [ "topGainersLosers" ]
+    }
+  }
+}

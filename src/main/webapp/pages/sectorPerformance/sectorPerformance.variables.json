@@ -1,0 +1,25 @@
+{
+  "getSectorperformance" : {
+    "_id" : "wm-getSectorperformance-wm.ServiceVariable-1753264513180",
+    "name" : "getSectorperformance",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "sectorperformance.RootResponse",
+    "service" : "sectorperformance",
+    "operation" : "invoke",
+    "operationId" : "sectorperformance_invoke",
+    "operationType" : "get",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "onSuccess" : "getSectorperformanceonSuccess(variable, data, options)",
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "sectorperformance"
+  }
+}

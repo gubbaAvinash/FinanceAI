@@ -1,0 +1,12 @@
+{
+  "toggle" : {
+    "background" : {
+      "selected" : {
+        "value" : "{color.primary.@.value}"
+      },
+      "@" : {
+        "value" : "{color.primary.@.value}"
+      }
+    }
+  }
+}

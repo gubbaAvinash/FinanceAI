@@ -1,0 +1,20 @@
+<wm-partial name="partial1">
+    <wm-container name="container3" class="sector-graph-container">
+        <wm-label padding="unset" caption="Top Flow"
+            class="on-surface letter-0px line-28px font-size-20 fst fw-700 custom-padding-bottom-16" name="label7">
+        </wm-label>
+        <wm-container name="container3" class="icon-btn">
+            <wm-radioset height="auto" name="radioset1" dataset="bind:Variables.stvFiltersOnTopChart.dataSet"
+                datafield="dataValue" on-change="radioset1Change($event, widget, newVal, oldVal)" displayfield="name"
+                datavalue="bind:Variables.stvFiltersOnTopChart.dataSet[0].dataValue" class="sector-radio custom-radio">
+            </wm-radioset>
+            <wm-button class="adjust-btn btn-default fullScreen-btn p-0" caption="" type="button" margin="unset"
+                name="fullScreenButton" iconclass="wi wi-fullscreen" on-click="fullScreenButtonClick($event, widget)">
+            </wm-button>
+        </wm-container>
+    </wm-container>
+    <wm-container class="flex-row align-items-center d-flex custom-gap-4" verticalalign="center" name="container13"
+        width="100%">
+        <div id="containerTopFlow" style="height: 300px; width: 100%;"></div>
+    </wm-container>
+</wm-partial>

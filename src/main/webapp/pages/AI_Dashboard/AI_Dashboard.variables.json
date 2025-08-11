@@ -1,0 +1,27 @@
+{
+  "stvCardsIcon" : {
+    "_id" : "wm-stvCardsIcon-wm.Variable-1753373965290",
+    "name" : "stvCardsIcon",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "P/E Ratio" : "./resources/images/logos/Market_Icon-642175718.png",
+      "EPS" : "./resources/images/logos/EPS_Image-642176054.png",
+      "Dividend Yield (%)" : "./resources/images/logos/Dividend_Yield_Image-642176065.png",
+      "Market Cap" : "./resources/images/logos/Market_Cap_Image-642176076.png",
+      "Pandemic-Year Return (Apple vs S&P 500)" : "./resources/images/logos/Market_Icon-642175718.png",
+      "Services Revenue Growth (2020)" : "./resources/images/logos/EPS_Image-642176054.png",
+      "Subscription Growth" : "./resources/images/logos/Dividend_Yield_Image-642176065.png",
+      "Market Cap Milestone" : "./resources/images/logos/Market_Cap_Image-642176076.png",
+      "5-Year CAGR (Apple vs S&P 500)" : "./resources/images/logos/Market_Icon-642175718.png",
+      "5-Year Returns (Apple vs NASDAQ)" : "./resources/images/logos/EPS_Image-642176054.png",
+      "Volatility (Apple vs Dow Jones)" : "./resources/images/logos/Dividend_Yield_Image-642176065.png",
+      "Dividend Yield (Apple vs S&P 500)" : "./resources/images/logos/Market_Cap_Image-642176076.png"
+    },
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  }
+}

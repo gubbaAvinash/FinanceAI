@@ -1,0 +1,338 @@
+{
+  "color" : {
+    "background" : {
+      "@" : {
+        "value" : "#0d0d0dff"
+      }
+    },
+    "error" : {
+      "@" : {
+        "value" : "#F2B8B5FF"
+      },
+      "container" : {
+        "@" : {
+          "value" : "#8C1D18FF"
+        }
+      }
+    },
+    "inverse" : {
+      "on-surface" : {
+        "@" : {
+          "value" : "#322F35FF"
+        }
+      },
+      "primary" : {
+        "@" : {
+          "value" : "#6750A4FF"
+        }
+      },
+      "surface" : {
+        "@" : {
+          "value" : "#E6E0E9FF"
+        }
+      }
+    },
+    "on-background" : {
+      "@" : {
+        "value" : "#000000"
+      }
+    },
+    "on-error" : {
+      "@" : {
+        "value" : "#601410FF"
+      },
+      "container" : {
+        "@" : {
+          "value" : "#F9DEDCFF"
+        }
+      }
+    },
+    "on-primary" : {
+      "@" : {
+        "value" : "#381E72FF"
+      },
+      "container" : {
+        "@" : {
+          "value" : "#EADDFFFF"
+        }
+      },
+      "fixed" : {
+        "@" : {
+          "value" : "#21005DFF"
+        },
+        "variant" : {
+          "@" : {
+            "value" : "#4F378BFF"
+          }
+        }
+      }
+    },
+    "on-secondary" : {
+      "@" : {
+        "value" : "#332D41FF"
+      },
+      "container" : {
+        "@" : {
+          "value" : "#E8DEF8FF"
+        }
+      },
+      "fixed" : {
+        "@" : {
+          "value" : "#1D192BFF"
+        },
+        "variant" : {
+          "@" : {
+            "value" : "#4A4458FF"
+          }
+        }
+      }
+    },
+    "on-surface" : {
+      "@" : {
+        "value" : "#E6E0E9FF"
+      },
+      "variant" : {
+        "@" : {
+          "value" : "#CAC4D0FF"
+        }
+      }
+    },
+    "on-tertiary" : {
+      "@" : {
+        "value" : "#492532FF"
+      },
+      "container" : {
+        "@" : {
+          "value" : "#FFD8E4FF"
+        }
+      },
+      "fixed" : {
+        "@" : {
+          "value" : "#31111DFF"
+        },
+        "variant" : {
+          "@" : {
+            "value" : "#633B48FF"
+          }
+        }
+      }
+    },
+    "outline" : {
+      "@" : {
+        "value" : "#000000"
+      },
+      "variant" : {
+        "@" : {
+          "value" : "#49454FFF"
+        },
+        "value" : "#212121"
+      }
+    },
+    "primary" : {
+      "2" : {
+        "@" : {
+          "value" : "#D0BCFEFF"
+        }
+      },
+      "@" : {
+        "value" : "#D0BCFEFF"
+      },
+      "container" : {
+        "@" : {
+          "value" : "#4F378BFF"
+        }
+      },
+      "fixed" : {
+        "@" : {
+          "value" : "#EADDFFFF"
+        },
+        "dim" : {
+          "@" : {
+            "value" : "#D0BCFFFF"
+          }
+        }
+      }
+    },
+    "scrim" : {
+      "@" : {
+        "value" : "#0d0d0dff"
+      }
+    },
+    "secondary" : {
+      "@" : {
+        "value" : "#CCC2DCFF"
+      },
+      "container" : {
+        "@" : {
+          "value" : "#4A4458FF"
+        }
+      },
+      "fixed" : {
+        "@" : {
+          "value" : "#E8DEF8FF"
+        },
+        "dim" : {
+          "@" : {
+            "value" : "#CCC2DCFF"
+          }
+        }
+      }
+    },
+    "shadow" : {
+      "@" : {
+        "value" : "#000000"
+      }
+    },
+    "surface" : {
+      "@" : {
+        "value" : "#141218FF"
+      },
+      "bright" : {
+        "@" : {
+          "value" : "#3B383EFF"
+        }
+      },
+      "container" : {
+        "@" : {
+          "value" : "#211F26FF"
+        },
+        "high" : {
+          "@" : {
+            "value" : "#2B2930FF"
+          }
+        },
+        "highest" : {
+          "@" : {
+            "value" : "#36343BFF"
+          }
+        },
+        "low" : {
+          "@" : {
+            "value" : "#1D1B20FF"
+          }
+        },
+        "lowest" : {
+          "@" : {
+            "value" : "#0F0D13FF"
+          }
+        }
+      },
+      "dim" : {
+        "@" : {
+          "value" : "#141218FF"
+        }
+      },
+      "tint" : {
+        "@" : {
+          "value" : "#D0BCFFFF"
+        }
+      },
+      "variant" : {
+        "@" : {
+          "value" : "#49454FFF"
+        }
+      }
+    },
+    "tertiary" : {
+      "@" : {
+        "value" : "#EFB8C8FF"
+      },
+      "container" : {
+        "@" : {
+          "value" : "#633B48FF"
+        }
+      },
+      "fixed" : {
+        "@" : {
+          "value" : "#FFD8E4FF"
+        },
+        "dim" : {
+          "@" : {
+            "value" : "#EFB8C8FF"
+          }
+        }
+      }
+    },
+    "headerbg" : {
+      "value" : "#0D0D0D"
+    },
+    "charttext" : {
+      "value" : "#FFFFFF"
+    },
+    "chartbg" : {
+      "value" : "#0D0D0D"
+    },
+    "darklightbg" : {
+      "value" : "linear-gradient(90deg, #19191A 0%, #121212 100%)"
+    },
+    "bodybg" : {
+      "value" : "#0D0D0D"
+    },
+    "onprimarylabel" : {
+      "value" : "#FFFFFF"
+    },
+    "container-padding" : {
+      "value" : "0px"
+    },
+    "border-none-dark" : {
+      "value" : "0px"
+    },
+    "modal-content-bg" : {
+      "value" : "#1D1D1F"
+    },
+    "surface-dim-bg" : {
+      "value" : "#0D0D0D"
+    },
+    "on-dialog-chart-bg" : {
+      "value" : "#000000"
+    },
+    "ai-textarea-border-width" : {
+      "value" : "1px"
+    },
+    "ai-textarea-border-color" : {
+      "value" : "#27272B"
+    },
+    "ai-textarea-border-bg" : {
+      "value" : "#1C1C1F"
+    },
+    "ai-default-indicator-bg" : {
+      "value" : "#18181B80"
+    },
+    "ai-default-indicator-border" : {
+      "value" : "#27272B80"
+    },
+    "ai-default-indicator-primary-bg" : {
+      "value" : "linear-gradient(94.38deg, rgba(88, 61, 129, 0.4) 45.01%, rgba(163, 110, 207, 0.4) 83.97%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) "
+    },
+    "table-text" : {
+      "value" : "#FFFFFF"
+    },
+    "on-bg-text" : {
+      "value" : "#FFFFFF"
+    },
+    "ai-left-bg" : {
+      "value" : "#0D0D0D"
+    },
+    "dialog-text" : {
+      "value" : "#FFFFFF"
+    },
+    "dialog-list-bg" : {
+      "value" : "#FFFFFF08"
+    },
+    "dialog-list-line" : {
+      "value" : "#FFFFFF33"
+    },
+    "label-color" : {
+      "value" : "#ffffffff"
+    },
+    "theme-bg" : {
+      "value" : "#FFFFFF1A"
+    },
+    "theme-text-color" : {
+      "value" : "#FFFFFF"
+    },
+    "footerbg" : {
+      "value" : "#0D0D0D"
+    }
+  }
+}

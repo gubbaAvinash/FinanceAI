@@ -1,0 +1,6 @@
+{
+  "id" : "sectorperformance",
+  "type" : "RestService",
+  "title" : "sectorperformance",
+  "mockEnabled" : false
+}

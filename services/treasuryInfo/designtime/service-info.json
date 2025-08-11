@@ -1,0 +1,6 @@
+{
+  "id" : "treasuryInfo",
+  "type" : "RestService",
+  "title" : "treasuryInfo",
+  "mockEnabled" : false
+}

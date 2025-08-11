@@ -1,0 +1,23 @@
+{
+  "stv" : {
+    "_id" : "wm-stv-wm.Variable-1754061575311",
+    "name" : "stv",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "name" : "aa",
+      "value" : "AA"
+    }, {
+      "name" : "bb",
+      "value" : "BB"
+    }, {
+      "name" : "cc",
+      "value" : "CC"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  }
+}

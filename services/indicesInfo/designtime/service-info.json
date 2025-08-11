@@ -1,0 +1,6 @@
+{
+  "id" : "indicesInfo",
+  "type" : "RestService",
+  "title" : "indicesInfo",
+  "mockEnabled" : false
+}

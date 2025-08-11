@@ -1,0 +1,136 @@
+{
+  "basePath" : "${rest.sectorperformance.basepath}",
+  "paths" : {
+    "/sectorperformance" : {
+      "x-WM-BASE_PATH" : "/sectorperformance",
+      "x-WM-TAG" : "sectorperformance",
+      "x-WM-RELATIVE_PATH" : "",
+      "get" : {
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "operationId" : "sectorperformance_invoke",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/RootResponse"
+            },
+            "description" : "Success"
+          }
+        },
+        "tags" : [ "sectorperformance" ],
+        "consumes" : [ "application/json" ]
+      },
+      "x-WM-COMPLETE_PATH" : "${rest.sectorperformance.scheme}://${rest.sectorperformance.host}${rest.sectorperformance.basepath}/sectorperformance"
+    }
+  },
+  "host" : "${rest.sectorperformance.host}",
+  "schemes" : [ "${rest.sectorperformance.scheme}" ],
+  "definitions" : {
+    "Response.performance" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "sectorperformance.Response.performance",
+      "x-WM-TAGS" : [ "sectorperformance" ],
+      "required" : [ "fiveYear", "lastMonth", "lastWeek", "tenYear", "threeYear", "today", "yearToDate" ],
+      "properties" : {
+        "yearToDate" : {
+          "format" : "double",
+          "type" : "number"
+        },
+        "fiveYear" : {
+          "format" : "double",
+          "type" : "number"
+        },
+        "today" : {
+          "format" : "double",
+          "type" : "number"
+        },
+        "lastMonth" : {
+          "format" : "double",
+          "type" : "number"
+        },
+        "lastWeek" : {
+          "format" : "double",
+          "type" : "number"
+        },
+        "threeYear" : {
+          "format" : "double",
+          "type" : "number"
+        },
+        "tenYear" : {
+          "format" : "double",
+          "type" : "number"
+        }
+      }
+    },
+    "Response.indicesEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "sectorperformance.Response.indicesEntryItem",
+      "x-WM-TAGS" : [ "sectorperformance" ],
+      "required" : [ "name", "script", "value" ],
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "value" : {
+          "format" : "double",
+          "type" : "number"
+        },
+        "script" : {
+          "type" : "string"
+        }
+      }
+    },
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "sectorperformance.RootResponse",
+      "x-WM-TAGS" : [ "sectorperformance" ],
+      "required" : [ "asOfDate", "indices", "market", "sectorPerformance" ],
+      "properties" : {
+        "market" : {
+          "type" : "string"
+        },
+        "indices" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.indicesEntryItem"
+          }
+        },
+        "sectorPerformance" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.sectorPerformanceEntryItem"
+          }
+        },
+        "asOfDate" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Response.sectorPerformanceEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "sectorperformance.Response.sectorPerformanceEntryItem",
+      "x-WM-TAGS" : [ "sectorperformance" ],
+      "required" : [ "performance", "sector" ],
+      "properties" : {
+        "performance" : {
+          "$ref" : "#/definitions/Response.performance"
+        },
+        "sector" : {
+          "type" : "string"
+        }
+      }
+    }
+  },
+  "swagger" : "2.0",
+  "info" : {
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "x-WM-API_ID" : "e8c29c73-8b08-4564-a98e-2c881062e4fe",
+    "x-WM-SERVICE_ID" : "onwavemaker",
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "version" : "2.0",
+    "x-WM-USE_WITH_CREDENTIALS" : false
+  },
+  "tags" : [ {
+    "name" : "sectorperformance"
+  } ]
+}

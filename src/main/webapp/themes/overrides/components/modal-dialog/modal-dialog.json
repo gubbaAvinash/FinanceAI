@@ -1,0 +1,12 @@
+{
+  "modal" : {
+    "backdrop" : {
+      "background" : {
+        "value" : "~\"color-mix(in srgb, color.scrim.@.value, transparent calc(100% - modal.backdrop.opacity.value))\""
+      }
+    },
+    "background" : {
+      "value" : "#FFFFFF"
+    }
+  }
+}

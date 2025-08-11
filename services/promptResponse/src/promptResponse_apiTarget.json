@@ -1,0 +1,348 @@
+{
+  "basePath" : "${rest.promptResponse.basepath}",
+  "paths" : {
+    "/scriptInfo/{scriptName}" : {
+      "post" : {
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "operationId" : "promptResponse_invoke",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/RootResponse"
+            },
+            "description" : "Success"
+          }
+        },
+        "parameters" : [ {
+          "schema" : {
+            "$ref" : "#/definitions/RootRequest"
+          },
+          "in" : "body",
+          "name" : "RequestBody",
+          "description" : "RequestBody",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Object",
+          "required" : false
+        }, {
+          "x-WM-VARIABLE_KEY" : "",
+          "in" : "path",
+          "name" : "scriptName",
+          "format" : "string",
+          "type" : "string",
+          "required" : true,
+          "x-WM-VARIABLE_TYPE" : "PROMPT"
+        } ],
+        "tags" : [ "promptResponse" ],
+        "consumes" : [ "application/json" ]
+      },
+      "x-WM-BASE_PATH" : "/scriptInfo/{scriptName}",
+      "x-WM-TAG" : "promptResponse",
+      "x-WM-RELATIVE_PATH" : "",
+      "x-WM-COMPLETE_PATH" : "${rest.promptResponse.scheme}://${rest.promptResponse.host}${rest.promptResponse.basepath}/scriptInfo/{scriptName}"
+    }
+  },
+  "host" : "${rest.promptResponse.host}",
+  "schemes" : [ "${rest.promptResponse.scheme}" ],
+  "definitions" : {
+    "Response.data-table" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "promptResponse.Response.data-table",
+      "x-WM-TAGS" : [ "promptResponse" ],
+      "required" : [ "data", "resultTitle" ],
+      "properties" : {
+        "data" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.dataEntryItem"
+          }
+        },
+        "resultTitle" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Response.candlestickChart" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "promptResponse.Response.candlestickChart",
+      "x-WM-TAGS" : [ "promptResponse" ],
+      "required" : [ "data" ],
+      "properties" : {
+        "data" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.dataEntryItem"
+          }
+        }
+      }
+    },
+    "Response.dataEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "promptResponse.Response.dataEntryItem",
+      "x-WM-TAGS" : [ "promptResponse" ],
+      "required" : [ "EPS", "Net Income", "Operating Margin", "Revenue", "Year", "close", "date", "high", "low", "open" ],
+      "properties" : {
+        "date" : {
+          "type" : "string"
+        },
+        "Net Income" : {
+          "type" : "string"
+        },
+        "high" : {
+          "format" : "double",
+          "type" : "number"
+        },
+        "Year" : {
+          "type" : "string"
+        },
+        "low" : {
+          "format" : "double",
+          "type" : "number"
+        },
+        "Operating Margin" : {
+          "type" : "string"
+        },
+        "EPS" : {
+          "type" : "string"
+        },
+        "Revenue" : {
+          "type" : "string"
+        },
+        "close" : {
+          "format" : "double",
+          "type" : "number"
+        },
+        "open" : {
+          "format" : "double",
+          "type" : "number"
+        }
+      }
+    },
+    "Response.5YearEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "promptResponse.Response.5YearEntryItem",
+      "x-WM-TAGS" : [ "promptResponse" ],
+      "required" : [ "averageClose", "year" ],
+      "properties" : {
+        "year" : {
+          "type" : "string"
+        },
+        "averageClose" : {
+          "format" : "double",
+          "type" : "number"
+        }
+      }
+    },
+    "Response.3YearEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "promptResponse.Response.3YearEntryItem",
+      "x-WM-TAGS" : [ "promptResponse" ],
+      "required" : [ "averageClose", "year" ],
+      "properties" : {
+        "year" : {
+          "type" : "string"
+        },
+        "averageClose" : {
+          "format" : "double",
+          "type" : "number"
+        }
+      }
+    },
+    "Response.metricsEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "promptResponse.Response.metricsEntryItem",
+      "x-WM-TAGS" : [ "promptResponse" ],
+      "required" : [ "display", "name", "value" ],
+      "properties" : {
+        "display" : {
+          "type" : "boolean"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "value" : {
+          "format" : "double",
+          "type" : "number"
+        }
+      }
+    },
+    "Response.lineChart" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "promptResponse.Response.lineChart",
+      "x-WM-TAGS" : [ "promptResponse" ],
+      "required" : [ "monthlyData", "thisweek", "weeklyData", "yearlyData" ],
+      "properties" : {
+        "weeklyData" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.weeklyDataEntryItem"
+          }
+        },
+        "monthlyData" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.monthlyDataEntryItem"
+          }
+        },
+        "yearlyData" : {
+          "$ref" : "#/definitions/Response.yearlyData"
+        },
+        "thisweek" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.thisweekEntryItem"
+          }
+        }
+      }
+    },
+    "Response.monthlyDataEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "promptResponse.Response.monthlyDataEntryItem",
+      "x-WM-TAGS" : [ "promptResponse" ],
+      "required" : [ "averageClose", "month" ],
+      "properties" : {
+        "month" : {
+          "type" : "string"
+        },
+        "averageClose" : {
+          "format" : "double",
+          "type" : "number"
+        }
+      }
+    },
+    "Response.thisweekEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "promptResponse.Response.thisweekEntryItem",
+      "x-WM-TAGS" : [ "promptResponse" ],
+      "required" : [ "price", "time" ],
+      "properties" : {
+        "price" : {
+          "format" : "double",
+          "type" : "number"
+        },
+        "time" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Response.weeklyDataEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "promptResponse.Response.weeklyDataEntryItem",
+      "x-WM-TAGS" : [ "promptResponse" ],
+      "required" : [ "close", "date" ],
+      "properties" : {
+        "date" : {
+          "type" : "string"
+        },
+        "close" : {
+          "format" : "double",
+          "type" : "number"
+        }
+      }
+    },
+    "RootRequest" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "promptResponse.RootRequest",
+      "x-WM-TAGS" : [ "promptResponse" ],
+      "required" : [ "requestId" ],
+      "properties" : {
+        "requestId" : {
+          "type" : "string"
+        }
+      }
+    },
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "promptResponse.RootResponse",
+      "x-WM-TAGS" : [ "promptResponse" ],
+      "required" : [ "candlestickChart", "companyName", "currency", "data-table", "defaultChart", "lastUpdated", "lineChart", "long-answer", "metrics", "short-answer", "symbol" ],
+      "properties" : {
+        "defaultChart" : {
+          "type" : "string"
+        },
+        "symbol" : {
+          "type" : "string"
+        },
+        "lastUpdated" : {
+          "type" : "string"
+        },
+        "candlestickChart" : {
+          "$ref" : "#/definitions/Response.candlestickChart"
+        },
+        "data-table" : {
+          "$ref" : "#/definitions/Response.data-table"
+        },
+        "companyName" : {
+          "type" : "string"
+        },
+        "lineChart" : {
+          "$ref" : "#/definitions/Response.lineChart"
+        },
+        "long-answer" : {
+          "type" : "string"
+        },
+        "currency" : {
+          "type" : "string"
+        },
+        "metrics" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.metricsEntryItem"
+          }
+        },
+        "short-answer" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Response.yearlyData" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "promptResponse.Response.yearlyData",
+      "x-WM-TAGS" : [ "promptResponse" ],
+      "required" : [ "10Year", "3Year", "5Year" ],
+      "properties" : {
+        "5Year" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.5YearEntryItem"
+          }
+        },
+        "10Year" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.10YearEntryItem"
+          }
+        },
+        "3Year" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.3YearEntryItem"
+          }
+        }
+      }
+    },
+    "Response.10YearEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "promptResponse.Response.10YearEntryItem",
+      "x-WM-TAGS" : [ "promptResponse" ],
+      "required" : [ "averageClose", "year" ],
+      "properties" : {
+        "year" : {
+          "type" : "string"
+        },
+        "averageClose" : {
+          "format" : "double",
+          "type" : "number"
+        }
+      }
+    }
+  },
+  "swagger" : "2.0",
+  "info" : {
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "x-WM-API_ID" : "f28e6b1d-5d09-4b01-b08e-cd8fbb988ac7",
+    "x-WM-SERVICE_ID" : "onwavemaker",
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "version" : "2.0",
+    "x-WM-USE_WITH_CREDENTIALS" : false
+  },
+  "tags" : [ {
+    "name" : "promptResponse"
+  } ]
+}

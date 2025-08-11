@@ -1,0 +1,26 @@
+{
+  "endpointAddress" : "https://mockoonapi.onwavemaker.com/kx/sectorRotation",
+  "method" : "GET",
+  "headers" : { },
+  "redirectEnabled" : true,
+  "requestBody" : "",
+  "queryParams" : { },
+  "authDetails" : null,
+  "contentType" : "application/json",
+  "multiParamInfoList" : [ ],
+  "urlBasePath" : "/kx",
+  "sampleHttpResponseDetails" : {
+    "statusCode" : 200,
+    "headers" : {
+      "Date" : [ "Thu, 31 Jul 2025 11:58:04 GMT" ],
+      "Content-Type" : [ "application/json; charset=utf-8" ],
+      "Content-Length" : [ "2309" ],
+      "Connection" : [ "keep-alive" ],
+      "Access-Control-Allow-Origin" : [ "*" ],
+      "Access-Control-Allow-Methods" : [ "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS" ],
+      "Access-Control-Allow-Headers" : [ "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With" ]
+    },
+    "responseBody" : "[{\"name\":\"Basic Materials\",\"change\":{\"07-16-2025\":-100,\"07-17-2025\":-120,\"07-18-2025\":-140,\"07-21-2025\":-200,\"07-22-2025\":-220,\"07-23-2025\":-240,\"07-24-2025\":-260,\"07-25-2025\":-280}}]",
+    "convertedResponse" : null
+  }
+}

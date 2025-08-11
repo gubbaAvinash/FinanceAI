@@ -1,0 +1,25 @@
+{
+  "getTreasuryInfo" : {
+    "_id" : "wm-getTreasuryInfo-wm.ServiceVariable-1753261957180",
+    "name" : "getTreasuryInfo",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "treasuryInfo.RootResponse",
+    "service" : "treasuryInfo",
+    "operation" : "invoke",
+    "operationId" : "treasuryInfo_invoke",
+    "operationType" : "get",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "onSuccess" : "getTreasuryInfoonSuccess(variable, data, options)",
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "treasuryInfo"
+  }
+}

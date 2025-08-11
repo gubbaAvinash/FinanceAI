@@ -1,0 +1,118 @@
+<wm-page name="page1">
+    <wm-header content="Header642175896" name="Main_Container_1"></wm-header>
+    <wm-content name="Main_Container_1">
+        <wm-page-content columnwidth="12" name="page-content1">
+            <wm-container class="flex-column surface-container-lowest-bg align-items-start d-flex"
+                id="main_container_1-642175990" horizontalalign="left" name="container1">
+                <wm-container class="flex-row align-items-center align-self-stretch d-flex justify-content-between"
+                    id="content_container-642176002" name="container2">
+                    <wm-container
+                        class="flex-column align-items-center d-flex flex-fill-item custom-gap-11 pb-0 custom-padding-left-18 custom-padding-right-22 custom-padding-top-28"
+                        id="dashboard_container-642176024" horizontalalign="center" name="container15">
+                        <wm-container class="flex-column align-items-start align-self-stretch d-flex gap-3"
+                            id="insights_header_container-642176025" horizontalalign="left" name="container16">
+                            <wm-container
+                                class="flex-row align-items-center align-self-stretch d-flex gap-2 custom-padding-bottom-41"
+                                id="back_to_dashboard_container-642176026" verticalalign="center"
+                                on-click="Actions.goToPage_Dashboard.invoke()" name="container17">
+                                <wm-custom-widget widgetname="icon_button" prop-icon="54616:25399" prop-state="enabled"
+                                    prop-style="standard" prop-icon_class="mi mi-arrow-back" prop-button_size="Regular"
+                                    prop-tonal="None" name="custom-widget3"></wm-custom-widget>
+                                <wm-label padding="unset" caption="Back to Dashboard"
+                                    class="on-surface-variant line-16px font-size-12 fst" name="label6"></wm-label>
+                            </wm-container>
+                            <wm-container
+                                class="flex-row align-items-center align-self-stretch d-flex justify-content-between"
+                                id="insights_title_container-642176029" name="container18">
+                                <wm-label padding="unset" caption="Generated Insights for AAPL "
+                                    class="on-background letter-0px line-32px font-size-24 fst" name="label7">
+                                </wm-label>
+                                <wm-container class="flex-row align-items-center d-flex custom-gap-39"
+                                    id="stock_info_container-642176031" verticalalign="center" name="container19">
+                                    <wm-picture resizemode="cover"
+                                        picturesource="resources/images/logos/Stock_Image-642176032.png" width="79.5"
+                                        height="25" name="picture3"></wm-picture>
+                                    <wm-container
+                                        class="flex-column d-flex justify-content-center gap-1 align-items-end"
+                                        id="stock_price_container-642176033" horizontalalign="right" name="container20">
+                                        <wm-label padding="unset" caption="$175.87"
+                                            class="on-surface letter-0px line-28px font-size-20 fst" name="label8">
+                                        </wm-label>
+                                        <wm-label padding="unset" caption="+1.98%"
+                                            class="on-error-container line-16px font-size-12 fst" name="label9">
+                                        </wm-label>
+                                    </wm-container>
+                                </wm-container>
+                            </wm-container>
+                        </wm-container>
+                        <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-11"
+                            id="insights_content-642176036" horizontalalign="left" name="container21">
+                            <wm-list listclass="list-group list-autocode-row gap-3 " itemclass="flex-grow-1"
+                                statehandler="URL" dataset="bind:Variables.autoModelMainContainer1.dataSet"
+                                navigation="Basic" class="list-card hug" name="list2">
+                                <wm-listtemplate layout="inline" name="listtemplate2">
+                                    <wm-container
+                                        class="flex-column align-items-start d-flex flex-grow-1 justify-content-center custom-gap-11"
+                                        id="pve_ratio_container-642176038" horizontalalign="left" name="container22">
+                                        <wm-container
+                                            class="flex-row align-items-start align-self-stretch d-flex justify-content-between"
+                                            id="pve_ratio_content-642176039" name="container23">
+                                            <wm-container class="flex-column align-items-start d-flex custom-gap-1"
+                                                id="pve_ratio_text_container-642176040" horizontalalign="left"
+                                                name="container24">
+                                                <wm-label padding="unset"
+                                                    caption="bind:Variables.autoModelMainContainer1.dataSet[$i].caption1"
+                                                    class="on-surface-variant line-16px font-size-12 fst"
+                                                    name="label10"></wm-label>
+                                                <wm-label padding="unset"
+                                                    caption="bind:Variables.autoModelMainContainer1.dataSet[$i].caption2"
+                                                    class="on-surface letter-0px line-32px font-size-24 fst"
+                                                    name="label11"></wm-label>
+                                            </wm-container>
+                                            <wm-picture resizemode="cover"
+                                                picturesource="bind:Variables.autoModelMainContainer1.dataSet[$i].picturesource3"
+                                                width="42" height="42" name="picture4"></wm-picture>
+                                        </wm-container>
+                                        <wm-container class="flex-row align-items-center d-flex custom-gap-3"
+                                            id="pve_ratio_change_container-642176044" verticalalign="center"
+                                            name="container25">
+                                            <wm-container class="flex-row align-items-center d-flex custom-gap-3"
+                                                id="pve_ratio_change_text_container-642176045" verticalalign="center"
+                                                name="container26">
+                                                <wm-picture resizemode="cover"
+                                                    picturesource="bind:Variables.autoModelMainContainer1.dataSet[$i].picturesource4"
+                                                    width="13" height="8" name="picture5"></wm-picture>
+                                                <wm-label padding="unset"
+                                                    caption="bind:Variables.autoModelMainContainer1.dataSet[$i].caption5"
+                                                    class="on-error-container line-14px font-size-12 fst"
+                                                    name="label12"></wm-label>
+                                            </wm-container>
+                                            <wm-label padding="unset"
+                                                caption="bind:Variables.autoModelMainContainer1.dataSet[$i].caption6"
+                                                class="on-surface-variant line-16px font-size-12 fst" name="label13">
+                                            </wm-label>
+                                        </wm-container>
+                                    </wm-container>
+                                </wm-listtemplate>
+                            </wm-list>
+                            <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-0"
+                                id="background_border_shadow-642176082" horizontalalign="left" name="container27">
+                                <wm-label padding="unset" caption="Price Performance"
+                                    class="on-background letter-0px line-28px font-size-20 fst" name="label14">
+                                </wm-label>
+                                <wm-composite name="composite1">
+                                    <wm-container class="col-md-9" name="container29">
+                                        <wm-select name="select1" dataset="bind:Variables.stvDropDownForCharts.dataSet"
+                                            datafield="dataValue" displayfield="name"
+                                            on-change="select1Change($event, widget, newVal, oldVal)"></wm-select>
+                                    </wm-container>
+                                </wm-composite>
+                                <wm-container name="container28" content="multiLineChart"></wm-container>
+                            </wm-container>
+                        </wm-container>
+                    </wm-container>
+                </wm-container>
+            </wm-container>
+        </wm-page-content>
+    </wm-content>
+</wm-page>

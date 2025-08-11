@@ -1,0 +1,88 @@
+{
+  "basePath" : "${rest.treasuryInfo.basepath}",
+  "paths" : {
+    "/treasuryInfo" : {
+      "x-WM-BASE_PATH" : "/treasuryInfo",
+      "x-WM-TAG" : "treasuryInfo",
+      "x-WM-RELATIVE_PATH" : "",
+      "get" : {
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "operationId" : "treasuryInfo_invoke",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/RootResponse"
+            },
+            "description" : "Success"
+          }
+        },
+        "tags" : [ "treasuryInfo" ],
+        "consumes" : [ "application/json" ]
+      },
+      "x-WM-COMPLETE_PATH" : "${rest.treasuryInfo.scheme}://${rest.treasuryInfo.host}${rest.treasuryInfo.basepath}/treasuryInfo"
+    }
+  },
+  "host" : "${rest.treasuryInfo.host}",
+  "schemes" : [ "${rest.treasuryInfo.scheme}" ],
+  "definitions" : {
+    "Response.yieldCurveEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "treasuryInfo.Response.yieldCurveEntryItem",
+      "x-WM-TAGS" : [ "treasuryInfo" ],
+      "required" : [ "maturity", "years", "yield" ],
+      "properties" : {
+        "maturity" : {
+          "type" : "string"
+        },
+        "yield" : {
+          "format" : "double",
+          "type" : "number"
+        },
+        "years" : {
+          "format" : "double",
+          "type" : "number"
+        }
+      }
+    },
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "treasuryInfo.RootResponse",
+      "x-WM-TAGS" : [ "treasuryInfo" ],
+      "required" : [ "asOfDate", "market", "notes", "unit", "yieldCurve" ],
+      "properties" : {
+        "market" : {
+          "type" : "string"
+        },
+        "unit" : {
+          "type" : "string"
+        },
+        "notes" : {
+          "type" : "string"
+        },
+        "yieldCurve" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.yieldCurveEntryItem"
+          }
+        },
+        "asOfDate" : {
+          "type" : "string"
+        }
+      }
+    }
+  },
+  "swagger" : "2.0",
+  "info" : {
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "x-WM-API_ID" : "01ca2e3a-824b-4b74-9eb9-a1d3277a891e",
+    "x-WM-SERVICE_ID" : "onwavemaker",
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "version" : "2.0",
+    "x-WM-USE_WITH_CREDENTIALS" : false
+  },
+  "tags" : [ {
+    "name" : "treasuryInfo"
+  } ]
+}

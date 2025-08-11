@@ -1,0 +1,26 @@
+{
+  "endpointAddress" : "https://mockoonapi.onwavemaker.com/kx/treasuryInfo",
+  "method" : "GET",
+  "headers" : { },
+  "redirectEnabled" : true,
+  "requestBody" : "",
+  "queryParams" : { },
+  "authDetails" : null,
+  "contentType" : "application/json",
+  "multiParamInfoList" : [ ],
+  "urlBasePath" : "/kx",
+  "sampleHttpResponseDetails" : {
+    "statusCode" : 200,
+    "headers" : {
+      "Date" : [ "Wed, 23 Jul 2025 09:12:11 GMT" ],
+      "Content-Type" : [ "application/json; charset=utf-8" ],
+      "Content-Length" : [ "793" ],
+      "Connection" : [ "keep-alive" ],
+      "Access-Control-Allow-Origin" : [ "*" ],
+      "Access-Control-Allow-Methods" : [ "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS" ],
+      "Access-Control-Allow-Headers" : [ "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With" ]
+    },
+    "responseBody" : "{\"market\":\"US Treasury\",\"asOfDate\":\"2025-07-21\",\"yieldCurve\":[{\"maturity\":\"1M\",\"years\":0.08,\"yield\":5.12}],\"unit\":\"Percent\",\"notes\":\"Yields represent approximate values for illustrative purposes.\"}",
+    "convertedResponse" : null
+  }
+}

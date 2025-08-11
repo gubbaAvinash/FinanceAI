@@ -1,0 +1,26 @@
+{
+  "endpointAddress" : "https://mockoonapi.onwavemaker.com/kx/indicesInfo",
+  "method" : "GET",
+  "headers" : { },
+  "redirectEnabled" : true,
+  "requestBody" : "",
+  "queryParams" : { },
+  "authDetails" : null,
+  "contentType" : "application/json",
+  "multiParamInfoList" : [ ],
+  "urlBasePath" : "/kx",
+  "sampleHttpResponseDetails" : {
+    "statusCode" : 200,
+    "headers" : {
+      "Date" : [ "Wed, 23 Jul 2025 11:58:08 GMT" ],
+      "Content-Type" : [ "application/json; charset=utf-8" ],
+      "Content-Length" : [ "1442" ],
+      "Connection" : [ "keep-alive" ],
+      "Access-Control-Allow-Origin" : [ "*" ],
+      "Access-Control-Allow-Methods" : [ "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS" ],
+      "Access-Control-Allow-Headers" : [ "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With" ]
+    },
+    "responseBody" : "{\"market\":\"US Stock Indices\",\"asOf\":\"Mon Apr 20 2026 04:33:27 GMT+0000 (Coordinated Universal Time)\",\"refresh_interval\":\"3 seconds\",\"unit\":\"USD\",\"source\":\"Mockoon using Faker.js\",\"indices\":[{\"name\":\"S&P 500\",\"ticker\":\"I:SPX\",\"value\":\"6303.57\",\"change\":\"-4.98\",\"percent_change\":\"0.034\",\"last_updated\":\"Wed Aug 28 2024 18:15:48 GMT+0000 (Coordinated Universal Time)\",\"logo\":\"https://wm-ps-by.s3.amazonaws.com/SandP.svg\"}]}",
+    "convertedResponse" : null
+  }
+}

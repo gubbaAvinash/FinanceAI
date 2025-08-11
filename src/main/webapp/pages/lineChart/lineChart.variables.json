@@ -1,0 +1,238 @@
+{
+  "staticVariable1" : {
+    "_id" : "wm-staticVariable1-wm.Variable-1753278318004",
+    "name" : "staticVariable1",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "symbol" : "AAPL",
+      "companyName" : "Apple Inc.",
+      "currency" : "USD",
+      "lastUpdated" : "2025-07-18T14:00:00Z",
+      "metrics" : {
+        "peRatio" : 28.5,
+        "pbRatio" : 7.2,
+        "eps" : 6.75,
+        "dividendYield" : 0.55,
+        "marketCap" : "3.1T",
+        "revenueTTM" : "400.3B",
+        "netIncomeTTM" : "105.5B",
+        "returnOnEquity" : 152.3,
+        "debtToEquity" : 1.65,
+        "currentRatio" : 1.06,
+        "freeCashFlowTTM" : "90.1B",
+        "avgVolume" : 75000000,
+        "sharesOutstanding" : "15.7B",
+        "institutionalOwnership" : "61%",
+        "beta" : 1.28,
+        "52WeekHigh" : 198.75,
+        "52WeekLow" : 142.3
+      },
+      "weeklyData" : [ {
+        "date" : "2025-07-12",
+        "close" : 196.05
+      }, {
+        "date" : "2025-07-05",
+        "close" : 192.45
+      }, {
+        "date" : "2025-06-28",
+        "close" : 189.8
+      }, {
+        "date" : "2025-06-21",
+        "close" : 187.1
+      } ],
+      "monthlyData" : [ {
+        "month" : "2025-07",
+        "averageClose" : 193.85
+      }, {
+        "month" : "2025-06",
+        "averageClose" : 188.4
+      }, {
+        "month" : "2025-05",
+        "averageClose" : 182.75
+      }, {
+        "month" : "2025-04",
+        "averageClose" : 178.9
+      } ],
+      "yearlyData" : {
+        "3Year" : [ {
+          "year" : "2023",
+          "averageClose" : 165.2
+        }, {
+          "year" : "2024",
+          "averageClose" : 178.5
+        }, {
+          "year" : "2025",
+          "averageClose" : 190.1
+        } ],
+        "5Year" : [ {
+          "year" : "2021",
+          "averageClose" : 135.8
+        }, {
+          "year" : "2022",
+          "averageClose" : 150.25
+        }, {
+          "year" : "2023",
+          "averageClose" : 165.2
+        }, {
+          "year" : "2024",
+          "averageClose" : 178.5
+        }, {
+          "year" : "2025",
+          "averageClose" : 190.1
+        } ],
+        "10Year" : [ {
+          "year" : "2016",
+          "averageClose" : 95.4
+        }, {
+          "year" : "2017",
+          "averageClose" : 115.6
+        }, {
+          "year" : "2018",
+          "averageClose" : 125.9
+        }, {
+          "year" : "2019",
+          "averageClose" : 145.2
+        }, {
+          "year" : "2020",
+          "averageClose" : 160.1
+        }, {
+          "year" : "2021",
+          "averageClose" : 135.8
+        }, {
+          "year" : "2022",
+          "averageClose" : 150.25
+        }, {
+          "year" : "2023",
+          "averageClose" : 165.2
+        }, {
+          "year" : "2024",
+          "averageClose" : 178.5
+        }, {
+          "year" : "2025",
+          "averageClose" : 190.1
+        } ]
+      },
+      "chartData" : {
+        "lineChart" : [ {
+          "time" : "2025-04-14",
+          "price" : 153.45
+        }, {
+          "time" : "2025-05-15",
+          "price" : 145.1
+        }, {
+          "time" : "2025-06-16",
+          "price" : 109.75
+        }, {
+          "time" : "2025-02-17",
+          "price" : 125.2
+        }, {
+          "time" : "2025-08-18",
+          "price" : 100.05
+        }, {
+          "time" : "2025-01-14",
+          "price" : 153.45
+        }, {
+          "time" : "2025-08-15",
+          "price" : 145.1
+        }, {
+          "time" : "2025-06-16",
+          "price" : 109.75
+        }, {
+          "time" : "2025-07-17",
+          "price" : 125.2
+        }, {
+          "time" : "2025-03-18",
+          "price" : 100.05
+        } ],
+        "barChart" : [ {
+          "date" : "2025-07-14",
+          "volume" : 72000000
+        }, {
+          "date" : "2025-07-15",
+          "volume" : 68000000
+        }, {
+          "date" : "2025-07-16",
+          "volume" : 75000000
+        }, {
+          "date" : "2025-07-17",
+          "volume" : 71000000
+        }, {
+          "date" : "2025-07-18",
+          "volume" : 73000000
+        } ],
+        "multiLineChart" : {
+          "open" : [ {
+            "time" : "2025-07-14",
+            "value" : 191.8
+          }, {
+            "time" : "2025-07-15",
+            "value" : 193.5
+          }, {
+            "time" : "2025-07-16",
+            "value" : 192.9
+          }, {
+            "time" : "2025-07-17",
+            "value" : 194.6
+          }, {
+            "time" : "2025-07-18",
+            "value" : 195.4
+          } ],
+          "close" : [ {
+            "time" : "2025-07-14",
+            "value" : 192.45
+          }, {
+            "time" : "2025-07-15",
+            "value" : 194.1
+          }, {
+            "time" : "2025-07-16",
+            "value" : 193.75
+          }, {
+            "time" : "2025-07-17",
+            "value" : 195.2
+          }, {
+            "time" : "2025-07-18",
+            "value" : 196.05
+          } ],
+          "high" : [ {
+            "time" : "2025-07-14",
+            "value" : 193
+          }, {
+            "time" : "2025-07-15",
+            "value" : 194.8
+          }, {
+            "time" : "2025-07-16",
+            "value" : 194.1
+          }, {
+            "time" : "2025-07-17",
+            "value" : 195.6
+          }, {
+            "time" : "2025-07-18",
+            "value" : 196.5
+          } ],
+          "low" : [ {
+            "time" : "2025-07-14",
+            "value" : 191.2
+          }, {
+            "time" : "2025-07-15",
+            "value" : 192.9
+          }, {
+            "time" : "2025-07-16",
+            "value" : 192.3
+          }, {
+            "time" : "2025-07-17",
+            "value" : 194.1
+          }, {
+            "time" : "2025-07-18",
+            "value" : 195
+          } ]
+        }
+      }
+    },
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  }
+}

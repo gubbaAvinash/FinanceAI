@@ -1,0 +1,160 @@
+{
+  "appNotification" : {
+    "_id" : "wm-appErrorHandler-wm.NotificationVariable-1454664620943",
+    "name" : "appNotification",
+    "owner" : "App",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "class",
+      "value" : "Error",
+      "type" : "list"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom right",
+      "type" : "list"
+    } ],
+    "operation" : "toast"
+  },
+  "goToPage_AI_bot__Zero_state__1" : {
+    "_id" : "wm-goToPage_AI_bot__Zero_state__1-wm.NavigationVariable-1753253664592",
+    "name" : "goToPage_AI_bot__Zero_state__1",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "operation" : "gotoPage",
+    "pageName" : "AI_bot__Zero_state__1"
+  },
+  "goToPage_AIAssistant" : {
+    "_id" : "wm-goToPage_AI_bot__Zero_state_-wm.NavigationVariable-1753253664592",
+    "name" : "goToPage_AIAssistant",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "operation" : "gotoPage",
+    "pageName" : "AIAssistant"
+  },
+  "goToPage_Dashboard" : {
+    "_id" : "wm-goToPage_Dashboard-wm.NavigationVariable-1753253664592",
+    "name" : "goToPage_Dashboard",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "operation" : "gotoPage",
+    "pageName" : "Dashboard"
+  },
+  "goToPage_Main" : {
+    "_id" : "wm-wm.NavigationVariable1753253647272",
+    "name" : "goToPage_Main",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "operation" : "gotoPage",
+    "pageName" : "Main"
+  },
+  "goToPage_Main_Container" : {
+    "_id" : "wm-goToPage_Main_Container-wm.NavigationVariable-1753253664592",
+    "name" : "goToPage_Main_Container",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "operation" : "gotoPage",
+    "pageName" : "Main_Container"
+  },
+  "goToPage_Main_Container_1" : {
+    "_id" : "wm-goToPage_Main_Container_1-wm.NavigationVariable-1753253664592",
+    "name" : "goToPage_Main_Container_1",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "operation" : "gotoPage",
+    "pageName" : "Main_Container_1"
+  },
+  "stvAIDashData" : {
+    "_id" : "wm-stvAIDashData-wm.Variable-1753336535168",
+    "name" : "stvAIDashData",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "cmp" : "",
+      "change" : "",
+      "displayedItems" : [ ],
+      "companyName" : "",
+      "chartName" : "",
+      "isChartShowDefault" : ""
+    },
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "stvDropDownForCharts" : {
+    "_id" : "wm-stvDropDownForCharts-wm.Variable-1753277936015",
+    "name" : "stvDropDownForCharts",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "name" : "Multi Line Chart",
+      "dataValue" : "multiLineChart"
+    }, {
+      "name" : "Line Chart",
+      "dataValue" : "lineChart"
+    }, {
+      "name" : "Candle Stick Chart",
+      "dataValue" : "candlestickChart"
+    }, {
+      "name" : "Advnaced Time Line Chart",
+      "dataValue" : "advancedTimeline"
+    }, {
+      "name" : "Performance Report Chart",
+      "dataValue" : "performanceReportChart"
+    }, {
+      "name" : "Revenue Chart",
+      "dataValue" : "revenueChart"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "stvFiltersOnCharts" : {
+    "_id" : "wm-stvFiltersOnCharts-wm.Variable-1753270304734",
+    "name" : "stvFiltersOnCharts",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "name" : "1D",
+      "dataValue" : "today"
+    }, {
+      "name" : "1W",
+      "dataValue" : "lastWeek"
+    }, {
+      "name" : "1M",
+      "dataValue" : "lastMonth"
+    }, {
+      "name" : "YTD",
+      "dataValue" : "yearToDate"
+    }, {
+      "name" : "3Y",
+      "dataValue" : "threeYear"
+    }, {
+      "name" : "5Y",
+      "dataValue" : "fiveYear"
+    }, {
+      "name" : "10Y",
+      "dataValue" : "tenYear"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "supportedLocale" : {
+    "_id" : "wm-wm.Variable1753253647272",
+    "name" : "supportedLocale",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataSet" : {
+      "en" : "English"
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  }
+}

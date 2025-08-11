@@ -1,0 +1,127 @@
+<wm-page name="page1">
+    <wm-header content="Header642175698" name="Dashboard">
+    </wm-header>
+    <wm-content name="Dashboard">
+        <wm-page-content columnwidth="12" name="page-content1">
+            <wm-container class="flex-column surface-container-lowest-bg align-items-start d-flex" id="dashboard-642175697" horizontalalign="left" name="container1">
+                <wm-container class="flex-row align-items-start align-self-stretch d-flex justify-content-between" id="content_container-642175709" name="container2">
+                    <wm-container class="flex-column align-items-start d-flex flex-fill-item gap-3" id="dashboard_container-642175710" horizontalalign="left" name="container3">
+                        <wm-label padding="unset" caption="Dashboard" class="on-surface inter-bold line-42px font-size-36 fst" name="label1"></wm-label>
+                        <wm-container direction="column" id="artificialgroup0-id0" horizontalalign="left" class="align-items-start d-flex flex-fill-item flex-column gap-3" name="container4">
+                            <wm-list listclass="list-group list-autocode-row gap-3 " itemclass="flex-grow-1" statehandler="URL" dataset="bind:Variables.autoModelDashboard0.dataSet" navigation="Basic" class="list-card hug" name="list1">
+                                <wm-listtemplate layout="inline" name="listtemplate1">
+                                    <wm-container class="flex-column align-items-start d-flex flex-grow-1 justify-content-between" id="market_card-642175713" name="container5">
+                                        <wm-container class="flex-row align-items-start align-self-stretch d-flex justify-content-between" id="market_info_container-642175714" name="container6">
+                                            <wm-container class="flex-column align-items-start d-flex custom-gap-1" id="market_text_container-642175715" horizontalalign="left" name="container7">
+                                                <wm-label padding="unset" caption="bind:Variables.autoModelDashboard0.dataSet[$i].caption1" class="on-surface-variant line-16px font-size-12 fst" name="label2"></wm-label>
+                                                <wm-label padding="unset" caption="bind:Variables.autoModelDashboard0.dataSet[$i].caption2" class="on-surface letter-0px line-32px font-size-24 fst" name="label3"></wm-label>
+                                            </wm-container>
+                                            <wm-picture resizemode="cover" picturesource="bind:Variables.autoModelDashboard0.dataSet[$i].picturesource3" width="42" height="42" name="picture1"></wm-picture>
+                                        </wm-container>
+                                        <wm-container class="flex-row align-items-center d-flex custom-gap-3" id="market_change_container-642175719" verticalalign="center" name="container8">
+                                            <wm-container class="flex-row align-items-center d-flex custom-gap-3" id="market_change_info-642175720" verticalalign="center" name="container9">
+                                                <wm-picture resizemode="cover" picturesource="bind:Variables.autoModelDashboard0.dataSet[$i].picturesource4" width="13" height="8" name="picture2"></wm-picture>
+                                                <wm-label padding="unset" caption="bind:Variables.autoModelDashboard0.dataSet[$i].caption5" class="on-error-container line-16px font-size-12 fst" name="label4"></wm-label>
+                                            </wm-container>
+                                            <wm-label padding="unset" caption="bind:Variables.autoModelDashboard0.dataSet[$i].caption6" class="on-surface-variant line-16px font-size-12 fst" name="label5"></wm-label>
+                                        </wm-container>
+                                    </wm-container>
+                                </wm-listtemplate>
+                            </wm-list>
+                            <wm-container class="flex-column align-items-start align-self-stretch d-flex flex-shrink-0 justify-content-between" id="background_border_shadow-642175757" name="container10">
+                                <wm-label padding="unset" caption="Treasury Yield Curve" class="on-surface letter-0px line-28px font-size-20 fst" name="label6"></wm-label>
+                                <wm-picture resizemode="cover" picturesource="resources/images/logos/Treasury_Yield_Curve_Chart-642175759.png" width="900" height="279.2923278808594" class="align-self-stretch flex-shrink-0" name="picture3"></wm-picture>
+                            </wm-container>
+                            <wm-container class="flex-column align-items-start align-self-stretch d-flex flex-shrink-0 justify-content-between" id="background_border_shadow-642175760" name="container11">
+                                <wm-container class="flex-row align-items-center align-self-stretch d-flex justify-content-between" id="sector_performance_header-642175761" name="container12">
+                                    <wm-label padding="unset" caption="Sector Performance" class="on-surface letter-0px line-28px font-size-20 fst" name="label7"></wm-label>
+                                    <wm-container class="flex-row align-items-center d-flex custom-gap-4" id="toggle_with_label-642175763" verticalalign="center" name="container13">
+                                        <wm-label padding="unset" caption="Show KPI’s" class="on-surface line-20px font-size-14 fst" name="label8"></wm-label>
+                                        <wm-custom-widget widgetname="switch_button" prop-icon="false" prop-selected="false" prop-state="enabled" name="custom-widget1">
+                                        </wm-custom-widget>
+                                    </wm-container>
+                                </wm-container>
+                                <wm-picture resizemode="cover" picturesource="resources/images/logos/Sector_Performance_Chart-642175766.png" width="900" height="279.2923278808594" class="align-self-stretch flex-shrink-0" name="picture4"></wm-picture>
+                            </wm-container>
+                        </wm-container>
+                    </wm-container>
+                    <wm-container class="flex-column surface-dim-bg align-items-center d-flex justify-content-between custom-padding-bottom-15 custom-padding-left-19 custom-padding-right-23 custom-padding-top-28" id="frame_2147211216-642291087" name="container14">
+                        <wm-container class="flex-column align-items-start d-flex custom-gap-6" id="frame_2147211214-642291088" horizontalalign="left" name="container15">
+                            <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-1" id="vix_container-642291089" horizontalalign="left" name="container16">
+                                <wm-label padding="unset" caption="VIX - Fear &amp; Greed Index" class="on-surface letter-0px line-28px font-size-20 fst" name="label9"></wm-label>
+                                <wm-container class="flex-column align-items-start align-self-stretch d-flex gap-2" id="vix_info_container-642291091" horizontalalign="left" name="container17">
+                                    <wm-container class="flex-row surface-container-lowest-bg align-items-center d-flex custom-gap-7 pb-0 ps-3 pe-3 pt-0" id="frame_2147211222-642291092" verticalalign="center" name="container18">
+                                        <wm-picture resizemode="cover" picturesource="resources/images/logos/VIX_Icon-642291093.png" width="28" height="28.5" class="flex-shrink-0" name="picture5"></wm-picture>
+                                        <wm-container class="flex-column align-items-start d-flex flex-shrink-0 gap-1" id="frame_2147211221-642291094" horizontalalign="left" name="container19">
+                                            <wm-label padding="unset" caption="CURRENT LEVEL" class="on-surface-variant line-16px font-size-12 fst" name="label10"></wm-label>
+                                            <wm-container class="flex-row align-items-center align-self-stretch d-flex custom-gap-3" id="frame_2147211220-642291096" verticalalign="center" name="container20">
+                                                <wm-label padding="unset" caption="22.45" class="on-surface line-24px font-size-16 fst" name="label11"></wm-label>
+                                                <wm-container class="flex-row align-items-center d-flex custom-gap-3" id="vix_change_container-642291098" verticalalign="center" name="container21">
+                                                    <wm-container class="flex-row align-items-center d-flex custom-gap-3" id="vix_change_info-642291099" verticalalign="center" name="container22">
+                                                        <wm-picture resizemode="cover" picturesource="resources/images/logos/Path_2-642291100.png" width="13" height="8" name="picture6"></wm-picture>
+                                                        <wm-label padding="unset" caption="-1.23" class="on-error-container inter-medium line-16px font-size-12 fst" name="label12"></wm-label>
+                                                    </wm-container>
+                                                    <wm-label padding="unset" caption="Up from yesterday" class="on-surface-variant line-16px font-size-11 fst" name="label13"></wm-label>
+                                                </wm-container>
+                                            </wm-container>
+                                        </wm-container>
+                                    </wm-container>
+                                    <wm-container class="flex-row on-primary-bg align-items-center align-self-stretch d-flex custom-gap-7 pb-0 ps-3 pe-3 pt-0" id="vix_volatility_container-642291103" verticalalign="center" name="container23">
+                                        <wm-picture resizemode="cover" picturesource="resources/images/logos/VIX_Volatility_Icon-642291104.png" width="28" height="28.5" name="picture7"></wm-picture>
+                                        <wm-container class="flex-column align-items-start d-flex flex-fill-item gap-1" id="vix_volatility_info-642291105" horizontalalign="left" name="container24">
+                                            <wm-label padding="unset" caption="VOLATILITY RISK" class="on-surface-variant line-16px font-size-12 fst" name="label14"></wm-label>
+                                            <wm-label padding="unset" caption="Normal" class="on-surface line-24px font-size-16 fst" name="label15"></wm-label>
+                                        </wm-container>
+                                    </wm-container>
+                                </wm-container>
+                            </wm-container>
+                            <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-1" id="economic_calendar_container-642291108" horizontalalign="left" name="container25">
+                                <wm-label padding="unset" caption="Economic Calender" class="on-surface letter-0px line-28px font-size-20 fst" name="label16"></wm-label>
+                                <wm-container class="flex-column align-items-start align-self-stretch d-flex gap-2" id="economic_calendar_events-642291110" horizontalalign="left" name="container26">
+                                    <wm-container class="flex-row on-primary-bg align-items-start align-self-stretch d-flex justify-content-between pb-3 custom-padding-left-20 custom-padding-right-24 pt-3" id="economic_event_container-642291111" name="container27">
+                                        <wm-label padding="unset" caption="09:00" class="on-surface-variant line-16px font-size-12 fst" name="label17"></wm-label>
+                                        <wm-container class="flex-column align-items-start d-flex justify-content-center gap-3" id="event_info_container-642291113" horizontalalign="left" name="container28">
+                                            <wm-container class="flex-row align-items-center align-self-stretch d-flex justify-content-between" id="event_title_container-642291114" name="container29">
+                                                <wm-label padding="unset" caption="NON-FARM PAYROLLS" class="on-surface-variant line-16px font-size-12 fst" name="label18"></wm-label>
+                                                <wm-container class="other-chips unselected-border primary-container-bg align-items-center d-flex justify-content-center pb-0 custom-padding-left-21 custom-padding-right-25 pt-0" style="border-radius: 20px;" name="container30">
+                                                    <wm-label caption="High" class="va-m" name="label19"></wm-label>
+                                                </wm-container>
+                                            </wm-container>
+                                            <wm-container class="flex-row align-items-center align-self-stretch d-flex justify-content-between" id="event_details_container-642291117" name="container31">
+                                                <wm-container class="flex-column align-items-start d-flex flex-fill-item gap-1" id="event_previous_container-642291118" horizontalalign="left" name="container32">
+                                                    <wm-label padding="unset" caption="Prev:" class="on-surface-variant line-16px font-size-11 fst" name="label20"></wm-label>
+                                                    <wm-label padding="unset" caption="245K" class="on-surface line-24px font-size-16 fst" name="label21"></wm-label>
+                                                </wm-container>
+                                                <wm-container class="flex-column align-items-start d-flex flex-fill-item gap-1" id="event_forecast_container-642291121" horizontalalign="left" name="container33">
+                                                    <wm-label padding="unset" caption="Forecast" class="on-surface-variant line-16px font-size-11 fst" name="label22"></wm-label>
+                                                    <wm-label padding="unset" caption="200K" class="on-surface line-24px font-size-16 fst" name="label23"></wm-label>
+                                                </wm-container>
+                                                <wm-container class="flex-column align-items-start d-flex flex-fill-item gap-1" id="event_actual_container-642291124" horizontalalign="left" name="container34">
+                                                    <wm-label padding="unset" caption="Actual" class="on-surface-variant line-16px font-size-11 fst" name="label24"></wm-label>
+                                                    <wm-label padding="unset" caption="227K" class="on-error-container line-24px font-size-16 fst" name="label25"></wm-label>
+                                                </wm-container>
+                                            </wm-container>
+                                        </wm-container>
+                                    </wm-container>
+                                    <wm-container class="flex-row on-primary-bg align-items-center align-self-stretch d-flex gap-3" id="event_actual_container-642291127" verticalalign="center" name="container35">
+                                        <wm-picture resizemode="cover" picturesource="resources/images/logos/Event_Actual_Icon-642291128.png" width="29" height="29.5" name="picture8"></wm-picture>
+                                        <wm-label padding="unset" caption="JOHN DOE SPEECH" class="on-surface-variant line-16px font-size-12 fst" name="label26"></wm-label>
+                                    </wm-container>
+                                </wm-container>
+                            </wm-container>
+                        </wm-container>
+                        <wm-container class="flex-column align-items-start d-flex custom-gap-8 custom-padding-bottom-16 custom-padding-left-18 custom-padding-right-22 custom-padding-top-29" id="frame_2147211232-642177532" horizontalalign="left" on-click="Actions.goToPage_AI_bot__Zero_state_.invoke()" backgroundimage="resources/images/imagelists/frame_2147211232-642177532.png" backgroundsize="contain" backgroundrepeat="no-repeat" name="container36">
+                            <wm-container class="flex-row align-items-start d-flex custom-gap-9" id="frame_2147211231-642177533" verticalalign="top" name="container37">
+                                <wm-container class="flex-column align-items-start d-flex custom-gap-1" id="frame_2147211230-642177534" horizontalalign="left" name="container38">
+                                    <wm-label padding="unset" caption="AI Financial Assistant" class="on-primary letter-0px line-28px font-size-20 fst" name="label27"></wm-label>
+                                    <wm-label padding="unset" caption="Stay on top of your finances with real-time insights, smart budgeting tips — all powered by AI." class="on-primary line-16px font-size-12 fst" name="label28"></wm-label>
+                                </wm-container>
+                                <wm-picture resizemode="cover" picturesource="resources/images/logos/Vector642177537-642177537.png" width="21.533342361450195" height="21.53333282470703" name="picture9"></wm-picture>
+                            </wm-container>
+                        </wm-container>
+                    </wm-container>
+                </wm-container>
+            </wm-container>
+        </wm-page-content>
+    </wm-content>
+</wm-page>

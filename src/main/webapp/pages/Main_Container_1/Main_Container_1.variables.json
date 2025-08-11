@@ -1,0 +1,60 @@
+{
+  "autoModelMainContainer0" : {
+    "_id" : "wm-autoModelMainContainer0-wm.Variable-1753253709304",
+    "name" : "autoModelMainContainer0",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "label" : "Analyze Sector Performance",
+      "state" : "True"
+    }, {
+      "label" : "Risk Indicators",
+      "state" : "True"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "autoModelMainContainer1" : {
+    "_id" : "wm-autoModelMainContainer1-wm.Variable-1753253709342",
+    "name" : "autoModelMainContainer1",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "caption1" : "PVE Ratio",
+      "caption2" : "28.9",
+      "picturesource3" : "resources/images/logos/PVE_Ratio_Image-642176043.png",
+      "picturesource4" : "resources/images/logos/Path_2-642176046.png",
+      "caption5" : "+23.45",
+      "caption6" : "Up from yesterday"
+    }, {
+      "caption1" : "EPS",
+      "caption2" : "$13.05",
+      "picturesource3" : "resources/images/logos/EPS_Image-642176054.png",
+      "picturesource4" : "resources/images/logos/Path_2-642176057.png",
+      "caption5" : "+23.45",
+      "caption6" : "Up from yesterday"
+    }, {
+      "caption1" : "Dividend Yield",
+      "caption2" : "0.32%",
+      "picturesource3" : "resources/images/logos/Dividend_Yield_Image-642176065.png",
+      "picturesource4" : "resources/images/logos/Path_3-642176068.png",
+      "caption5" : "-45.67",
+      "caption6" : "from yesterday"
+    }, {
+      "caption1" : "Market Cap",
+      "caption2" : "$2.5T",
+      "picturesource3" : "resources/images/logos/Market_Cap_Image-642176076.png",
+      "picturesource4" : "resources/images/logos/Path_3-642176079.png",
+      "caption5" : "-8.67",
+      "caption6" : "from yesterday"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  }
+}

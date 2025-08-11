@@ -1,0 +1,6 @@
+{
+  "id" : "sectorRotation",
+  "type" : "RestService",
+  "title" : "sectorRotation",
+  "mockEnabled" : false
+}
