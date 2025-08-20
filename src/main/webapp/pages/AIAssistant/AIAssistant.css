@@ -17,7 +17,7 @@
 }
 
 #sidebar_image-642175828 {
-    height: calc(100vh - 82px);
+    height: calc(100vh - 64px);
     padding: 24px;
     width: 500px;
     background-size: cover;
@@ -35,7 +35,7 @@ textarea {
 
 .w-500 {
     width: 500px;
-    height: calc(100vh - 82px);
+    height: calc(100vh - 64px);
 }
 
 .ai-right-content {

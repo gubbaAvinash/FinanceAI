@@ -1,1 +1,29 @@
-<wm-partial name="partial1"><wm-layoutgrid name="layoutgrid1"class="condensed p-0"><wm-gridrow name="gridrow1"><wm-gridcolumn columnwidth="12"name="gridcolumn1"horizontalalign="left"><wm-label padding="unset"class="on-background letter-0px line-28px font-size-20 fst fw-700"type="p"name="label1"caption="bind:pageParams.caption"></wm-label></wm-gridcolumn></wm-gridrow><wm-gridrow name="gridrow2"><wm-gridcolumn columnwidth="12"name="gridcolumn3"><wm-container name="dynamictablecontainer"><wm-table statehandler="none"name="stvDataTableDatasetTable1"title=""dataset="bind:pageParams.content"navigation="None"show="true"><wm-table-row content="Partial_Nested_Dynamic_Table"expandicon="wi wi-minus-square"collapseicon="wi wi-plus-square"position="0"closeothers="true"on-rowexpand="stvDataTableDatasetTable1_OnRowexpand($event, widget, row, $data)"widget-type="button"show="bind:pageParams.nestedObjData &amp;&amp; pageParams.nestedObjData.length"disabled="false"class="btn-icon"columnwidth="50px"><wm-param name="content"value="bind:pageParams.nestedObjData &amp;&amp; getNestedArr(Widgets.stvDataTableDatasetTable1.currentItem.Category)"type="string"></wm-param></wm-table-row></wm-table></wm-container></wm-gridcolumn></wm-gridrow></wm-layoutgrid></wm-partial>
+<wm-partial name="partial1">
+    <wm-layoutgrid name="layoutgrid1" class="condensed p-0">
+        <wm-gridrow name="gridrow1">
+            <wm-gridcolumn columnwidth="12" name="gridcolumn1" horizontalalign="left">
+                <wm-label padding="unset" class="on-background letter-0px line-28px font-size-20 fst fw-700" type="p"
+                    name="label1" caption="bind:pageParams.caption"></wm-label>
+            </wm-gridcolumn>
+        </wm-gridrow>
+        <wm-gridrow name="gridrow2">
+            <wm-gridcolumn columnwidth="12" name="gridcolumn3">
+                <wm-container name="dynamictablecontainer">
+                    <wm-table statehandler="none" name="stvDataTableDatasetTable1" title=""
+                        dataset="bind:pageParams.content" navigation="None" show="true">
+                        <wm-table-row content="Partial_Nested_Dynamic_Table" expandicon="wi wi-minus-square"
+                            collapseicon="wi wi-plus-square" position="0" closeothers="true"
+                            on-rowexpand="stvDataTableDatasetTable1_OnRowexpand($event, widget, row, $data)"
+                            widget-type="button"
+                            show="bind:pageParams.nestedObjData &amp;&amp; pageParams.nestedObjData.length"
+                            disabled="false" class="btn-icon" columnwidth="50px">
+                            <wm-param name="content"
+                                value="bind:pageParams.nestedObjData &amp;&amp; getNestedArr(Widgets.stvDataTableDatasetTable1.currentItem.Category)"
+                                type="string"></wm-param>
+                        </wm-table-row>
+                    </wm-table>
+                </wm-container>
+            </wm-gridcolumn>
+        </wm-gridrow>
+    </wm-layoutgrid>
+</wm-partial>

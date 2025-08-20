@@ -1,0 +1,48 @@
+.partial-dashboard-content {
+    height: 89vh;
+    overflow: auto;
+}
+
+.ai-dashboard-card {
+    border: 1px solid var(--Schemes-Outline, #E5E7EB);
+    border-radius: 2px;
+    height: auto;
+    padding: 12px;
+}
+
+.list-autocode-row {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.list-autocode-row {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+
+}
+
+.list-autocode-row .app-list-item.list-horizontal-scroll {
+    min-width: max-content;
+}
+
+.list-autocode-row .app-list-item.list-horizontal-scroll .ai-dashboard-card {
+    min-width: 168px;
+}
+
+.list-autocode-row:has(.list-horizontal-scroll) {
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+}
+
+
+@media screen and (min-width: 1394px) and (max-width: 1674px) {
+
+    ul li:has(.appleIndices) {
+        width: 32.33%;
+    }
+
+    ul li:nth-child(4) .appleIndices {
+        max-width: 34%;
+    }
+}

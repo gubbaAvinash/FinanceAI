@@ -63,6 +63,17 @@
     "operation" : "gotoPage",
     "pageName" : "Main_Container_1"
   },
+  "goToPage_New_AIAssistant" : {
+    "_id" : "wm-goToPage_New_AIAssistant-wm.NavigationVariable-1755004142447",
+    "name" : "goToPage_New_AIAssistant",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "New_AIAssistant",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
   "stvAIDashData" : {
     "_id" : "wm-stvAIDashData-wm.Variable-1753336535168",
     "name" : "stvAIDashData",
@@ -75,7 +86,34 @@
       "displayedItems" : [ ],
       "companyName" : "",
       "chartName" : "",
-      "isChartShowDefault" : ""
+      "isChartShowDefault" : "",
+      "chartData" : { },
+      "keyword" : "",
+      "symbols" : "",
+      "types" : "",
+      "longanswer" : "",
+      "dateRange" : "",
+      "defaultChart" : ""
+    },
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "stvAIGeneratedData" : {
+    "_id" : "wm-stvAIGeneratedData-wm.Variable-1755013483153",
+    "name" : "stvAIGeneratedData",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "keyword" : "",
+      "symbols" : "",
+      "displayedItems" : [ ],
+      "types" : "",
+      "dateRange" : "",
+      "isChartShowDefault" : "",
+      "chartName" : ""
     },
     "type" : "entry",
     "isList" : false,

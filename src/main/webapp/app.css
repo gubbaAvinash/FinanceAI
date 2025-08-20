@@ -416,7 +416,7 @@
     border-radius: var(--wm-radius-circle);
 }
 
-@font-face {
+/* @font-face {
     font-family: "RobotoMedium";
     src: url("resources/fonts/RobotoMedium.woff2") format("woff2");
 }
@@ -427,8 +427,8 @@
 }
 
 @font-face {
-    font-family: "RobotoRegular";
-    src: url("resources/fonts/RobotoRegular.woff2") format("woff2");
+    font-family: "Helvetica";
+    src: url("resources/fonts/Helvetica.woff2") format("woff2");
 }
 
 @font-face {
@@ -449,39 +449,34 @@
 @font-face {
     font-family: "Lantinghei TCDemibold";
     src: url("resources/fonts/Lantinghei TCDemibold.woff2") format("woff2");
-}
+} */
+
+
 
 .roboto-medium {
-    font-family: RobotoMedium;
+    font-weight: 500;
 }
 
 .inter-bold {
-    font-family: InterBold;
+    font-weight: 600 !important;
 }
 
 .roboto-regular {
-    font-family: RobotoRegular;
+    font-family: var(--wm-body-large-font-family);
 }
 
 .roboto-semibold {
-    font-family: RobotoSemiBold;
+    font-weight: 500;
 }
 
 .roboto-bold {
-    font-family: RobotoBold;
+    font-weight: 600;
 }
 
 .inter-medium {
-    font-family: InterMedium;
+    font-weight: 500;
 }
 
-.lantinghei tc-demibold {
-    font-family: Lantinghei TCDemibold;
-}
-
-.inter-semi bold {
-    font-family: InterSemi Bold;
-}
 
 .underline {
     text-decoration-line: underline;
@@ -552,7 +547,7 @@
 }
 
 .font-size-36 {
-    font-size: 36px;
+    font-size: 24px;
 }
 
 .font-size-12 {
@@ -564,7 +559,7 @@
 }
 
 .font-size-20 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .font-size-16 {
@@ -716,9 +711,9 @@
 }
 
 .list-autocode-row {
-    display: flex !important;
+    /* display: flex !important;
     flex-direction: row !important;
-    flex-wrap: wrap !important;
+    flex-wrap: wrap !important; */
 }
 
 .no-overflow {
@@ -1071,9 +1066,9 @@
 }
 
 .list-autocode-row {
-    display: flex !important;
+    /* display: flex !important;
     flex-direction: row !important;
-    flex-wrap: wrap !important;
+    flex-wrap: wrap !important; */
 }
 
 .no-overflow {
@@ -1621,9 +1616,9 @@ input:-webkit-autofill:active {
 
 .wm-app .ai-main,
 .wm-app main.app-content {
-    max-height: calc(100vh - 82px);
+    max-height: calc(100vh - 64px);
     overflow: auto;
-    margin-top: 82px;
+    margin-top: 64px;
 }
 
 .wm-app main.app-content.ai-main {
@@ -1653,7 +1648,7 @@ input:-webkit-autofill:active {
 }
 
 .wm-app main.app-content {
-    max-height: calc(100vh - 135px);
+    max-height: calc(100vh - 118px);
 }
 
 
@@ -1689,16 +1684,17 @@ input:-webkit-autofill:active {
 }
 
 .wm-app .app-label.font-italic {
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .wm-app .font-bold {
-    font-weight: 500;
+    font-weight: 600;
+    line-height: 1.4;
 }
 
 
 .wm-app main.app-content.ai-main {
-    max-height: calc(100vh - 82px);
+    max-height: calc(100vh - 64px);
 }
 
 
@@ -1764,4 +1760,207 @@ html[color="dark"] body::-webkit-scrollbar-thumb:hover {
 html[color="dark"] body {
     scrollbar-color: #555 #1e1e1e;
     /* For Firefox */
+}
+
+
+/* new changes */
+.wm-app .app-livelist-container.Indices-Info.list-autocode-row.list-group {
+    width: 100%;
+    margin: 0px;
+}
+
+.wm-app .right-column-bg {
+    background-color: var(--wm-color-surface-dim-bg);
+    padding: 16px !important;
+}
+
+.wm-app .app-grid-column.left-column {
+    padding: 16px !important;
+}
+
+.wm-app .sector-container .app-radioset.list-group.inline {
+    flex-wrap: nowrap;
+}
+
+.wm-app .sector-container .sector-radio {
+    gap: 5px !important;
+    margin-right: 0px !important;
+}
+
+.wm-app .app-container.borderd-container .app-radio.radio>label>input[type="radio"] {
+    padding-left: 16px;
+    padding-right: 16px;
+    min-width: 50px;
+}
+
+.wm-app .app-container.borderd-container .sector-radio li {
+    width: 50px !important;
+}
+
+.wm-app .grid-layout-show-hide .left-column {
+    width: 100%;
+}
+
+.wm-app .grid-layout-show-hide .right-column-bg {
+    display: none;
+}
+
+.wm-app .sector-radio .app-radio .caption {
+    font-size: 14px !important;
+}
+
+.wm-app .bg-color .app-container.media-body .font-bold {
+    font-size: var(--wm-h3-font-size);
+    margin-bottom: 10px;
+}
+
+.wm-app .app-button.adjust-btn:hover {
+    background: transparent !important;
+    color: var(--wm-color-primary);
+    --wm-btn-background: transparent !important;
+}
+
+.wm-app .modal-backdrop {
+    opacity: 0.5;
+    background: #000;
+}
+
+.wm-app .app-label.p.text-muted.font-italic {
+    line-height: 24px;
+}
+
+.wm-app .app-panel.media-list.bg-color .app-label {
+    font-size: 16px;
+}
+
+.wm-app .fw-500 {
+    font-weight: 600;
+}
+
+.wm-app .btn-primary.btn-outlined {
+    font-size: 17px;
+}
+
+.wm-app .modal-dialog .modal-content .modal-footer .btn {
+    font-size: var(--wm-app-font-size);
+}
+
+.wm-app .control-label {
+    font-size: var(--wm-app-font-size);
+}
+
+.wm-app .app-composite-widget.caption-floating.float-active .control-label {
+    font-size: 12px;
+}
+
+
+.wm-app .app-grid .table>tbody>tr {
+    font-size: var(--wm-app-font-size);
+}
+
+.wm-app .ai-left-content .app-label {
+    font-size: 14px;
+}
+
+.wm-app .prompt-col .app-button {
+    min-height: auto;
+    padding: 0px 8px;
+    height: auto;
+    margin: 0px !important;
+
+}
+
+.wm-app .prompt-col .app-button .app-icon {
+    font-size: 18px;
+}
+
+.wm-app .prompt-col .app-label {
+    text-decoration: underline;
+}
+
+.wm-app .d-flex.prompt-col {
+    align-items: center;
+}
+
+.wm-app .User .media-heading.your-text {
+    background-color: var(--wm-color-bodybg);
+}
+
+.wm-app .default-prompt-drop {
+    padding: 16px 0px !important;
+}
+
+.wm-app .default-prompt-drop .app-label {
+    white-space: pre-wrap;
+}
+
+.wm-app .app-grid .table>tbody>tr td {
+    word-wrap: break-word;
+}
+
+.wm-app .app-label.on-surface.letter-0px.line-32px.font-size-24.fst.fw-600 {
+    font-size: 18px;
+}
+
+.wm-app .app-grid-layout.view-res-layout {
+    background-color: var(--wm-color-surface-dim-bg);
+    border-radius: 4px;
+    padding: 12px;
+
+}
+
+.wm-app .app-grid-layout.view-res-layout .prompt-col .app-label {
+    text-decoration: none;
+}
+
+.wm-app .app-grid-layout.view-res-layout>.app-grid-row>.app-grid-column {
+    padding: 0px;
+}
+
+.wm-app .app-grid-layout.view-res-layout .default-view .app-label {
+    padding: 16px 0px;
+}
+
+.wm-app .generatedLabel-default {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.wm-app .app-container.generated_insights {
+    /* position: absolute;
+    margin-top: -40px;
+    width: 100%; */
+}
+
+.wm-app .list-group-item.User {
+    padding-bottom: 40px;
+}
+
+.wm-app .list-group-item.User .media-body p {
+    min-height: 40px;
+}
+
+.wm-app .list-group-item.AI .media-body .media-heading.your-text {
+    order: 2;
+}
+
+.wm-app .list-group-item.AI .media-body p {
+    padding: 0 12px 24px 0 !important;
+
+}
+
+.wm-app .list-group-item.User {
+    padding-bottom: 20px;
+}
+
+.wm-app .list-group-item.AI .media-body {
+    display: grid;
+    justify-content: flex-start;
+}
+
+.wm-app .table-container.table-responsive .formatted-text {
+    width: 100%;
+    white-space: pre-wrap;
+    display: block;
+    max-width: 100%;
 }

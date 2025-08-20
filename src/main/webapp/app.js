@@ -134,8 +134,8 @@ App.categorizePrompt = function (prompt) {
 
 App.toogleThemeIcon = function () {
     if (App.isDarkThemeEnabled == undefined || App.isDarkThemeEnabled == null) {
-        App.isDarkThemeEnabled = true;
-        document.querySelectorAll('[name="buttonDark"]').forEach(btn => btn.classList.add('btn-primary'));
+        App.isDarkThemeEnabled = false;
+        document.querySelectorAll('[name="buttonLight"]').forEach(btn => btn.classList.add('btn-primary'));
     } else if (App.isDarkThemeEnabled) {
         document.querySelectorAll('[name="buttonDark"]').forEach(btn => btn.classList.add('btn-primary'));
         document.querySelectorAll('[name="buttonLight"]').forEach(btn => btn.classList.remove('btn-primary'));

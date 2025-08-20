@@ -1,0 +1,110 @@
+{
+  "body" : {
+    "large" : {
+      "font-size" : {
+        "value" : "20px"
+      },
+      "font-family" : {
+        "value" : "Helvetica,Roboto"
+      }
+    },
+    "medium" : {
+      "font-family" : {
+        "value" : "Helvetica,Roboto"
+      },
+      "font-size" : {
+        "value" : "17px"
+      }
+    },
+    "small" : {
+      "font-family" : {
+        "value" : "Helvetica,Roboto"
+      }
+    }
+  },
+  "h1" : {
+    "font-family" : {
+      "value" : "Helvetica,Roboto"
+    },
+    "font-size" : {
+      "value" : "24px"
+    }
+  },
+  "h2" : {
+    "font-family" : {
+      "value" : "Helvetica,Roboto"
+    },
+    "font-size" : {
+      "value" : "20px"
+    }
+  },
+  "h3" : {
+    "font-family" : {
+      "value" : "Helvetica,Roboto"
+    },
+    "font-size" : {
+      "value" : "18px"
+    }
+  },
+  "h4" : {
+    "font-family" : {
+      "value" : "Helvetica,Roboto"
+    }
+  },
+  "h5" : {
+    "font-family" : {
+      "value" : "Helvetica,Roboto"
+    }
+  },
+  "h6" : {
+    "font-family" : {
+      "value" : "Helvetica,Roboto"
+    }
+  },
+  "label" : {
+    "large" : {
+      "font-family" : {
+        "value" : "Helvetica,Roboto"
+      },
+      "font-size" : {
+        "value" : "24px"
+      }
+    },
+    "medium" : {
+      "font-family" : {
+        "value" : "Helvetica,Roboto"
+      },
+      "font-size" : {
+        "value" : "17px"
+      }
+    },
+    "small" : {
+      "font-family" : {
+        "value" : "Helvetica,Roboto"
+      },
+      "font-size" : {
+        "value" : "12px"
+      }
+    }
+  },
+  "display" : {
+    "large" : {
+      "font-family" : {
+        "value" : "Helvetica,Roboto"
+      },
+      "font-size" : {
+        "value" : "32px"
+      }
+    },
+    "medium" : {
+      "font-family" : {
+        "value" : "Helvetica,Roboto"
+      }
+    },
+    "small" : {
+      "font-family" : {
+        "value" : "Helvetica,Roboto"
+      }
+    }
+  }
+}

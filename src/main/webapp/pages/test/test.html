@@ -1,0 +1,188 @@
+<wm-page pagetitle="Test" name="page1">
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-label padding="unset" class="p" type="p" name="label1" caption="Basic Widgets"></wm-label>
+            <wm-layoutgrid name="layoutgrid1">
+                <wm-gridrow name="gridrow1">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn1">
+                        <wm-button class="btn-default" caption="" type="button" margin="unset" name="button5"
+                            iconclass="wm-sl-l sl-facebook"></wm-button>
+                        <wm-button class="btn-default" caption="test" type="button" margin="unset"
+                            iconclass="wm-sl-l sl-facebook" hint="facebook" name="button5_1"></wm-button>
+                        <wm-button class="btn-default" caption="button" type="button" margin="unset" iconclass=""
+                            hint="facebook" name="button6_1"></wm-button>
+                        <wm-button class="btn-default" caption="" type="button" margin="unset" iconclass=""
+                            name="button7_1" iconurl="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+                            iconwidth="30" iconheight="40"></wm-button>
+                        <wm-button class="btn-default" caption="" type="button" margin="unset"
+                            iconclass="wm-sl-l sl-facebook" name="button8_1" arialabel="button8_1"></wm-button>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow3">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn5">
+                        <wm-buttongroup name="buttongroup2">
+                            <wm-button class="btn-default" type="button" caption="left" name="button6"></wm-button>
+                            <wm-button class="btn-default" type="button" caption="center" name="button7"></wm-button>
+                            <wm-button class="btn-default" type="button" caption="right" name="button8"></wm-button>
+                        </wm-buttongroup>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow4">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn6">
+                        <wm-composite name="composite1">
+                            <wm-label class="col-md-3 control-label" notag="true" name="label2" caption="text">
+                            </wm-label>
+                            <wm-container class="col-md-9" name="container1">
+                                <wm-text name="text"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow5">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn7">
+                        <wm-composite name="composite2">
+                            <wm-label class="col-md-3 control-label" notag="true" name="label3" caption="Number">
+                            </wm-label>
+                            <wm-container class="col-md-9" name="container2">
+                                <wm-number textalign="right" name="number1"></wm-number>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow6">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn8">
+                        <wm-composite name="composite3">
+                            <wm-label class="col-md-3 control-label" notag="true" name="label4" caption="text Area">
+                            </wm-label>
+                            <wm-container class="col-md-9" name="container3">
+                                <wm-textarea name="textarea1"></wm-textarea>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow7">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn9">
+                        <wm-composite name="composite4">
+                            <wm-label class="col-md-3 control-label" notag="true" name="label5"></wm-label>
+                            <wm-container class="col-md-9" name="container4">
+                                <wm-select name="select1" placeholder="Select" dataset="1,2,3,4,5"
+                                    datafield="All Fields"></wm-select>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow8">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn10">
+                        <wm-composite name="composite5">
+                            <wm-label class="col-md-3 control-label" notag="true" name="label6"></wm-label>
+                            <wm-container class="col-md-9" name="container5">
+                                <wm-currency textalign="right" name="currency1"></wm-currency>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow9">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn11">
+                        <wm-composite name="composite6">
+                            <wm-label class="col-md-3 control-label" notag="true" name="label7"></wm-label>
+                            <wm-container class="col-md-9" name="container6">
+                                <wm-radioset height="auto" name="radioset1" datafield="All Fields"></wm-radioset>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow10">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn12">
+                        <wm-composite name="composite7">
+                            <wm-checkbox caption="Label" class="col-md-push-3 col-md-9" name="checkbox1"
+                                checkedvalue="yes" uncheckedvalue="no" datavalue="yes"></wm-checkbox>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow11">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn13">
+                        <wm-composite name="composite13">
+                            <wm-label class="col-md-3 control-label" notag="true" name="label12"></wm-label>
+                            <wm-container class="col-md-9" name="container11">
+                                <wm-checkboxset height="auto" name="checkboxset1"></wm-checkboxset>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow12">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn14">
+                        <wm-composite name="composite9">
+                            <wm-label class="col-md-3 control-label" notag="true" name="label8"></wm-label>
+                            <wm-container class="col-md-9" name="container7">
+                                <wm-checkbox caption="Toggle" type="toggle" name="toggle123"></wm-checkbox>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow13">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn15"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow14">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn16">
+                        <wm-composite name="composite10">
+                            <wm-label class="col-md-3 control-label" notag="true" name="label9"></wm-label>
+                            <wm-container class="col-md-9" name="container8">
+                                <wm-switch datavalue="yes" name="switch1"></wm-switch>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow15">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn17">
+                        <wm-composite name="composite11">
+                            <!-- <wm-label class="col-md-3 control-label" notag="true" name="label10" caption="Selector"> 
+                            </wm-label>-->
+                            <wm-container class="col-md-9" name="container9">
+                                <wm-colorpicker name="colorpicker1"></wm-colorpicker>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow16">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn18">
+                        <wm-composite name="composite12">
+                            <wm-label class="col-md-3 control-label" notag="true" name="label11"></wm-label>
+                            <wm-container class="col-md-9" name="container10">
+                                <wm-slider name="slider1"></wm-slider>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow17">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn19">
+                        <wm-icon name="icon1"></wm-icon>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow18">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn20">
+                        <wm-progress-bar datavalue="30" name="progress_bar1"></wm-progress-bar>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow19">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn21">
+                        <wm-progress-circle width="150px" height="150px" name="progress_circle1"></wm-progress-circle>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow20">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn22">
+                        <wm-audio controls="controls" audiopreload="none" name="audio1"></wm-audio>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow21">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn23"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow22">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn24"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow23">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn25"></wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+        </wm-page-content>
+    </wm-content>
+</wm-page>

@@ -48,7 +48,7 @@
     "type" : "indicesInfo.RootResponse",
     "service" : "indicesInfo",
     "operation" : "invoke",
-    "operationId" : "indicesInfo_RestServiceVirtualController-invoke",
+    "operationId" : "indicesInfo_invoke",
     "operationType" : "get",
     "serviceType" : "RestService",
     "dataSet" : [ ],
@@ -60,7 +60,7 @@
     "inFlightBehavior" : "executeLast",
     "transformationRequired" : false,
     "saveInPhonegap" : false,
-    "controller" : "RestServiceVirtual"
+    "controller" : "indicesInfo"
   },
   "stvAllCharts" : {
     "_id" : "wm-stvAllCharts-wm.Variable-1754061087284",

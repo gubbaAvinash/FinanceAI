@@ -5,14 +5,14 @@
   <parent>
     <groupId>com.wavemaker.app</groupId>
     <artifactId>wavemaker-app-parent</artifactId>
-    <version>11.11.7</version>
+    <version>11.12.0</version>
   </parent>
   <groupId>com.wavemaker.project</groupId>
   <artifactId>FinanceAI</artifactId>
   <version>1.0</version>
   <packaging>war</packaging>
   <properties>
-    <wavemaker.app.runtime.ui.version>11.11.7-rc.217</wavemaker.app.runtime.ui.version>
+    <wavemaker.app.runtime.ui.version>11.12.0-rc.219</wavemaker.app.runtime.ui.version>
     <wavemaker.artifactType>wmapp</wavemaker.artifactType>
   </properties>
   <build>
@@ -32,6 +32,7 @@
               <sources>
                 <source>services/heatMap/src</source>
                 <source>services/indicesInfo/src</source>
+                <source>services/kxAiAssistPromptResp/src</source>
                 <source>services/promptResponse/src</source>
                 <source>services/sectorRotation/src</source>
                 <source>services/sectorperformance/src</source>

@@ -1,0 +1,33 @@
+{
+  "migrationTaskDetailsList" : [ {
+    "onReleaseVersion" : "11.11",
+    "migrationVersion" : 1111.01,
+    "migrationMessages" : [ ]
+  }, {
+    "onReleaseVersion" : "11.11",
+    "migrationVersion" : 1111.02,
+    "migrationMessages" : [ ]
+  }, {
+    "onReleaseVersion" : "11.11",
+    "migrationVersion" : 1111.03,
+    "migrationMessages" : [ ]
+  }, {
+    "onReleaseVersion" : "11.11",
+    "migrationVersion" : 1111.04,
+    "migrationMessages" : [ {
+      "msg" : "Updated operationId and tagNames in {} rest service(s)",
+      "args" : [ 1 ]
+    }, {
+      "msg" : "Updated OperationId and Controller in {} Page variables json files",
+      "args" : [ 2 ]
+    } ]
+  }, {
+    "onReleaseVersion" : "11.11",
+    "migrationVersion" : 1111.05,
+    "migrationMessages" : [ ]
+  }, {
+    "onReleaseVersion" : "11.11",
+    "migrationVersion" : 1111.06,
+    "migrationMessages" : [ ]
+  } ]
+}

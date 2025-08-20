@@ -3,13 +3,13 @@
   "paths" : {
     "/indicesInfo" : {
       "x-WM-BASE_PATH" : "/indicesInfo",
-      "x-WM-TAG" : "RestServiceVirtualController",
+      "x-WM-TAG" : "indicesInfo",
       "x-WM-RELATIVE_PATH" : "",
       "get" : {
         "x-WM-METHOD_NAME" : "invoke",
         "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
         "produces" : [ "application/json" ],
-        "operationId" : "indicesInfo_RestServiceVirtualController-invoke",
+        "operationId" : "indicesInfo_invoke",
         "responses" : {
           "200" : {
             "schema" : {
@@ -18,7 +18,7 @@
             "description" : "Success"
           }
         },
-        "tags" : [ "RestServiceVirtualController" ],
+        "tags" : [ "indicesInfo" ],
         "consumes" : [ "application/json" ]
       },
       "x-WM-COMPLETE_PATH" : "${rest.indicesInfo.scheme}://${rest.indicesInfo.host}${rest.indicesInfo.basepath}/indicesInfo"
@@ -29,7 +29,7 @@
   "definitions" : {
     "Response.indicesEntryItem" : {
       "x-WM-FULLY_QUALIFIED_NAME" : "indicesInfo.Response.indicesEntryItem",
-      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "x-WM-TAGS" : [ "indicesInfo" ],
       "required" : [ "change", "last_updated", "logo", "name", "percent_change", "ticker", "value" ],
       "properties" : {
         "ticker" : {
@@ -57,7 +57,7 @@
     },
     "RootResponse" : {
       "x-WM-FULLY_QUALIFIED_NAME" : "indicesInfo.RootResponse",
-      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "x-WM-TAGS" : [ "indicesInfo" ],
       "required" : [ "asOf", "indices", "market", "refresh_interval", "source", "unit" ],
       "properties" : {
         "market" : {
@@ -96,7 +96,7 @@
     "x-WM-USE_WITH_CREDENTIALS" : false
   },
   "tags" : [ {
-    "name" : "RestServiceVirtualController",
+    "name" : "indicesInfo",
     "description" : "Rest service swagger documentation"
   } ]
 }

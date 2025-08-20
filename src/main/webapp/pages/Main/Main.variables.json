@@ -1,23 +1,281 @@
 {
-  "stv" : {
-    "_id" : "wm-stv-wm.Variable-1754061575311",
-    "name" : "stv",
+  "autoModelDashboard0" : {
+    "_id" : "wm-autoModelDashboard0-wm.Variable-1753253679674",
+    "name" : "autoModelDashboard0",
     "owner" : "Page",
     "category" : "wm.Variable",
     "dataBinding" : [ ],
     "dataSet" : [ {
-      "name" : "aa",
-      "value" : "AA"
+      "caption1" : "S&P 500",
+      "caption2" : "754.69",
+      "picturesource3" : "resources/images/logos/Market_Icon-642175718.png",
+      "picturesource4" : "resources/images/logos/Path_2-642175721.png",
+      "caption5" : "+23.45",
+      "caption6" : "Up from yesterday"
     }, {
-      "name" : "bb",
-      "value" : "BB"
+      "caption1" : "NASDAQ",
+      "caption2" : "567.89",
+      "picturesource3" : "resources/images/logos/Market_Icon-642175729.png",
+      "picturesource4" : "resources/images/logos/Path_2-642175732.png",
+      "caption5" : "+23.45",
+      "caption6" : "Up from yesterday"
     }, {
-      "name" : "cc",
-      "value" : "CC"
+      "caption1" : "DOW JONES",
+      "caption2" : "121.53",
+      "picturesource3" : "resources/images/logos/Market_Icon-642175740.png",
+      "picturesource4" : "resources/images/logos/Path_3-642175743.png",
+      "caption5" : "-45.67",
+      "caption6" : "Up from yesterday"
+    }, {
+      "caption1" : "RUSSELL",
+      "caption2" : "232.42",
+      "picturesource3" : "resources/images/logos/Market_Icon-642175751.png",
+      "picturesource4" : "resources/images/logos/Path_3-642175754.png",
+      "caption5" : "-8.67",
+      "caption6" : "Up from yesterday"
     } ],
     "type" : "entry",
     "isList" : true,
     "twoWayBinding" : false,
     "saveInPhonegap" : false
+  },
+  "getIndicesInfo" : {
+    "_id" : "wm-getIndicesInfo-wm.ServiceVariable-1753256021528",
+    "name" : "getIndicesInfo",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "indicesInfo.RootResponse",
+    "service" : "indicesInfo",
+    "operation" : "invoke",
+    "operationId" : "indicesInfo_invoke",
+    "operationType" : "get",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "onSuccess" : "getIndicesInfoonSuccess(variable, data, options)",
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "indicesInfo"
+  },
+  "stvAllCharts" : {
+    "_id" : "wm-stvAllCharts-wm.Variable-1754061087284",
+    "name" : "stvAllCharts",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "pageName" : "treasuryYield",
+      "displayName" : "Treasury Yield Curve",
+      "imagePath" : "resources/images/imagelists/treasuryYieldImage.png",
+      "darkImagePath" : "resources/images/imagelists/treasuryYieldDarkImage.png"
+    }, {
+      "pageName" : "sectorPerformance",
+      "displayName" : "Sector Performance",
+      "imagePath" : "resources/images/imagelists/sectorPerformanceImage.png",
+      "darkImagePath" : "resources/images/imagelists/sectorPerformanceDarkImage.png"
+    }, {
+      "pageName" : "heatMapChart",
+      "displayName" : "Market Heat Map",
+      "imagePath" : "resources/images/imagelists/heatMapImage.png",
+      "darkImagePath" : "resources/images/imagelists/heatMapDarkImage.png"
+    }, {
+      "pageName" : "sectorRotation",
+      "displayName" : "Sector Rotation",
+      "imagePath" : "resources/images/imagelists/sectorRotationImage.png",
+      "darkImagePath" : "resources/images/imagelists/sectorRotationDarkImage.png"
+    }, {
+      "pageName" : "topFlow",
+      "displayName" : "Top Flow",
+      "imagePath" : "resources/images/imagelists/TopFlowImage.png",
+      "darkImagePath" : "resources/images/imagelists/TopFlowDarkImage.png"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "stvDashboardCharts" : {
+    "_id" : "wm-stvDashboardCharts-wm.Variable-1753945358908",
+    "name" : "stvDashboardCharts",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "name" : "heatMapChart",
+      "displayValue" : "Market Heat Map "
+    }, {
+      "name" : "sectorRotation",
+      "displayValue" : "Sector Rotation"
+    }, {
+      "name" : "topFlow",
+      "displayValue" : "Top Flow"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "stvIndicesInfo" : {
+    "_id" : "wm-stvIndicesInfo-wm.Variable-1753272137974",
+    "name" : "stvIndicesInfo",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "market" : "US Stock Indices",
+      "asOf" : "Mon Apr 20 2026 04:33:27 GMT+0000 (Coordinated Universal Time)",
+      "refresh_interval" : "3 seconds",
+      "unit" : "USD",
+      "source" : "Mockoon using Faker.js",
+      "indices" : [ {
+        "name" : "S&P 500",
+        "ticker" : "I:SPX",
+        "value" : "6303.57",
+        "change" : "-4.98",
+        "percent_change" : "0.034",
+        "last_updated" : "Wed Aug 28 2024 18:15:48 GMT+0000 (Coordinated Universal Time)",
+        "logo" : "https://wm-ps-by.s3.amazonaws.com/SandP.svg"
+      } ]
+    },
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "stvNewDetails" : {
+    "_id" : "wm-stvNewDetails-wm.Variable-1754465974734",
+    "name" : "stvNewDetails",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "name" : "Technology & Financial Services",
+      "sub" : "Technology sector and communications continue to outperform, even while consumer, industrial, and materials sectors lag. Market strength in recent quarters has largely been driven by tech valuations rather than earnings growth across the board.",
+      "date" : ""
+    }, {
+      "name" : "Weakening U.S. and Global Manufacturing",
+      "sub" : "Global manufacturing sectors showed signs of strain in early 2025, with notable declines in autos, materials (chemicals, metals), and basic goods production. This slowdown weighed on broader economic activity.",
+      "date" : ""
+    }, {
+      "name" : "Regulatory & Policy Pressures on Financial Services",
+      "sub" : "Rising geopolitical friction—such as ongoing trade tensions and tariffs—is forcing increased regulation and complexity across financial markets, with new compliance burdens and oversight implications.",
+      "date" : ""
+    }, {
+      "name" : "Macro Risks Highlighted",
+      "sub" : "Economists and investors are closely watching risks from trade disputes, inflation, weaker services activity, and U.S.-focused tariffs, which continue to stir market volatility.",
+      "date" : ""
+    }, {
+      "name" : "Energy Sector Price Volatility",
+      "sub" : "Global oil and gas markets experienced heightened volatility this week as supply disruptions in key producing regions met with fluctuating demand forecasts. Energy equities saw sharp intraday swings as traders priced in geopolitical uncertainty.",
+      "date" : ""
+    }, {
+      "name" : "Emerging Markets Currency Pressure",
+      "sub" : "Several emerging market currencies faced renewed depreciation pressures, driven by capital outflows, stronger U.S. dollar demand, and investor caution over slowing global growth. Central banks in affected countries are weighing intervention measures.",
+      "date" : ""
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "stvResultsData" : {
+    "_id" : "wm-stvResultsData-wm.Variable-1754471961799",
+    "name" : "stvResultsData",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "company" : "Tesla (TSLA)",
+      "quarter" : "",
+      "EPS" : 1.45,
+      "revenue" : "312 M"
+    }, {
+      "company" : "Microsoft (MSFT)",
+      "quarter" : "",
+      "EPS" : 0.33,
+      "revenue" : "210 M"
+    }, {
+      "company" : "Apple (AAPL)",
+      "quarter" : "",
+      "EPS" : 2.1,
+      "revenue" : "544 M"
+    }, {
+      "company" : "Amazon (AMZN)",
+      "quarter" : "",
+      "EPS" : 0.87,
+      "revenue" : "398 M"
+    }, {
+      "company" : "Alphabet (GOOGL)",
+      "quarter" : "",
+      "EPS" : 1.12,
+      "revenue" : "476 M"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "stvSelectedCharts" : {
+    "_id" : "wm-stvSelectedCharts-wm.Variable-1754064101196",
+    "name" : "stvSelectedCharts",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ ],
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "stvTempSelectedCharts" : {
+    "_id" : "wm-stvSelectedCharts-wm.Variable-1754060800031",
+    "name" : "stvTempSelectedCharts",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ ],
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "stvTempUnselectedCharts" : {
+    "_id" : "wm-stvUnselectedCharts-wm.Variable-1754062306460",
+    "name" : "stvTempUnselectedCharts",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ ],
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "stvUnselectedCharts" : {
+    "_id" : "wm-stvUnselectedCharts-wm.Variable-1754064169411",
+    "name" : "stvUnselectedCharts",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ ],
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "timerActionForIndicesRefresh" : {
+    "_id" : "wm-timerActionForIndicesRefresh-wm.TimerVariable-1753256488925",
+    "name" : "timerActionForIndicesRefresh",
+    "owner" : "Page",
+    "category" : "wm.TimerVariable",
+    "startUpdate" : true,
+    "repeating" : true,
+    "delay" : 3000,
+    "onTimerFire" : "Variables.getIndicesInfo.invoke()"
   }
 }

@@ -2,372 +2,187 @@
     <wm-header content="Header642175698" name="Dashboard" on-load="DashboardLoad($event, widget)"></wm-header>
     <wm-content name="Dashboard">
         <wm-page-content columnwidth="12" name="page-content1">
-            <wm-container class="flex-column surface-container-lowest-bg align-items-start d-flex"
-                id="dashboard-642175697" horizontalalign="left" name="container1">
-                <wm-container class="flex-row align-items-start align-self-stretch d-flex justify-content-between"
-                    id="content_container-642175709" name="container2">
-                    <wm-container
-                        class="flex-column align-items-start d-flex flex-fill-item gap-3 dashboard-left-content"
-                        id="dashboard_container-642175710" horizontalalign="left" name="container3">
+            <wm-container class="flex-column surface-container-lowest-bg align-items-start d-flex" id="dashboard-642175697" horizontalalign="left" name="container1">
+                <wm-container class="flex-row align-items-start align-self-stretch d-flex justify-content-between" id="content_container-642175709" name="container2">
+                    <wm-container class="flex-column align-items-start d-flex flex-fill-item gap-3 dashboard-left-content" id="dashboard_container-642175710" horizontalalign="left" name="container3">
                         <wm-layoutgrid name="layoutgrid1" class="condensed">
                             <wm-gridrow name="gridrow1">
                                 <wm-gridcolumn columnwidth="8" name="gridcolumn1">
-                                    <wm-label padding="unset" caption="Dashboard"
-                                        class="on-surface inter-bold line-42px font-size-36 fst" name="label36_1">
+                                    <wm-label padding="unset" caption="Dashboard" class="on-surface inter-bold line-42px font-size-36 fst" name="label36_1">
                                     </wm-label>
-                                    <wm-button class="adjust-btn btn-default fullScreen-btn p-0 mx-2" caption=""
-                                        type="button" margin="unset" name="buttonConfigure"
-                                        iconclass="wm-sl-r sl-settings" on-click="Widgets.dialogConfigure.open()"
-                                        arialabel="DashSettings"></wm-button>
+                                    <wm-button class="adjust-btn btn-default fullScreen-btn p-0 mx-2" caption="" type="button" margin="unset" name="buttonConfigure" iconclass="wm-sl-r sl-settings" on-click="Widgets.dialogConfigure.open()" hint="Configure Dashboard"></wm-button>
                                 </wm-gridcolumn>
                                 <wm-gridcolumn columnwidth="4" name="gridcolumn2" horizontalalign="right">
-                                    <wm-button class="text-primary fullScreen-btn adjust-btn btn-default p-0 mx-2"
-                                        caption="" type="button" margin="unset" iconclass="wi wi-keyboard-arrow-right"
-                                        on-click="collapseButtonClick($event, widget)" name="collapseButton" show="true"
-                                        disabled="false" hint="Collapse"></wm-button>
-                                    <wm-button class="text-primary fullScreen-btn adjust-btn btn-default p-0 mx-2"
-                                        caption="" type="button" margin="unset" iconclass="wi wi-keyboard-arrow-left"
-                                        on-click="expandButtonClick($event, widget)" name="expandButton" show="false"
-                                        disabled="false" hint="Expand"></wm-button>
+                                    <wm-button class="text-primary fullScreen-btn adjust-btn btn-default p-0 mx-2" caption="" type="button" margin="unset" iconclass="wi wi-keyboard-arrow-right" on-click="collapseButtonClick($event, widget)" name="collapseButton" show="true" disabled="false" arialabel="collapseButton"></wm-button>
+                                    <wm-button class="text-primary fullScreen-btn adjust-btn btn-default p-0 mx-2" caption="" type="button" margin="unset" iconclass="wi wi-keyboard-arrow-left" on-click="expandButtonClick($event, widget)" name="expandButton" show="false" disabled="false" hint="Expand"></wm-button>
                                 </wm-gridcolumn>
                             </wm-gridrow>
                         </wm-layoutgrid>
-                        <wm-label padding="unset" caption="Dashboard"
-                            class="on-surface inter-bold line-42px font-size-36 fst" name="label1" show="false">
+                        <wm-label padding="unset" caption="Dashboard" class="on-surface inter-bold line-42px font-size-36 fst" name="label1" show="false">
                         </wm-label>
-                        <wm-container direction="column" id="artificialgroup0-id0" horizontalalign="left"
-                            class="align-items-start d-flex flex-fill-item flex-column " name="container4">
-                            <wm-list listclass="list-group list-autocode-row gap-3 Indices-Info" itemclass="flex-grow-1"
-                                statehandler="URL" navigation="Basic" class="list-card hug" name="list1"
-                                dataset="bind:Variables.stvIndicesInfo.dataSet.indices" loadingdatamsg=""
-                                loadingicon="">
+                        <wm-container direction="column" id="artificialgroup0-id0" horizontalalign="left" class="align-items-start d-flex flex-fill-item flex-column " name="container4">
+                            <wm-list listclass="list-group list-autocode-row gap-3 Indices-Info" itemclass="flex-grow-1" statehandler="URL" navigation="Basic" class="list-card hug" name="list1" dataset="bind:Variables.stvIndicesInfo.dataSet.indices" loadingdatamsg="" loadingicon="">
                                 <wm-listtemplate layout="inline" name="listtemplate1">
-                                    <wm-container
-                                        class="flex-column align-items-start d-flex flex-grow-1 justify-content-between"
-                                        id="market_card-642175713" name="container5">
-                                        <wm-container
-                                            class="flex-row align-items-start align-self-stretch d-flex justify-content-between"
-                                            id="market_info_container-642175714" name="container6">
-                                            <wm-container class="flex-column align-items-start d-flex custom-gap-1 w-80"
-                                                id="market_text_container-642175715" horizontalalign="left"
-                                                name="container7">
-                                                <wm-label padding="unset"
-                                                    caption="bind:Variables.stvIndicesInfo.dataSet.indices[$i].name.toUpperCase()"
-                                                    class="on-surface-variant line-16px font-size-12 fst company-label"
-                                                    name="label2"></wm-label>
-                                                <wm-label padding="unset"
-                                                    caption="bind:Variables.stvIndicesInfo.dataSet.indices[$i].value"
-                                                    class="on-surface letter-0px line-32px font-size-24 fst fw-600"
-                                                    name="label3"></wm-label>
+                                    <wm-container class="flex-column align-items-start d-flex flex-grow-1 justify-content-between" id="market_card-642175713" name="container5">
+                                        <wm-container class="flex-row align-items-start align-self-stretch d-flex justify-content-between" id="market_info_container-642175714" name="container6">
+                                            <wm-container class="flex-column align-items-start d-flex custom-gap-1 w-80" id="market_text_container-642175715" horizontalalign="left" name="container7">
+                                                <wm-label padding="unset" caption="bind:Variables.stvIndicesInfo.dataSet.indices[$i].name.toUpperCase()" class="on-surface-variant line-16px font-size-12 fst company-label" name="label2"></wm-label>
+                                                <wm-label padding="unset" caption="bind:Variables.stvIndicesInfo.dataSet.indices[$i].value" class="on-surface letter-0px line-32px font-size-24 fst fw-600" name="label3"></wm-label>
                                             </wm-container>
-                                            <wm-picture resizemode="cover"
-                                                picturesource="bind:Variables.stvIndicesInfo.dataSet.indices[$i].logo"
-                                                width="42" height="42" name="picture1" shape="circle" class="ml-5">
+                                            <wm-picture resizemode="cover" picturesource="bind:Variables.stvIndicesInfo.dataSet.indices[$i].logo" width="42" height="42" name="picture1" shape="circle" class="ml-5">
                                             </wm-picture>
                                         </wm-container>
-                                        <wm-container class="flex-row align-items-center d-flex custom-gap-3"
-                                            id="market_change_container-642175719" verticalalign="center"
-                                            name="container8">
-                                            <wm-container class="flex-row align-items-center d-flex custom-gap-3"
-                                                id="market_change_info-642175720" verticalalign="center"
-                                                name="container9">
-                                                <wm-picture resizemode="cover"
-                                                    picturesource="resources/images/logos/Path_3-642176068.png"
-                                                    width="13" height="8" name="picture2"
-                                                    show="bind:(Variables.stvIndicesInfo.dataSet.indices[$i].percent_change | stringToNumber) &gt; 0 ? false : true">
+                                        <wm-container class="flex-row align-items-center d-flex custom-gap-3" id="market_change_container-642175719" verticalalign="center" name="container8">
+                                            <wm-container class="flex-row align-items-center d-flex custom-gap-3" id="market_change_info-642175720" verticalalign="center" name="container9">
+                                                <wm-picture resizemode="cover" picturesource="resources/images/logos/Path_3-642176068.png" width="13" height="8" name="picture2" show="bind:(Variables.stvIndicesInfo.dataSet.indices[$i].percent_change | stringToNumber) > 0 ? false : true">
                                                 </wm-picture>
-                                                <wm-picture resizemode="cover"
-                                                    picturesource="bind:Variables.autoModelDashboard0.dataSet[$i].picturesource4"
-                                                    width="13" height="8" name="picture10"
-                                                    show="bind:(Variables.stvIndicesInfo.dataSet.indices[$i].percent_change | stringToNumber) &gt; 0 ? true : false">
+                                                <wm-picture resizemode="cover" picturesource="bind:Variables.autoModelDashboard0.dataSet[$i].picturesource4" width="13" height="8" name="picture10" show="bind:(Variables.stvIndicesInfo.dataSet.indices[$i].percent_change | stringToNumber) > 0 ? true : false">
                                                 </wm-picture>
-                                                <wm-label padding="unset"
-                                                    caption="bind:Variables.stvIndicesInfo.dataSet.indices[$i].percent_change"
-                                                    class="on-error-container line-16px font-size-12 fst fw-500"
-                                                    name="label4"></wm-label>
+                                                <wm-label padding="unset" caption="bind:Variables.stvIndicesInfo.dataSet.indices[$i].percent_change" class="on-error-container line-16px font-size-12 fst fw-500" name="label4"></wm-label>
                                             </wm-container>
-                                            <wm-label padding="unset" caption=""
-                                                class="on-surface-variant line-16px font-size-12 fst" name="label5">
+                                            <wm-label padding="unset" caption="" class="on-surface-variant line-16px font-size-12 fst" name="label5">
                                             </wm-label>
                                         </wm-container>
                                     </wm-container>
                                 </wm-listtemplate>
                             </wm-list>
                         </wm-container>
-                        <wm-container
-                            class="flex-column align-self-stretch d-flex flex-shrink-0 justify-content-between borderd-container sector-container"
-                            name="containerChart1" id="containerSector"
-                            content="bind:Variables.stvSelectedCharts.dataSet[0] ? Variables.stvSelectedCharts.dataSet[0].pageName : 'testContainerPartial'"
-                            show="bind:Variables.stvSelectedCharts.dataSet[0] ? true : false"></wm-container>
-                        <wm-container
-                            class="flex-column align-self-stretch d-flex flex-shrink-0 justify-content-between borderd-container sector-container"
-                            name="containerChart2" id="containerSector"
-                            content="bind:Variables.stvSelectedCharts.dataSet[1] ? Variables.stvSelectedCharts.dataSet[1].pageName : 'testContainerPartial'"
-                            show="bind:Variables.stvSelectedCharts.dataSet[1] ? true : false"></wm-container>
-                        <wm-container name="containerChart3" id="containerSector"
-                            class="flex-column align-self-stretch d-flex flex-shrink-0 justify-content-between borderd-container sector-container"
-                            show="bind:Variables.stvSelectedCharts.dataSet[2] ? true : false"
-                            content="bind:Variables.stvSelectedCharts.dataSet[2] ? Variables.stvSelectedCharts.dataSet[2].pageName : 'testContainerPartial'">
+                        <wm-container class="flex-column align-self-stretch d-flex flex-shrink-0 justify-content-between borderd-container sector-container" name="containerChart1" id="containerSector" content="bind:Variables.stvSelectedCharts.dataSet[0] ? Variables.stvSelectedCharts.dataSet[0].pageName : 'testContainerPartial'" show="bind:Variables.stvSelectedCharts.dataSet[0] ? true : false"></wm-container>
+                        <wm-container class="flex-column align-self-stretch d-flex flex-shrink-0 justify-content-between borderd-container sector-container" name="containerChart2" id="containerSector" content="bind:Variables.stvSelectedCharts.dataSet[1] ? Variables.stvSelectedCharts.dataSet[1].pageName : 'testContainerPartial'" show="bind:Variables.stvSelectedCharts.dataSet[1] ? true : false"></wm-container>
+                        <wm-container name="containerChart3" id="containerSector" class="flex-column align-self-stretch d-flex flex-shrink-0 justify-content-between borderd-container sector-container" show="bind:Variables.stvSelectedCharts.dataSet[2] ? true : false" content="bind:Variables.stvSelectedCharts.dataSet[2] ? Variables.stvSelectedCharts.dataSet[2].pageName : 'testContainerPartial'">
                         </wm-container>
-                        <wm-container name="containerChart4" id="containerSector"
-                            class="flex-column align-self-stretch d-flex flex-shrink-0 justify-content-between borderd-container sector-container"
-                            show="bind:Variables.stvSelectedCharts.dataSet[3] ? true : false"
-                            content="bind:Variables.stvSelectedCharts.dataSet[3] ? Variables.stvSelectedCharts.dataSet[3].pageName : 'testContainerPartial'">
+                        <wm-container name="containerChart4" id="containerSector" class="flex-column align-self-stretch d-flex flex-shrink-0 justify-content-between borderd-container sector-container" show="bind:Variables.stvSelectedCharts.dataSet[3] ? true : false" content="bind:Variables.stvSelectedCharts.dataSet[3] ? Variables.stvSelectedCharts.dataSet[3].pageName : 'testContainerPartial'">
                         </wm-container>
-                        <wm-container name="containerChart5" id="containerSector"
-                            class="flex-column align-self-stretch d-flex flex-shrink-0 justify-content-between borderd-container sector-container"
-                            show="bind:Variables.stvSelectedCharts.dataSet[4] ? true : false"
-                            content="bind:Variables.stvSelectedCharts.dataSet[4] ? Variables.stvSelectedCharts.dataSet[4].pageName : 'testContainerPartial'">
+                        <wm-container name="containerChart5" id="containerSector" class="flex-column align-self-stretch d-flex flex-shrink-0 justify-content-between borderd-container sector-container" show="bind:Variables.stvSelectedCharts.dataSet[4] ? true : false" content="bind:Variables.stvSelectedCharts.dataSet[4] ? Variables.stvSelectedCharts.dataSet[4].pageName : 'testContainerPartial'">
                         </wm-container>
                     </wm-container>
                     <!-- </wm-container> -->
-                    <wm-container
-                        class="flex-column surface-dim-bg align-items-center d-flex justify-content-between custom-padding-bottom-15 custom-padding-left-19 custom-padding-right-23 custom-padding-top-28"
-                        id="frame_2147211216-642291087" name="rightSideDashContainer" show="true">
-                        <wm-container class="flex-column align-items-start d-flex custom-gap-6"
-                            id="frame_2147211214-642291088" horizontalalign="left" name="container15" show="false">
-                            <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-1"
-                                id="vix_container-642291089" horizontalalign="left" name="container16">
-                                <wm-label padding="unset" caption="VIX - Fear &amp; Greed Index"
-                                    class="on-surface letter-0px line-28px font-size-20 fst fw-700" name="label9">
+                    <wm-container class="flex-column surface-dim-bg align-items-center d-flex justify-content-between custom-padding-bottom-15 custom-padding-left-19 custom-padding-right-23 custom-padding-top-28" id="frame_2147211216-642291087" name="rightSideDashContainer" show="true">
+                        <wm-container class="flex-column align-items-start d-flex custom-gap-6" id="frame_2147211214-642291088" horizontalalign="left" name="container15" show="false">
+                            <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-1" id="vix_container-642291089" horizontalalign="left" name="container16">
+                                <wm-label padding="unset" caption="VIX - Fear &amp; Greed Index" class="on-surface letter-0px line-28px font-size-20 fst fw-700" name="label9">
                                 </wm-label>
-                                <wm-container class="flex-column align-items-start align-self-stretch d-flex gap-2"
-                                    id="vix_info_container-642291091" horizontalalign="left" name="container17">
-                                    <wm-container
-                                        class="flex-row surface-container-lowest-bg align-items-center d-flex custom-gap-7 pb-0 ps-3 pe-3 pt-0"
-                                        id="frame_2147211222-642291092" verticalalign="center" name="container18">
-                                        <wm-picture resizemode="cover"
-                                            picturesource="resources/images/logos/VIX_Icon-642291093.png" width="28"
-                                            height="28.5" class="flex-shrink-0" name="picture5"></wm-picture>
-                                        <wm-container class="flex-column align-items-start d-flex flex-shrink-0 gap-1"
-                                            id="frame_2147211221-642291094" horizontalalign="left" name="container19">
-                                            <wm-label padding="unset" caption="CURRENT LEVEL"
-                                                class="on-surface-variant line-16px font-size-12 fst" name="label10">
+                                <wm-container class="flex-column align-items-start align-self-stretch d-flex gap-2" id="vix_info_container-642291091" horizontalalign="left" name="container17">
+                                    <wm-container class="flex-row surface-container-lowest-bg align-items-center d-flex custom-gap-7 pb-0 ps-3 pe-3 pt-0" id="frame_2147211222-642291092" verticalalign="center" name="container18">
+                                        <wm-picture resizemode="cover" picturesource="resources/images/logos/VIX_Icon-642291093.png" width="28" height="28.5" class="flex-shrink-0" name="picture5"></wm-picture>
+                                        <wm-container class="flex-column align-items-start d-flex flex-shrink-0 gap-1" id="frame_2147211221-642291094" horizontalalign="left" name="container19">
+                                            <wm-label padding="unset" caption="CURRENT LEVEL" class="on-surface-variant line-16px font-size-12 fst" name="label10">
                                             </wm-label>
-                                            <wm-container
-                                                class="flex-row align-items-center align-self-stretch d-flex custom-gap-3"
-                                                id="frame_2147211220-642291096" verticalalign="center"
-                                                name="container20">
-                                                <wm-label padding="unset" caption="22.45"
-                                                    class="on-surface line-24px font-size-16 fst" name="label11">
+                                            <wm-container class="flex-row align-items-center align-self-stretch d-flex custom-gap-3" id="frame_2147211220-642291096" verticalalign="center" name="container20">
+                                                <wm-label padding="unset" caption="22.45" class="on-surface line-24px font-size-16 fst" name="label11">
                                                 </wm-label>
-                                                <wm-container class="flex-row align-items-center d-flex custom-gap-3"
-                                                    id="vix_change_container-642291098" verticalalign="center"
-                                                    name="container21">
-                                                    <wm-container
-                                                        class="flex-row align-items-center d-flex custom-gap-3"
-                                                        id="vix_change_info-642291099" verticalalign="center"
-                                                        name="container22">
-                                                        <wm-picture resizemode="cover"
-                                                            picturesource="resources/images/logos/Path_2-642291100.png"
-                                                            width="13" height="8" name="picture6"></wm-picture>
-                                                        <wm-label padding="unset" caption="-1.23"
-                                                            class="on-error-container inter-medium line-16px font-size-12 fst fw-500"
-                                                            name="label12"></wm-label>
+                                                <wm-container class="flex-row align-items-center d-flex custom-gap-3" id="vix_change_container-642291098" verticalalign="center" name="container21">
+                                                    <wm-container class="flex-row align-items-center d-flex custom-gap-3" id="vix_change_info-642291099" verticalalign="center" name="container22">
+                                                        <wm-picture resizemode="cover" picturesource="resources/images/logos/Path_2-642291100.png" width="13" height="8" name="picture6"></wm-picture>
+                                                        <wm-label padding="unset" caption="-1.23" class="on-error-container inter-medium line-16px font-size-12 fst fw-500" name="label12"></wm-label>
                                                     </wm-container>
-                                                    <wm-label padding="unset" caption=""
-                                                        class="on-surface-variant line-16px font-size-11 fst fw-500"
-                                                        name="label13"></wm-label>
+                                                    <wm-label padding="unset" caption="" class="on-surface-variant line-16px font-size-11 fst fw-500" name="label13"></wm-label>
                                                 </wm-container>
                                             </wm-container>
                                         </wm-container>
                                     </wm-container>
-                                    <wm-container
-                                        class="flex-row on-primary-bg align-items-center align-self-stretch d-flex custom-gap-7 pb-0 ps-3 pe-3 pt-0"
-                                        id="vix_volatility_container-642291103" verticalalign="center"
-                                        name="container23">
-                                        <wm-picture resizemode="cover"
-                                            picturesource="resources/images/logos/VIX_Volatility_Icon-642291104.png"
-                                            width="28" height="28.5" name="picture7"></wm-picture>
-                                        <wm-container class="flex-column align-items-start d-flex flex-fill-item gap-1"
-                                            id="vix_volatility_info-642291105" horizontalalign="left"
-                                            name="container24">
-                                            <wm-label padding="unset" caption="VOLATILITY RISK"
-                                                class="on-surface-variant line-16px font-size-12 fst" name="label14">
+                                    <wm-container class="flex-row on-primary-bg align-items-center align-self-stretch d-flex custom-gap-7 pb-0 ps-3 pe-3 pt-0" id="vix_volatility_container-642291103" verticalalign="center" name="container23">
+                                        <wm-picture resizemode="cover" picturesource="resources/images/logos/VIX_Volatility_Icon-642291104.png" width="28" height="28.5" name="picture7"></wm-picture>
+                                        <wm-container class="flex-column align-items-start d-flex flex-fill-item gap-1" id="vix_volatility_info-642291105" horizontalalign="left" name="container24">
+                                            <wm-label padding="unset" caption="VOLATILITY RISK" class="on-surface-variant line-16px font-size-12 fst" name="label14">
                                             </wm-label>
-                                            <wm-label padding="unset" caption="Normal"
-                                                class="on-surface line-24px font-size-16 fst" name="label15"></wm-label>
+                                            <wm-label padding="unset" caption="Normal" class="on-surface line-24px font-size-16 fst" name="label15"></wm-label>
                                         </wm-container>
                                     </wm-container>
                                 </wm-container>
                             </wm-container>
-                            <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-1"
-                                id="economic_calendar_container-642291108" horizontalalign="left" name="container25">
-                                <wm-label padding="unset" caption="Economic Calendar"
-                                    class="on-surface letter-0px line-28px font-size-20 fst fw-700" name="label16">
+                            <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-1" id="economic_calendar_container-642291108" horizontalalign="left" name="container25">
+                                <wm-label padding="unset" caption="Economic Calendar" class="on-surface letter-0px line-28px font-size-20 fst fw-700" name="label16">
                                 </wm-label>
-                                <wm-container class="flex-column align-items-start align-self-stretch d-flex gap-2"
-                                    id="economic_calendar_events-642291110" horizontalalign="left" name="container26">
-                                    <wm-container
-                                        class="flex-row on-primary-bg align-items-start align-self-stretch d-flex justify-content-between pb-3 custom-padding-left-20 custom-padding-right-24 pt-3"
-                                        id="economic_event_container-642291111" name="container27">
-                                        <wm-container
-                                            class="flex-column align-items-start d-flex justify-content-center gap-3"
-                                            id="event_info_container-642291113" horizontalalign="left"
-                                            name="container28">
-                                            <wm-container
-                                                class="flex-row align-items-center align-self-stretch d-flex justify-content-between"
-                                                id="event_title_container-642291114" name="container29">
-                                                <wm-label padding="unset" caption="NON-FARM PAYROLLS"
-                                                    class="on-surface-variant line-16px font-size-12 fst"
-                                                    name="label18"></wm-label>
-                                                <wm-container
-                                                    class="other-chips unselected-border primary-container-bg align-items-center d-flex justify-content-center pb-0 custom-padding-left-21 custom-padding-right-25 pt-0"
-                                                    style="border-radius: 20px;" name="container30">
-                                                    <wm-label caption="High" class="va-m font-size-11 text-danger"
-                                                        name="label19"></wm-label>
+                                <wm-container class="flex-column align-items-start align-self-stretch d-flex gap-2" id="economic_calendar_events-642291110" horizontalalign="left" name="container26">
+                                    <wm-container class="flex-row on-primary-bg align-items-start align-self-stretch d-flex justify-content-between pb-3 custom-padding-left-20 custom-padding-right-24 pt-3" id="economic_event_container-642291111" name="container27">
+                                        <wm-container class="flex-column align-items-start d-flex justify-content-center gap-3" id="event_info_container-642291113" horizontalalign="left" name="container28">
+                                            <wm-container class="flex-row align-items-center align-self-stretch d-flex justify-content-between" id="event_title_container-642291114" name="container29">
+                                                <wm-label padding="unset" caption="NON-FARM PAYROLLS" class="on-surface-variant line-16px font-size-12 fst" name="label18"></wm-label>
+                                                <wm-container class="other-chips unselected-border primary-container-bg align-items-center d-flex justify-content-center pb-0 custom-padding-left-21 custom-padding-right-25 pt-0" style="border-radius: 20px;" name="container30">
+                                                    <wm-label caption="High" class="va-m font-size-11 text-danger" name="label19"></wm-label>
                                                 </wm-container>
                                             </wm-container>
-                                            <wm-container
-                                                class="flex-row align-items-center align-self-stretch d-flex justify-content-between"
-                                                id="event_details_container-642291117" name="container31">
-                                                <wm-container
-                                                    class="flex-column align-items-start d-flex flex-fill-item gap-1"
-                                                    id="event_previous_container-642291118" horizontalalign="left"
-                                                    name="container32">
-                                                    <wm-label padding="unset" caption="09:00"
-                                                        class="on-surface-variant line-16px font-size-11 fst fw-500"
-                                                        name="label17"></wm-label>
+                                            <wm-container class="flex-row align-items-center align-self-stretch d-flex justify-content-between" id="event_details_container-642291117" name="container31">
+                                                <wm-container class="flex-column align-items-start d-flex flex-fill-item gap-1" id="event_previous_container-642291118" horizontalalign="left" name="container32">
+                                                    <wm-label padding="unset" caption="09:00" class="on-surface-variant line-16px font-size-11 fst fw-500" name="label17"></wm-label>
                                                 </wm-container>
-                                                <wm-container
-                                                    class="flex-column align-items-start d-flex flex-fill-item gap-1"
-                                                    id="event_previous_container-642291118" horizontalalign="left"
-                                                    name="container41">
-                                                    <wm-label padding="unset" caption="Prev:"
-                                                        class="on-surface-variant line-16px font-size-11 fst fw-500"
-                                                        name="label33"></wm-label>
-                                                    <wm-label padding="unset" caption="245K"
-                                                        class="on-surface line-24px font-size-16 fst" name="label34">
+                                                <wm-container class="flex-column align-items-start d-flex flex-fill-item gap-1" id="event_previous_container-642291118" horizontalalign="left" name="container41">
+                                                    <wm-label padding="unset" caption="Prev:" class="on-surface-variant line-16px font-size-11 fst fw-500" name="label33"></wm-label>
+                                                    <wm-label padding="unset" caption="245K" class="on-surface line-24px font-size-16 fst" name="label34">
                                                     </wm-label>
                                                 </wm-container>
-                                                <wm-container
-                                                    class="flex-column align-items-start d-flex flex-fill-item gap-1"
-                                                    id="event_forecast_container-642291121" horizontalalign="left"
-                                                    name="container33">
-                                                    <wm-label padding="unset" caption="Forecast"
-                                                        class="on-surface-variant line-16px font-size-11 fst fw-500"
-                                                        name="label22"></wm-label>
-                                                    <wm-label padding="unset" caption="200K"
-                                                        class="on-surface line-24px font-size-16 fst" name="label23">
+                                                <wm-container class="flex-column align-items-start d-flex flex-fill-item gap-1" id="event_forecast_container-642291121" horizontalalign="left" name="container33">
+                                                    <wm-label padding="unset" caption="Forecast" class="on-surface-variant line-16px font-size-11 fst fw-500" name="label22"></wm-label>
+                                                    <wm-label padding="unset" caption="200K" class="on-surface line-24px font-size-16 fst" name="label23">
                                                     </wm-label>
                                                 </wm-container>
-                                                <wm-container
-                                                    class="flex-column align-items-start d-flex flex-fill-item gap-1"
-                                                    id="event_actual_container-642291124" horizontalalign="left"
-                                                    name="container34">
-                                                    <wm-label padding="unset" caption="Actual"
-                                                        class="on-surface-variant line-16px font-size-11 fst fw-500"
-                                                        name="label24"></wm-label>
-                                                    <wm-label padding="unset" caption="227K"
-                                                        class="on-error-container line-24px font-size-16 fst"
-                                                        name="label25"></wm-label>
+                                                <wm-container class="flex-column align-items-start d-flex flex-fill-item gap-1" id="event_actual_container-642291124" horizontalalign="left" name="container34">
+                                                    <wm-label padding="unset" caption="Actual" class="on-surface-variant line-16px font-size-11 fst fw-500" name="label24"></wm-label>
+                                                    <wm-label padding="unset" caption="227K" class="on-error-container line-24px font-size-16 fst" name="label25"></wm-label>
                                                 </wm-container>
                                             </wm-container>
                                         </wm-container>
                                     </wm-container>
-                                    <wm-container
-                                        class="flex-row on-primary-bg align-items-center align-self-stretch d-flex gap-3"
-                                        id="event_actual_container-642291127" verticalalign="center" name="container35">
-                                        <wm-picture resizemode="cover"
-                                            picturesource="resources/images/logos/Event_Actual_Icon-642291128.png"
-                                            width="29" height="29.5" name="picture8"></wm-picture>
-                                        <wm-label padding="unset" caption="bind:&quot;Jerome Powell speech&quot;"
-                                            class="on-surface-variant line-16px font-size-12 fst" name="label26">
+                                    <wm-container class="flex-row on-primary-bg align-items-center align-self-stretch d-flex gap-3" id="event_actual_container-642291127" verticalalign="center" name="container35">
+                                        <wm-picture resizemode="cover" picturesource="resources/images/logos/Event_Actual_Icon-642291128.png" width="29" height="29.5" name="picture8"></wm-picture>
+                                        <wm-label padding="unset" caption="bind:&quot;Jerome Powell speech&quot;" class="on-surface-variant line-16px font-size-12 fst" name="label26">
                                         </wm-label>
                                     </wm-container>
                                 </wm-container>
                             </wm-container>
                         </wm-container>
-                        <wm-container class="flex-column align-items-start d-flex custom-gap-6"
-                            id="frame_2147211214-642291088" horizontalalign="left" name="container56_1">
-                            <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-1"
-                                id="vix_container-642291089" horizontalalign="left" name="container57">
-                                <wm-label padding="unset" caption="News"
-                                    class="on-surface letter-0px line-28px font-size-20 fst fw-700" name="label39_1">
+                        <wm-container class="flex-column align-items-start d-flex custom-gap-6" id="frame_2147211214-642291088" horizontalalign="left" name="container56_1">
+                            <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-1" id="vix_container-642291089" horizontalalign="left" name="container57">
+                                <wm-label padding="unset" caption="News" class="on-surface letter-0px line-28px font-size-20 fst fw-700" name="label39_1">
                                 </wm-label>
-                                <wm-list listclass="list-group" itemclass="list-group-item" template="true"
-                                    template-name="Action List" itemsperrow="xs-1 sm-1 md-1 lg-1"
-                                    class="media-list bg-color" statehandler="URL" name="stvNewDetailsList1"
-                                    dataset="bind:Variables.stvNewDetails.dataSet" navigation="None"
-                                    on-beforedatarender="stvNewDetailsList1Beforedatarender(widget, $data)"
-                                    orderby="date:desc" selectfirstitem="false">
+                                <wm-list listclass="list-group" itemclass="list-group-item" template="true" template-name="Action List" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list bg-color" statehandler="URL" name="stvNewDetailsList1" dataset="bind:Variables.stvNewDetails.dataSet" navigation="None" on-beforedatarender="stvNewDetailsList1Beforedatarender(widget, $data)" orderby="date:desc" selectfirstitem="false">
                                     <wm-listtemplate layout="inline" name="listtemplate9">
                                         <wm-container class="media-left" name="container155" show="false">
-                                            <wm-picture width="32pt" height="32pt" name="Picture" shape="circle"
-                                                class="media-object"></wm-picture>
+                                            <wm-picture width="32pt" height="32pt" name="Picture" shape="circle" class="media-object"></wm-picture>
                                         </wm-container>
                                         <wm-container class="media-body " name="container156">
-                                            <wm-label name="Name" class="p media-heading h3 font-bold"
-                                                caption="bind:Variables.stvNewDetails.dataSet[$i].name" fontsize="1.143"
-                                                fontunit="em"></wm-label>
-                                            <wm-label caption="bind:Variables.stvNewDetails.dataSet[$i].sub"
-                                                class="p text-muted font-italic" name="label46"></wm-label>
-                                            <wm-label name="JobTitle"
-                                                caption="bind:Variables.stvNewDetails.dataSet[$i].date"
-                                                class="p text-muted font-italic mt-2"></wm-label>
+                                            <wm-label name="Name" class="p media-heading h3 font-bold" caption="bind:Variables.stvNewDetails.dataSet[$i].name" fontsize="1.143" fontunit="em"></wm-label>
+                                            <wm-label caption="bind:Variables.stvNewDetails.dataSet[$i].sub" class="p text-muted font-italic" name="label46"></wm-label>
+                                            <wm-label name="JobTitle" caption="bind:Variables.stvNewDetails.dataSet[$i].date" class="p text-muted font-italic mt-2"></wm-label>
                                         </wm-container>
                                     </wm-listtemplate>
                                 </wm-list>
                             </wm-container>
                         </wm-container>
-                        <wm-container
-                            class="flex-column align-items-start d-flex custom-gap-8 custom-padding-bottom-16 custom-padding-left-18 custom-padding-right-22 custom-padding-top-29 ai-bottom-container bg-img"
-                            id="frame_2147211232-642177532" horizontalalign="left"
-                            on-click="Actions.goToPage_AIAssistant.invoke()" name="container36" show="false">
-                            <wm-container class="flex-row align-items-start d-flex custom-gap-9"
-                                id="frame_2147211231-642177533" verticalalign="top" name="container37">
-                                <wm-container class="flex-column align-items-start d-flex custom-gap-1"
-                                    id="frame_2147211230-642177534" horizontalalign="left" name="container38">
-                                    <wm-label padding="unset" caption="AI Financial Assistant"
-                                        class="on-primary letter-0px line-28px font-size-20 fst" name="label27">
+                        <wm-container class="flex-column align-items-start d-flex custom-gap-8 custom-padding-bottom-16 custom-padding-left-18 custom-padding-right-22 custom-padding-top-29 ai-bottom-container bg-img" id="frame_2147211232-642177532" horizontalalign="left" on-click="Actions.goToPage_AIAssistant.invoke()" name="container36" show="false">
+                            <wm-container class="flex-row align-items-start d-flex custom-gap-9" id="frame_2147211231-642177533" verticalalign="top" name="container37">
+                                <wm-container class="flex-column align-items-start d-flex custom-gap-1" id="frame_2147211230-642177534" horizontalalign="left" name="container38">
+                                    <wm-label padding="unset" caption="AI Financial Assistant" class="on-primary letter-0px line-28px font-size-20 fst" name="label27">
                                     </wm-label>
-                                    <wm-label padding="unset"
-                                        caption="Stay on top of your finances with real-time insights, smart budgeting tips — all powered by AI."
-                                        class="on-primary line-16px font-size-12 fst" name="label28"></wm-label>
+                                    <wm-label padding="unset" caption="Stay on top of your finances with real-time insights, smart budgeting tips — all powered by AI." class="on-primary line-16px font-size-12 fst" name="label28"></wm-label>
                                 </wm-container>
-                                <wm-picture resizemode="cover"
-                                    picturesource="resources/images/logos/Vector642177537-642177537.png"
-                                    width="21.533342361450195" height="21.53333282470703" name="picture9"></wm-picture>
+                                <wm-picture resizemode="cover" picturesource="resources/images/logos/Vector642177537-642177537.png" width="21.533342361450195" height="21.53333282470703" name="picture9"></wm-picture>
                             </wm-container>
                         </wm-container>
-                        <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-1"
-                            id="economic_calendar_events-642291110" horizontalalign="left" name="container60">
-                            <wm-label padding="unset" caption="Results"
-                                class="on-surface letter-0px line-28px font-size-20 fst fw-700" name="label43">
+                        <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-1" id="economic_calendar_events-642291110" horizontalalign="left" name="container60">
+                            <wm-label padding="unset" caption="Results" class="on-surface letter-0px line-28px font-size-20 fst fw-700" name="label43">
                             </wm-label>
-                            <wm-list listclass="list-group" itemclass="list-group-item" template="true"
-                                template-name="Media List" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list bg-color"
-                                statehandler="URL" name="stvResultsDataList1"
-                                dataset="bind:Variables.stvResultsData.dataSet" navigation="None"
-                                on-beforedatarender="stvResultsDataList1Beforedatarender(widget, $data)">
+                            <wm-list listclass="list-group" itemclass="list-group-item" template="true" template-name="Media List" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list bg-color" statehandler="URL" name="stvResultsDataList1" dataset="bind:Variables.stvResultsData.dataSet" navigation="None" on-beforedatarender="stvResultsDataList1Beforedatarender(widget, $data)">
                                 <wm-listtemplate layout="media" name="listtemplate6">
                                     <wm-container class="media-body " name="container66">
                                         <wm-layoutgrid name="layoutgrid3">
                                             <wm-gridrow name="gridrow3">
                                                 <wm-gridcolumn columnwidth="6" name="gridcolumn5">
-                                                    <wm-label class="pull-left"
-                                                        caption="bind:Variables.stvResultsData.dataSet[$i].company"
-                                                        name="Name" fontsize="1.143" fontunit="em"></wm-label>
-                                                    <wm-label class="pull-right text-muted ps-2"
-                                                        caption="bind:Variables.stvResultsData.dataSet[$i].quarter"
-                                                        name="label58"></wm-label>
+                                                    <wm-label class="pull-left" caption="bind:Variables.stvResultsData.dataSet[$i].company" name="Name" fontsize="1.143" fontunit="em"></wm-label>
+                                                    <wm-label class="pull-right text-muted ps-2" caption="bind:Variables.stvResultsData.dataSet[$i].quarter" name="label58"></wm-label>
                                                 </wm-gridcolumn>
-                                                <wm-gridcolumn columnwidth="6" name="gridcolumn6"
-                                                    horizontalalign="right">
-                                                    <wm-label padding="unset" class="p" type="p" name="label57"
-                                                        caption="bind:&quot;EPS &quot;+Variables.stvResultsData.dataSet[$i].EPS">
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn6" horizontalalign="right">
+                                                    <wm-label padding="unset" class="p" type="p" name="label57" caption="bind:&quot;EPS &quot;+Variables.stvResultsData.dataSet[$i].EPS">
                                                     </wm-label>
                                                 </wm-gridcolumn>
                                             </wm-gridrow>
                                             <wm-gridrow name="gridrow4">
                                                 <wm-gridcolumn columnwidth="6" name="gridcolumn7">
-                                                    <wm-label class="pull-left" caption="Revenue" fontsize="1.143"
-                                                        fontunit="em" name="label54"></wm-label>
+                                                    <wm-label class="pull-left" caption="Revenue" fontsize="1.143" fontunit="em" name="label54"></wm-label>
                                                 </wm-gridcolumn>
-                                                <wm-gridcolumn columnwidth="6" name="gridcolumn8"
-                                                    horizontalalign="right">
-                                                    <wm-label name="Time" class="pull-right text-muted"
-                                                        caption="bind:&quot;$&quot;+Variables.stvResultsData.dataSet[$i].revenue">
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn8" horizontalalign="right">
+                                                    <wm-label name="Time" class="pull-right text-muted" caption="bind:&quot;$&quot;+Variables.stvResultsData.dataSet[$i].revenue">
                                                     </wm-label>
                                                 </wm-gridcolumn>
                                             </wm-gridrow>
@@ -376,65 +191,33 @@
                                 </wm-listtemplate>
                             </wm-list>
                         </wm-container>
-                        <wm-container
-                            class="flex-column align-items-start d-flex custom-gap-8 custom-padding-bottom-16 custom-padding-left-18 custom-padding-right-22 custom-padding-top-29 ai-bottom-container p-relative-container"
-                            id="frame_2147211232-642177532" horizontalalign="left"
-                            on-click="Actions.goToPage_AIAssistant.invoke()" name="container44_1" show="true">
-                            <wm-container
-                                class="flex-row align-items-start d-flex custom-gap-9 p-absolute-container cursor-pointer"
-                                id="frame_2147211231-642177533" verticalalign="top" name="container45_1" show="true"
-                                on-click="Actions.goToPage_AIAssistant.invoke()">
-                                <wm-container class="flex-column align-items-start d-flex custom-gap-1"
-                                    id="frame_2147211230-642177534" horizontalalign="left" name="container46">
-                                    <wm-label padding="unset" caption="AI Financial Assistant"
-                                        class="on-primary letter-0px line-28px font-size-20 fst" name="label33_1">
+                        <wm-container class="flex-column align-items-start d-flex custom-gap-8 custom-padding-bottom-16 custom-padding-left-18 custom-padding-right-22 custom-padding-top-29 ai-bottom-container p-relative-container" id="frame_2147211232-642177532" horizontalalign="left" on-click="Actions.goToPage_AIAssistant.invoke()" name="container44_1" show="true">
+                            <wm-container class="flex-row align-items-start d-flex custom-gap-9 p-absolute-container cursor-pointer" id="frame_2147211231-642177533" verticalalign="top" name="container45_1" show="true" on-click="Actions.goToPage_AIAssistant.invoke()">
+                                <wm-container class="flex-column align-items-start d-flex custom-gap-1" id="frame_2147211230-642177534" horizontalalign="left" name="container46">
+                                    <wm-label padding="unset" caption="AI Financial Assistant" class="on-primary letter-0px line-28px font-size-20 fst" name="label33_1">
                                     </wm-label>
-                                    <wm-label padding="unset"
-                                        caption="Stay on top of your finances with real-time insights, smart budgeting tips — all powered by AI."
-                                        class="on-primary line-16px font-size-12 fst" name="label34_1"></wm-label>
+                                    <wm-label padding="unset" caption="Stay on top of your finances with real-time insights, smart budgeting tips — all powered by AI." class="on-primary line-16px font-size-12 fst" name="label34_1"></wm-label>
                                 </wm-container>
-                                <wm-picture resizemode="cover"
-                                    picturesource="resources/images/logos/Vector642177537-642177537.png"
-                                    width="21.533342361450195" height="21.53333282470703" name="picture9_1"
-                                    class="ai-new-arrow"></wm-picture>
+                                <wm-picture resizemode="cover" picturesource="resources/images/logos/Vector642177537-642177537.png" width="21.533342361450195" height="21.53333282470703" name="picture9_1" class="ai-new-arrow"></wm-picture>
                             </wm-container>
-                            <wm-picture resizemode="cover" name="picture10_1"
-                                picturesource="resources/images/imagelists/frame_2147211232-642177532.png"></wm-picture>
+                            <wm-picture resizemode="cover" name="picture10_1" picturesource="resources/images/imagelists/frame_2147211232-642177532.png"></wm-picture>
                         </wm-container>
-                        <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-1"
-                            id="economic_calendar_container-642291108" horizontalalign="left" name="container42">
-                            <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-1"
-                                id="economic_calendar_events-642291110" horizontalalign="left" name="container43"
-                                show="false">
-                                <wm-label padding="unset" caption="Earnings Release Date"
-                                    class="on-surface letter-0px line-28px font-size-20 fst fw-700" name="label47">
+                        <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-1" id="economic_calendar_container-642291108" horizontalalign="left" name="container42">
+                            <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-1" id="economic_calendar_events-642291110" horizontalalign="left" name="container43" show="false">
+                                <wm-label padding="unset" caption="Earnings Release Date" class="on-surface letter-0px line-28px font-size-20 fst fw-700" name="label47">
                                 </wm-label>
-                                <wm-container
-                                    class="flex-column on-primary-bg align-items-start d-flex justify-content-center pb-3 custom-padding-left-20 custom-padding-right-24 pt-3 w-100 gap-2"
-                                    id="economic_event_container-642291111" name="container44">
-                                    <wm-container
-                                        class="flex-row align-items-center align-self-stretch d-flex justify-content-between"
-                                        id="event_info_container-642291113" horizontalalign="left" name="container45">
-                                        <wm-label padding="unset" class="on-surface line-24px font-size-16 fst" type="p"
-                                            name="label35" caption="• Tesla (TSLA) :"></wm-label>
-                                        <wm-label padding="unset" class="on-surface-variant line-16px font-size-12 fst"
-                                            type="p" name="label38" caption="July 23, 2025"></wm-label>
+                                <wm-container class="flex-column on-primary-bg align-items-start d-flex justify-content-center pb-3 custom-padding-left-20 custom-padding-right-24 pt-3 w-100 gap-2" id="economic_event_container-642291111" name="container44">
+                                    <wm-container class="flex-row align-items-center align-self-stretch d-flex justify-content-between" id="event_info_container-642291113" horizontalalign="left" name="container45">
+                                        <wm-label padding="unset" class="on-surface line-24px font-size-16 fst" type="p" name="label35" caption="• Tesla (TSLA) :"></wm-label>
+                                        <wm-label padding="unset" class="on-surface-variant line-16px font-size-12 fst" type="p" name="label38" caption="July 23, 2025"></wm-label>
                                     </wm-container>
-                                    <wm-container
-                                        class="flex-row align-items-center align-self-stretch d-flex justify-content-between"
-                                        id="event_info_container-642291113" horizontalalign="left" name="container54">
-                                        <wm-label padding="unset" class="on-surface line-24px font-size-16 fst" type="p"
-                                            name="label36" caption="• Microsoft (MSFT) :"></wm-label>
-                                        <wm-label padding="unset" class="on-surface-variant line-16px font-size-12 fst"
-                                            type="p" name="label39" caption="July 30, 2025"></wm-label>
+                                    <wm-container class="flex-row align-items-center align-self-stretch d-flex justify-content-between" id="event_info_container-642291113" horizontalalign="left" name="container54">
+                                        <wm-label padding="unset" class="on-surface line-24px font-size-16 fst" type="p" name="label36" caption="• Microsoft (MSFT) :"></wm-label>
+                                        <wm-label padding="unset" class="on-surface-variant line-16px font-size-12 fst" type="p" name="label39" caption="July 30, 2025"></wm-label>
                                     </wm-container>
-                                    <wm-container
-                                        class="flex-row align-items-center align-self-stretch d-flex justify-content-between"
-                                        id="event_info_container-642291113" horizontalalign="left" name="container55">
-                                        <wm-label padding="unset" class="on-surface line-24px font-size-16 fst" type="p"
-                                            name="label37" caption="• Apple (AAPL) :"></wm-label>
-                                        <wm-label padding="unset" class="on-surface-variant line-16px font-size-12 fst"
-                                            type="p" name="label40" caption="July 31, 2025"></wm-label>
+                                    <wm-container class="flex-row align-items-center align-self-stretch d-flex justify-content-between" id="event_info_container-642291113" horizontalalign="left" name="container55">
+                                        <wm-label padding="unset" class="on-surface line-24px font-size-16 fst" type="p" name="label37" caption="• Apple (AAPL) :"></wm-label>
+                                        <wm-label padding="unset" class="on-surface-variant line-16px font-size-12 fst" type="p" name="label40" caption="July 31, 2025"></wm-label>
                                     </wm-container>
                                 </wm-container>
                             </wm-container>
@@ -445,63 +228,40 @@
         </wm-page-content>
     </wm-content>
     <wm-footer content="footer" name="footer1"></wm-footer>
-    <wm-dialog dialogtype="design-dialog" modal="true" title="Configure Dashboard" iconclass="" name="dialogConfigure"
-        on-close="dialogConfigureClose($event, widget)" class="config-dialog">
+    <wm-dialog dialogtype="design-dialog" modal="true" title="Configure Dashboard" iconclass="" name="dialogConfigure" on-close="dialogConfigureClose($event, widget)" class="config-dialog">
         <wm-layoutgrid name="layoutgrid2">
             <wm-gridrow name="gridrow2">
                 <wm-gridcolumn columnwidth="4" name="gridcolumn3">
-                    <wm-list listclass="list-group" itemclass="list-group-item" template="true"
-                        template-name="Action List" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list"
-                        statehandler="none" name="stvSelectedChartsList"
-                        dataset="bind:Variables.stvTempSelectedCharts.dataSet" navigation="None" title=""
-                        nodatamessage="" enablereorder="true"
-                        on-reorder="stvSelectedChartsListReorder($event, $data, $changedItem)">
+                    <wm-list listclass="list-group" itemclass="list-group-item" template="true" template-name="Action List" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" statehandler="none" name="stvSelectedChartsList" dataset="bind:Variables.stvTempSelectedCharts.dataSet" navigation="None" title="" nodatamessage="" enablereorder="true" on-reorder="stvSelectedChartsListReorder($event, $data, $changedItem)">
                         <wm-listtemplate layout="inline" name="listtemplate2">
                             <wm-container class="media-left" name="container50">
-                                <wm-button type="button" class="btn-transparent" iconclass="mi mi-more-vert fa-2x"
-                                    name="buttonAA"></wm-button>
+                                <wm-button type="button" class="btn-transparent" iconclass="mi mi-more-vert fa-2x" name="buttonAA"></wm-button>
                             </wm-container>
                             <wm-container class="media-body" padding="unset unset unset 1.25em" name="container51">
-                                <wm-label name="Name" class="p media-heading"
-                                    caption="bind:Variables.stvTempSelectedCharts.dataSet[$i].displayName"
-                                    fontsize="1.143" fontunit="em"></wm-label>
+                                <wm-label name="Name" class="p media-heading" caption="bind:Variables.stvTempSelectedCharts.dataSet[$i].displayName" fontsize="1.143" fontunit="em"></wm-label>
                             </wm-container>
                             <wm-container class="media-right media-top" name="container52">
-                                <wm-button type="button" class="btn-transparent" iconclass="fa fa-minus-circle fa-2x"
-                                    name="buttonRemove"
-                                    on-click="buttonRemoveClick($event, widget, item, currentItemWidgets)"></wm-button>
+                                <wm-button type="button" class="btn-transparent" iconclass="fa fa-minus-circle fa-2x" name="buttonRemove" on-click="buttonRemoveClick($event, widget, item, currentItemWidgets)"></wm-button>
                             </wm-container>
                         </wm-listtemplate>
                     </wm-list>
-                    <wm-list listclass="list-group" itemclass="list-group-item" template="true"
-                        template-name="Action List" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list list-unselect"
-                        statehandler="none" name="stvUnselectedChartsList"
-                        dataset="bind:Variables.stvTempUnselectedCharts.dataSet" navigation="None" title=""
-                        nodatamessage="">
+                    <wm-list listclass="list-group" itemclass="list-group-item" template="true" template-name="Action List" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list list-unselect" statehandler="none" name="stvUnselectedChartsList" dataset="bind:Variables.stvTempUnselectedCharts.dataSet" navigation="None" title="" nodatamessage="">
                         <wm-listtemplate layout="inline" name="listtemplate2">
                             <wm-container class="media-body" padding="unset unset unset 1.25em" name="container51">
-                                <wm-label name="Name" class="p media-heading"
-                                    caption="bind:Variables.stvTempUnselectedCharts.dataSet[$i].displayName"
-                                    fontsize="1.143" fontunit="em"></wm-label>
+                                <wm-label name="Name" class="p media-heading" caption="bind:Variables.stvTempUnselectedCharts.dataSet[$i].displayName" fontsize="1.143" fontunit="em"></wm-label>
                             </wm-container>
                             <wm-container class="media-right media-top" name="container52">
-                                <wm-button type="button" class="btn-transparent" iconclass="fa fa-plus-circle fa-2x"
-                                    name="buttonAdd"
-                                    on-click="buttonAddClick($event, widget, item, currentItemWidgets)"></wm-button>
+                                <wm-button type="button" class="btn-transparent" iconclass="fa fa-plus-circle fa-2x" name="buttonAdd" on-click="buttonAddClick($event, widget, item, currentItemWidgets)"></wm-button>
                             </wm-container>
                         </wm-listtemplate>
                     </wm-list>
                 </wm-gridcolumn>
                 <wm-gridcolumn columnwidth="8" name="gridcolumn4" class="dialog-right">
                     <wm-label padding="unset 0.5em" caption="Preview" name="label37_1" class="h5 mb-2"></wm-label>
-                    <wm-list listclass="list-group" itemclass="list-group-item" template="true"
-                        template-name="Action List" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list"
-                        statehandler="none" dataset="bind:Variables.stvTempSelectedCharts.dataSet" navigation="None"
-                        title="" nodatamessage="All charts are removed" enablereorder="false" name="list4">
+                    <wm-list listclass="list-group" itemclass="list-group-item" template="true" template-name="Action List" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" statehandler="none" dataset="bind:Variables.stvTempSelectedCharts.dataSet" navigation="None" title="" nodatamessage="All charts are removed" enablereorder="false" name="list4">
                         <wm-listtemplate layout="inline" name="listtemplate4">
                             <wm-container class="media-body" padding="unset unset unset 1.25em" name="container56">
-                                <wm-picture resizemode="cover" name="picture11"
-                                    picturesource="bind:App.isDarkThemeEnabled ? Variables.stvTempSelectedCharts.dataSet[$i].darkImagePath : Variables.stvTempSelectedCharts.dataSet[$i].imagePath">
+                                <wm-picture resizemode="cover" name="picture11" picturesource="bind:App.isDarkThemeEnabled ? Variables.stvTempSelectedCharts.dataSet[$i].darkImagePath : Variables.stvTempSelectedCharts.dataSet[$i].imagePath">
                                 </wm-picture>
                             </wm-container>
                         </wm-listtemplate>
@@ -510,8 +270,7 @@
             </wm-gridrow>
         </wm-layoutgrid>
         <wm-dialogactions name="dialogactions1">
-            <wm-button class="btn-primary" caption="Save"
-                on-click="buttonSaveClick($event, widget);Widgets.dialogConfigure.close()" name="buttonSave">
+            <wm-button class="btn-primary" caption="Save" on-click="buttonSaveClick($event, widget);Widgets.dialogConfigure.close()" name="buttonSave">
             </wm-button>
         </wm-dialogactions>
     </wm-dialog>

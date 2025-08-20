@@ -1,11 +1,10 @@
 export default {
     baseFont: '',
     fonts: [
-        /**
-         * {
-         *  name: fontName,
-         *  path: 'relative (from webapp) path of font files in webapp folder.'
-         * }
-         */
+        {
+            name: "Helvetica",
+            path: '/src/main/webapp/resources/files/Helvetica.ttf'
+        }
+
     ]
 };

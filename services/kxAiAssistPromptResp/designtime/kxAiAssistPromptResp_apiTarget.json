@@ -1,0 +1,139 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "x-WM-API_ID" : "d1cfde0f-5546-40a6-9986-67e4fce0e770",
+    "x-WM-SERVICE_ID" : "onwavemaker",
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-USE_WITH_CREDENTIALS" : false,
+    "version" : "2.0"
+  },
+  "host" : "mockoonapi.onwavemaker.com",
+  "basePath" : "/kx",
+  "tags" : [ {
+    "name" : "kxAiAssistPromptResp"
+  } ],
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/kxaiAssistant" : {
+      "post" : {
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "tags" : [ "kxAiAssistPromptResp" ],
+        "operationId" : "kxAiAssistPromptResp_invoke",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Object",
+          "in" : "body",
+          "name" : "RequestBody",
+          "description" : "RequestBody",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/RootRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/RootResponse"
+            }
+          }
+        }
+      },
+      "x-WM-BASE_PATH" : "/kxaiAssistant",
+      "x-WM-TAG" : "kxAiAssistPromptResp",
+      "x-WM-RELATIVE_PATH" : "",
+      "x-WM-COMPLETE_PATH" : "${rest.kxAiAssistPromptResp.scheme}://${rest.kxAiAssistPromptResp.host}${rest.kxAiAssistPromptResp.basepath}/kxaiAssistant"
+    }
+  },
+  "definitions" : {
+    "Response.docsEntryItem" : {
+      "required" : [ "Chunk", "Date", "Source", "Symbol", "Text", "Type", "__nn_distance", "int" ],
+      "properties" : {
+        "__nn_distance" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "Type" : {
+          "type" : "string"
+        },
+        "Symbol" : {
+          "type" : "string"
+        },
+        "Text" : {
+          "type" : "string"
+        },
+        "Chunk" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "int" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Date" : {
+          "type" : "string"
+        },
+        "Source" : {
+          "type" : "string"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "kxAiAssistPromptResp.Response.docsEntryItem",
+      "x-WM-TAGS" : [ "kxAiAssistPromptResp" ]
+    },
+    "RootRequest" : {
+      "required" : [ "requestId" ],
+      "properties" : {
+        "requestId" : {
+          "type" : "string"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "kxAiAssistPromptResp.RootRequest",
+      "x-WM-TAGS" : [ "kxAiAssistPromptResp" ]
+    },
+    "RootResponse" : {
+      "required" : [ "date_range", "docs", "keyword", "refined_prompt", "symbols", "types" ],
+      "properties" : {
+        "date_range" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "types" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "docs" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.docsEntryItem"
+          }
+        },
+        "refined_prompt" : {
+          "type" : "string"
+        },
+        "keyword" : {
+          "type" : "string"
+        },
+        "symbols" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "kxAiAssistPromptResp.RootResponse",
+      "x-WM-TAGS" : [ "kxAiAssistPromptResp" ]
+    }
+  }
+}

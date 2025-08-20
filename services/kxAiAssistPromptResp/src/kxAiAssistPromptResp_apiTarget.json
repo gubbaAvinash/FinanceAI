@@ -1,0 +1,139 @@
+{
+  "basePath" : "${rest.kxAiAssistPromptResp.basepath}",
+  "paths" : {
+    "/kxaiAssistant" : {
+      "post" : {
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "operationId" : "kxAiAssistPromptResp_invoke",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/RootResponse"
+            },
+            "description" : "Success"
+          }
+        },
+        "parameters" : [ {
+          "schema" : {
+            "$ref" : "#/definitions/RootRequest"
+          },
+          "in" : "body",
+          "name" : "RequestBody",
+          "description" : "RequestBody",
+          "x-WM-FULLY_QUALIFIED_TYPE" : "java.lang.Object",
+          "required" : false
+        } ],
+        "tags" : [ "kxAiAssistPromptResp" ],
+        "consumes" : [ "application/json" ]
+      },
+      "x-WM-BASE_PATH" : "/kxaiAssistant",
+      "x-WM-TAG" : "kxAiAssistPromptResp",
+      "x-WM-RELATIVE_PATH" : "",
+      "x-WM-COMPLETE_PATH" : "${rest.kxAiAssistPromptResp.scheme}://${rest.kxAiAssistPromptResp.host}${rest.kxAiAssistPromptResp.basepath}/kxaiAssistant"
+    }
+  },
+  "host" : "${rest.kxAiAssistPromptResp.host}",
+  "schemes" : [ "${rest.kxAiAssistPromptResp.scheme}" ],
+  "definitions" : {
+    "Response.docsEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "kxAiAssistPromptResp.Response.docsEntryItem",
+      "x-WM-TAGS" : [ "kxAiAssistPromptResp" ],
+      "required" : [ "Chunk", "Date", "Source", "Symbol", "Text", "Type", "__nn_distance", "int" ],
+      "properties" : {
+        "__nn_distance" : {
+          "format" : "double",
+          "type" : "number"
+        },
+        "Type" : {
+          "type" : "string"
+        },
+        "Symbol" : {
+          "type" : "string"
+        },
+        "Text" : {
+          "type" : "string"
+        },
+        "Chunk" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "int" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "Date" : {
+          "type" : "string"
+        },
+        "Source" : {
+          "type" : "string"
+        }
+      }
+    },
+    "RootRequest" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "kxAiAssistPromptResp.RootRequest",
+      "x-WM-TAGS" : [ "kxAiAssistPromptResp" ],
+      "required" : [ "requestId" ],
+      "properties" : {
+        "requestId" : {
+          "type" : "string"
+        }
+      }
+    },
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "kxAiAssistPromptResp.RootResponse",
+      "x-WM-TAGS" : [ "kxAiAssistPromptResp" ],
+      "required" : [ "date_range", "docs", "keyword", "refined_prompt", "symbols", "types" ],
+      "properties" : {
+        "date_range" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "types" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "docs" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Response.docsEntryItem"
+          }
+        },
+        "refined_prompt" : {
+          "type" : "string"
+        },
+        "keyword" : {
+          "type" : "string"
+        },
+        "symbols" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  },
+  "swagger" : "2.0",
+  "info" : {
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "x-WM-API_ID" : "d1cfde0f-5546-40a6-9986-67e4fce0e770",
+    "x-WM-SERVICE_ID" : "onwavemaker",
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "version" : "2.0",
+    "x-WM-USE_WITH_CREDENTIALS" : false
+  },
+  "tags" : [ {
+    "name" : "kxAiAssistPromptResp"
+  } ]
+}

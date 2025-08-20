@@ -1,0 +1,6 @@
+{
+  "id" : "kxAiAssistPromptResp",
+  "type" : "RestService",
+  "title" : "kxAiAssistPromptResp",
+  "mockEnabled" : false
+}

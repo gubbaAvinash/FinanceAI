@@ -1,0 +1,181 @@
+<wm-partial name="partial1">
+    <wm-container class="flex-column surface-container-lowest-bg align-items-start d-flex"
+        id="main_container_1-642175990" horizontalalign="left" name="container1">
+        <wm-container class="flex-row align-items-center align-self-stretch d-flex justify-content-between"
+            id="content_container-642176002" name="container2">
+            <wm-container
+                class="flex-column align-items-center d-flex flex-fill-item custom-gap-11 pb-0 custom-padding-left-18 custom-padding-right-22 custom-padding-top-28 partial-dashboard-content"
+                id="dashboard_container-642176024" horizontalalign="center" name="container15">
+                <wm-container class="flex-column align-items-start align-self-stretch d-flex gap-3"
+                    id="insights_header_container-642176025" horizontalalign="left" name="container16">
+                    <wm-container
+                        class="flex-row align-items-center align-self-stretch d-flex gap-2 custom-padding-bottom-41 left-14 justify-content-between"
+                        id="back_to_dashboard_container-642176026" verticalalign="center" name="container17">
+                        <wm-container name="container23_1" class="d-flex align-items-center gap-2">
+                            <wm-button class="btn-default btn-transparent" caption="" type="button" margin="unset"
+                                iconclass="mi mi-arrow-back" name="button3"
+                                on-click="Actions.goToPage_Dashboard.invoke()"></wm-button>
+                            <wm-label padding="unset" caption="Back to Dashboard"
+                                class="on-surface-variant line-16px font-size-12 fst cursor-pointer" name="label6"
+                                on-click="Actions.goToPage_Dashboard.invoke()"></wm-label>
+                        </wm-container>
+                        <wm-container name="container22_1">
+                            <wm-button class="btn-default btn-transparent p-0" caption="" type="button" margin="unset"
+                                name="buttonDownload" iconclass="mi mi-download"
+                                on-click="buttonDownloadClick($event, widget)"></wm-button>
+                            <wm-button class="btn-default" caption="" type="button" margin="unset" name="buttonPrint"
+                                on-click="buttonPrintClick($event, widget)" iconclass="wi wi-print" show="false">
+                            </wm-button>
+                        </wm-container>
+                    </wm-container>
+                    <wm-container class="flex-row align-items-center align-self-stretch d-flex justify-content-between"
+                        id="insights_title_container-642176029" name="container18">
+                        <wm-label padding="unset"
+                            caption="bind:&quot;Generated Insights for &quot;+Variables.stvAIDashData.dataSet.keyword"
+                            class="on-background letter-0px line-32px font-size-24 fst fw-600" name="label7"></wm-label>
+                        <wm-container class="flex-row align-items-center d-flex custom-gap-39"
+                            id="stock_info_container-642176031" verticalalign="center" name="container19" show="false">
+                            <wm-picture resizemode="cover"
+                                picturesource="resources/images/logos/Stock_Image-642176032.png" width="79.5"
+                                height="25" name="picture3"></wm-picture>
+                            <wm-container class="flex-column d-flex justify-content-center gap-1 align-items-end"
+                                id="stock_price_container-642176033" horizontalalign="right" name="container20">
+                                <wm-label padding="unset"
+                                    caption="bind:&quot;$&quot;+Variables.stvAIDashData.dataSet.keyword"
+                                    class="on-surface letter-0px line-28px font-size-20 fst fw-700" name="label8">
+                                </wm-label>
+                                <wm-label padding="unset"
+                                    caption="bind:&quot;+&quot;+Variables.stvAIDashData.dataSet.change+&quot;%&quot;"
+                                    class="on-error-container line-16px font-size-12 fst fw-500" name="label9">
+                                </wm-label>
+                            </wm-container>
+                        </wm-container>
+                    </wm-container>
+                </wm-container>
+                <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-11"
+                    id="insights_content-642176036" horizontalalign="left" name="container21">
+                    <wm-layoutgrid name="layoutgrid1" class="view-res-layout">
+                        <wm-gridrow name="gridrow1">
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn1" class="p-0">
+                                <wm-container class="d-flex prompt-col">
+                                    <wm-label padding="unset" class="p text-change" type="p" name="label10_1"
+                                        caption="View long response"></wm-label>
+
+                                    <wm-button caption="" type="button" margin="unset" name="button6"
+                                        iconclass="wi wi-chevron-up" on-tap="button6Tap($event, widget)">
+                                    </wm-button>
+                                    <wm-button caption="" type="button" margin="unset" name="button7"
+                                        iconclass="wi wi-chevron-down" show="false" on-tap="button7Tap($event, widget)">
+                                    </wm-button>
+                                </wm-container>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow2">
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn3" class="default-view">
+                                <wm-label padding="unset" class="p" type="p"
+                                    caption="bind:App.Variables.stvAIDashData.dataSet.longanswer" name="label11_1"
+                                    show="false"></wm-label>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                    </wm-layoutgrid>
+                    <wm-list listclass="list-group list-autocode-row gap-3 mh-auto"
+                        itemclass="bind:App.tesla ? &quot;app-list-item flex-grow-1 list-horizontal-scroll pandemic&quot; : &quot;app-list-item flex-grow-1&quot; || App.applePandemic ? &quot;app-list-item flex-grow-1 list-horizontal-scroll pandemic&quot; : &quot;app-list-item flex-grow-1&quot; || App.appleIndices ? &quot;app-list-item flex-grow-1 list-horizontal-scroll apple&quot; : &quot;app-list-item flex-grow-1&quot;"
+                        statehandler="URL" dataset="bind:Variables.stvAIDashData.dataSet.displayedItems"
+                        navigation="Basic" class="list-card hug mh-auto" name="list2">
+                        <wm-listtemplate layout="inline" name="listtemplate2">
+                            <wm-container
+                                class="flex-column align-items-start d-flex flex-grow-1 justify-content-center custom-gap-11 ai-dashboard-card"
+                                id="pve_ratio_container-642176038" horizontalalign="left" name="container22">
+                                <wm-container
+                                    class="flex-row align-items-start align-self-stretch d-flex justify-content-between"
+                                    id="pve_ratio_content-642176039" name="container23">
+                                    <wm-container class="flex-column align-items-start d-flex custom-gap-1"
+                                        id="pve_ratio_text_container-642176040" horizontalalign="left"
+                                        name="container24">
+                                        <wm-label padding="unset"
+                                            caption="bind:Variables.stvAIDashData.dataSet.displayedItems[$i].name"
+                                            class="on-surface-variant line-16px font-size-12 fst fw-500" name="label10">
+                                        </wm-label>
+                                        <wm-label padding="unset"
+                                            caption="bind:Variables.stvAIDashData.dataSet.displayedItems[$i].value"
+                                            class="on-surface letter-0px line-32px font-size-24 fst fw-600"
+                                            name="label11"></wm-label>
+                                    </wm-container>
+                                    <wm-picture resizemode="cover"
+                                        picturesource="bind:Variables.stvCardsIcon.dataSet[Widgets.list2.currentItemWidgets.label10.caption]"
+                                        width="42" height="42" name="picture4"
+                                        pictureplaceholder="resources/images/imagelists/default-image.png"
+                                        show="bind:Variables.stvCardsIcon.dataSet[Widgets.list2.currentItemWidgets.label10.caption]">
+                                    </wm-picture>
+                                </wm-container>
+                                <wm-container class="flex-row align-items-center d-flex custom-gap-3"
+                                    id="pve_ratio_change_container-642176044" verticalalign="center" name="container25"
+                                    show="false">
+                                    <wm-container class="flex-row align-items-center d-flex custom-gap-3"
+                                        id="pve_ratio_change_text_container-642176045" verticalalign="center"
+                                        name="container26">
+                                        <wm-picture resizemode="cover"
+                                            picturesource="bind:Variables.autoModelMainContainer1.dataSet[$i].picturesource4"
+                                            width="13" height="8" name="picture5"></wm-picture>
+                                        <wm-label padding="unset"
+                                            caption="bind:Variables.autoModelMainContainer1.dataSet[$i].caption5"
+                                            class="on-error-container line-14px font-size-12 fst fw-600" name="label12">
+                                        </wm-label>
+                                    </wm-container>
+                                    <wm-label padding="unset"
+                                        caption="bind:Variables.autoModelMainContainer1.dataSet[$i].caption6"
+                                        class="on-surface-variant line-16px font-size-12 fst" name="label13"></wm-label>
+                                </wm-container>
+                            </wm-container>
+                        </wm-listtemplate>
+                    </wm-list>
+                    <wm-container
+                        class="flex-column align-items-start align-self-stretch d-flex gap-1 ai-dashboard-card"
+                        id="background_border_shadow-642176082" horizontalalign="left" name="container27"
+                        show="bind:Variables.stvAIDashData.dataSet.isChartShowDefault">
+                        <wm-container name="container20_1" class="app-container d-flex gap-3 align-items-center">
+                            <wm-label padding="unset" caption="Time Series Tool"
+                                class="on-background letter-0px line-28px font-size-20 fst fw-700" name="label14"
+                                show="bind:Variables.stvAIDashData.dataSet.isChartShowDefault"></wm-label>
+                            <wm-container name="container20_2">
+                                <wm-button class="btn-default" caption="" type="button" margin="unset" name="button1"
+                                    on-click="button1Click($event, widget)"
+                                    show="bind:Variables.stvAIDashData.dataSet.isChartShowDefault"
+                                    iconclass="fa fa-bar-chart"></wm-button>
+                                <wm-button class="btn-default m-0" caption="" type="button" margin="unset"
+                                    name="button2" on-click="button2Click($event, widget)" show="false"
+                                    iconclass="wi wi-line-chart"></wm-button>
+                            </wm-container>
+                        </wm-container>
+                        <wm-composite name="composite1" show="false">
+                            <wm-container class="col-md-9" name="container29">
+                                <wm-select name="select1" dataset="bind:Variables.stvDropDownForCharts.dataSet"
+                                    datafield="dataValue" displayfield="name"
+                                    on-change="select1Change($event, widget, newVal, oldVal)"></wm-select>
+                            </wm-container>
+                        </wm-composite>
+                        <wm-container name="chartsContainer"
+                            show="bind:Variables.stvAIDashData.dataSet.isChartShowDefault "
+                            content="bind:Variables.stvAIDashData.dataSet.chartName ? Variables.stvAIDashData.dataSet.chartName : &quot;testContainerPartial&quot;"
+                            width="100%"></wm-container>
+                    </wm-container>
+                </wm-container>
+                <wm-container name="containerDefaultTable" content="Partial_DynamicDataTable"
+                    show="bind:pageParams.cleanedDefaultTableArr &amp;&amp; pageParams.cleanedDefaultTableArr.length"
+                    class="ai-dashboard-card">
+                    <wm-param name="content" value="bind:pageParams.cleanedDefaultTableArr" type="string"></wm-param>
+                    <wm-param name="nestedObjData" value="bind:pageParams.nestedDefaultTableArr" type="string">
+                    </wm-param>
+                    <wm-param name="caption" value="bind:pageParams.defaultTableCaption" type="string"></wm-param>
+                </wm-container>
+                <wm-container name="containerDataTable" content="Partial_DynamicDataTable"
+                    show="bind:pageParams.cleanedDataTableArr &amp;&amp; pageParams.cleanedDataTableArr.length"
+                    class="ai-dashboard-card">
+                    <wm-param name="content" value="bind:pageParams.cleanedDataTableArr" type="string"></wm-param>
+                    <wm-param name="nestedObjData" value="bind:pageParams.nestedDataTableArr" type="string"></wm-param>
+                    <wm-param name="caption" value="bind:pageParams.dataTableCaption" type="string"></wm-param>
+                </wm-container>
+            </wm-container>
+        </wm-container>
+    </wm-container>
+</wm-partial>

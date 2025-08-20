@@ -1,0 +1,26 @@
+{
+  "endpointAddress" : "https://mockoonapi.onwavemaker.com/kx/kxaiAssistant",
+  "method" : "POST",
+  "headers" : { },
+  "redirectEnabled" : true,
+  "requestBody" : "{\n\"requestId\" : \"Is 3M a capital-intensive business based on FY2022 data?\"\n}",
+  "queryParams" : { },
+  "authDetails" : null,
+  "contentType" : "application/json",
+  "multiParamInfoList" : [ ],
+  "urlBasePath" : "/kx",
+  "sampleHttpResponseDetails" : {
+    "statusCode" : 200,
+    "headers" : {
+      "Date" : [ "Tue, 12 Aug 2025 11:48:09 GMT" ],
+      "Content-Type" : [ "application/json; charset=utf-8" ],
+      "Content-Length" : [ "38444" ],
+      "Connection" : [ "keep-alive" ],
+      "Access-Control-Allow-Origin" : [ "*" ],
+      "Access-Control-Allow-Methods" : [ "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS" ],
+      "Access-Control-Allow-Headers" : [ "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With" ]
+    },
+    "responseBody" : "{\"refined_prompt\":\"Is 3M a capital-intensive business based on FY2022 data?\\nTo determine if 3M is a capital-intensive business based on FY2022 data, we need to analyze their financial statements and other relevant information from their SEC filings. Specifically, we should focus on the following documents:\\n\\n1. **Form 10-K for Fiscal Year 2022**: This annual report will provide comprehensive details about 3M's financial performance, including balance sheet items such as property, plant, and equipment (PPE), which are key indicators of capital intensity.\\n\\nPlease confirm if you would like me to proceed with this analysis.\",\"symbols\":[\"MMM\"],\"types\":[\"10-K\",\"10-Q\",\"8-K\"],\"date_range\":[\"2022-01-01\",\"2023-03-02\"],\"keyword\":\"capital-intensive\",\"docs\":[{\"__nn_distance\":0.4958364963531494,\"int\":240,\"Symbol\":\"MMM\",\"Type\":\"10-K\",\"Date\":\"2022-02-09T00:00:00\",\"Source\":\"sec-edgar-filings/MMM/10-K/0000066740-22-000010/full-submission.txt\",\"Chunk\":34,\"Text\":\"Table of Contents \\n\\nBalance Sheet: \\n3M’s strong balance sheet and liquidity provide the Company with significant flexibility to fund its numerous opportunities going forward. The Company will continue to invest in its operations to drive growth, including continual review of acquisition opportunities. \\nThe Company uses working capital measures that place emphasis and focus on certain working capital assets, such as accounts receivable and inventory activity. \\nWorking Capital (non-GAAP measure): \\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\tDecember 31, \\t\\tChange \\t\\n(Millions) \\t\\t2021 \\t\\t2020 \\t\\t\\nCurrent assets \\t\\t$ \\t15,403  \\t\\t\\t$ \\t14,982 \\t\\t\\t$ \\t421 \\t\\t\\nLess: Current liabilities \\t\\t9,035  \\t\\t\\t7,948 \\t\\t\\t1,087 \\t\\t\\nWorking capital (non-GAAP measure) \\t\\t$ \\t6,368  \\t\\t\\t$ \\t7,034 \\t\\t\\t(666) \\t\\t\\n\\nVarious assets and liabilities, including cash and short-term debt, can fluctuate significantly from month to month depending on short-term liquidity needs. Working capital is not defined under U.S. generally accepted accounting principles and may not be computed the same as similarly titled measures used by other companies. The Company defines working capital as current assets minus current liabilities. 3M believes working capital is meaningful to investors as a measure of operational efficiency and short-term financial health. \\nWorking capital decreased $0.7 billion compared with December 31, 2020. Balance changes in current assets increased working capital, driven by increases in inventory, partially offset by decreases in marketable securities-current. Balance changes in current liabilities decreased working capital, primarily due to increases in short-term borrowing and the current portion of long-term debt and accounts payable. \\nInventory increased from December 31, 2020, primarily as a result of increased underlying operating activity related to increased sales partially offset by foreign currency translation impacts, while marketable securities-current decreased from lower investments in commercial paper and U.S. treasury securities. Current portion of long-term debt increased based on underlying debt maturities while accounts payable also increased as a result of increased operating activity from that of late 2020 partially offset by foreign currency translation impacts. \\nReturn on Invested Capital (non-GAAP measure): \\nReturn on Invested Capital (ROIC) is not defined under U.S. generally accepted accounting principles. Therefore, ROIC should not be considered a substitute for other measures prepared in accordance with U.S. GAAP and may not be comparable to similarly titled measures used by other companies. The Company defines ROIC as adjusted net income (net income including non-controlling interest plus after-tax interest expense) divided by average invested capital (equity plus debt). The Company believes ROIC is meaningful to investors as it focuses on shareholder value creation. The calculation is provided in the below table. \\nThe increase in ROIC was driven by the increased operating income and the higher non-service pension and postretirement net benefit year-on-year. \\n35\"}]}",
+    "convertedResponse" : null
+  }
+}

@@ -12,7 +12,7 @@
   "host" : "mockoonapi.onwavemaker.com",
   "basePath" : "/kx",
   "tags" : [ {
-    "name" : "RestServiceVirtualController",
+    "name" : "indicesInfo",
     "description" : "Rest service swagger documentation"
   } ],
   "schemes" : [ "https" ],
@@ -21,8 +21,8 @@
       "get" : {
         "x-WM-METHOD_NAME" : "invoke",
         "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
-        "tags" : [ "RestServiceVirtualController" ],
-        "operationId" : "indicesInfo_RestServiceVirtualController-invoke",
+        "tags" : [ "indicesInfo" ],
+        "operationId" : "indicesInfo_invoke",
         "consumes" : [ "application/json" ],
         "produces" : [ "application/json" ],
         "responses" : {
@@ -35,7 +35,7 @@
         }
       },
       "x-WM-BASE_PATH" : "/indicesInfo",
-      "x-WM-TAG" : "RestServiceVirtualController",
+      "x-WM-TAG" : "indicesInfo",
       "x-WM-RELATIVE_PATH" : "",
       "x-WM-COMPLETE_PATH" : "${rest.indicesInfo.scheme}://${rest.indicesInfo.host}${rest.indicesInfo.basepath}/indicesInfo"
     }
@@ -67,7 +67,7 @@
         }
       },
       "x-WM-FULLY_QUALIFIED_NAME" : "indicesInfo.Response.indicesEntryItem",
-      "x-WM-TAGS" : [ "RestServiceVirtualController" ]
+      "x-WM-TAGS" : [ "indicesInfo" ]
     },
     "RootResponse" : {
       "required" : [ "asOf", "indices", "market", "refresh_interval", "source", "unit" ],
@@ -96,7 +96,7 @@
         }
       },
       "x-WM-FULLY_QUALIFIED_NAME" : "indicesInfo.RootResponse",
-      "x-WM-TAGS" : [ "RestServiceVirtualController" ]
+      "x-WM-TAGS" : [ "indicesInfo" ]
     }
   }
 }

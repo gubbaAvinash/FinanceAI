@@ -69,6 +69,32 @@
   "type" : "PAGE",
   "params" : [ ]
 }, {
+  "name" : "New_AIAssistant",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "New_AI_Dashboard",
+  "type" : "PARTIAL",
+  "params" : [ {
+    "name" : "cleanedDataTableArr",
+    "type" : "string"
+  }, {
+    "name" : "nestedDefaultTableArr",
+    "type" : "string"
+  }, {
+    "name" : "cleanedDefaultTableArr",
+    "type" : "string"
+  }, {
+    "name" : "nestedDataTableArr",
+    "type" : "string"
+  }, {
+    "name" : "defaultTableCaption",
+    "type" : "string"
+  }, {
+    "name" : "dataTableCaption",
+    "type" : "string"
+  } ]
+}, {
   "name" : "Partial_DynamicDataTable",
   "type" : "PARTIAL",
   "params" : [ {
@@ -155,6 +181,10 @@
 }, {
   "name" : "sectorRotation",
   "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "test",
+  "type" : "PAGE",
   "params" : [ ]
 }, {
   "name" : "testContainerPartial",

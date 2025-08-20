@@ -2,62 +2,197 @@
     <wm-header content="Header642175698" name="Dashboard"></wm-header>
     <wm-content name="AI_bot__Zero_state_" class="ai-main">
         <wm-page-content columnwidth="12" name="page-content1">
-            <wm-container class="flex-column surface-container-lowest-bg align-items-start d-flex" id="ai_bot__zero_state_-642175815" horizontalalign="left" name="container1">
-                <wm-container class="flex-row align-items-start align-self-stretch d-flex justify-content-between container-2" id="content_container-642175827" name="container2">
+            <wm-container class="flex-column surface-container-lowest-bg align-items-start d-flex"
+                id="ai_bot__zero_state_-642175815" horizontalalign="left" name="container1">
+                <wm-container
+                    class="flex-row align-items-start align-self-stretch d-flex justify-content-between container-2"
+                    id="content_container-642175827" name="container2">
                     <wm-container name="container24" class="p-relative-container p-0 ai-left-panel">
-                        <wm-container class="flex-column align-items-center d-flex justify-content-between ai-left-content p-absolute" id="sidebar_image-642175828" name="container3">
+                        <wm-container
+                            class="flex-column align-items-center d-flex justify-content-between ai-left-content p-absolute"
+                            id="sidebar_image-642175828" name="container3">
                             <wm-container name="container22">
-                                <wm-container class="flex-row align-items-center d-flex justify-content-between ai-top-head-padding" id="assistant_header-642176897" name="container4">
-                                    <wm-container class="flex-row align-items-center d-flex justify-content-center custom-gap-8" id="frame_2147211229-642176898" verticalalign="center" name="container5">
-                                        <wm-picture resizemode="cover" picturesource="resources/images/logos/image_52-642176899.png" width="35" height="35" name="picture1"></wm-picture>
-                                        <wm-label padding="unset" caption="AI Financial Assistant" class="on-surface letter-0px line-28px font-size-20 fst fw-700" name="label1"></wm-label></wm-container>
-                                    <wm-button class="btn-default btn-transparent z-index-2" caption="" type="button" margin="unset" name="btnDelete" iconclass="wm-sl-r sl-bin" on-click="btnDeleteClick($event, widget)"></wm-button></wm-container>
-                                <wm-container class="flex-column align-items-start align-self-stretch d-flex" id="data" horizontalalign="left" name="containerpromptData" show="bind:chatInitiated">
-                                    <wm-list listclass="list-group" itemclass="bind:&quot;list-group-item&quot; + &quot; &quot;+ Widgets.conversationList.currentItem.promptBy" template="true" template-name="Contact List" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" datafield="All Fields" statehandler="none" name="conversationList" dataset="bind:Variables.stvData.dataSet" navigation="None">
+                                <wm-container
+                                    class="flex-row align-items-center d-flex justify-content-between ai-top-head-padding"
+                                    id="assistant_header-642176897" name="container4">
+                                    <wm-container
+                                        class="flex-row align-items-center d-flex justify-content-center custom-gap-8"
+                                        id="frame_2147211229-642176898" verticalalign="center" name="container5">
+                                        <wm-picture resizemode="cover"
+                                            picturesource="resources/images/logos/image_52-642176899.png" width="35"
+                                            height="35" name="picture1"></wm-picture>
+                                        <wm-label padding="unset" caption="AI Financial Assistant"
+                                            class="on-surface letter-0px line-28px font-size-20 fst fw-700"
+                                            name="label1"></wm-label>
+                                    </wm-container>
+                                    <wm-button class="btn-default btn-transparent z-index-2" caption="" type="button"
+                                        margin="unset" name="btnDelete" iconclass="wm-sl-r sl-bin"
+                                        on-click="btnDeleteClick($event, widget)"></wm-button>
+                                </wm-container>
+                                <wm-container class="flex-column align-items-start align-self-stretch d-flex" id="data"
+                                    horizontalalign="left" name="containerpromptData" show="bind:chatInitiated">
+                                    <wm-list listclass="list-group"
+                                        itemclass="bind:&quot;list-group-item&quot; + &quot; &quot;+ Widgets.conversationList.currentItem.promptBy"
+                                        template="true" template-name="Contact List" itemsperrow="xs-1 sm-1 md-1 lg-1"
+                                        class="media-list" datafield="All Fields" statehandler="none"
+                                        name="conversationList" dataset="bind:Variables.stvData.dataSet"
+                                        navigation="None">
                                         <wm-listtemplate layout="inline" name="listtemplate1">
                                             <wm-container class="media-body" name="container19">
-                                                <wm-label class="p media-heading" name="Name" caption="bind:Variables.stvData.dataSet[$i].dataValue" fontunit="em" padding="unset unset unset 1.25em" show="bind:Variables.stvData.dataSet[$i].status !='typing'"></wm-label>
-                                                <wm-label class="p media-heading" name="Typing" caption="bind:Variables.stvData.dataSet[$i].dataValue" fontunit="em" padding="1.25em" conditionalclass="bind:Variables.stvData.dataSet[$i].status" show="bind:Variables.stvData.dataSet[$i].status=='typing'"></wm-label></wm-container>
+                                                <wm-label class="p media-heading" name="Name"
+                                                    caption="bind:Variables.stvData.dataSet[$i].dataValue" fontunit="em"
+                                                    padding="unset unset unset 1.25em"
+                                                    show="bind:Variables.stvData.dataSet[$i].status !='typing'">
+                                                </wm-label>
+                                                <wm-label class="p media-heading" name="Typing"
+                                                    caption="bind:Variables.stvData.dataSet[$i].dataValue" fontunit="em"
+                                                    padding="1.25em"
+                                                    conditionalclass="bind:Variables.stvData.dataSet[$i].status"
+                                                    show="bind:Variables.stvData.dataSet[$i].status=='typing'">
+                                                </wm-label>
+                                            </wm-container>
                                             <wm-container class="media-left" name="container18">
-                                                <wm-picture width="34px" height="34px" name="Picture" shape="circle" class="media-object" picturesource="resources/images/logos/avtar.png" show="bind:Widgets.conversationList.currentItem.promptBy =='User'"></wm-picture></wm-container></wm-listtemplate></wm-list></wm-container></wm-container>
+                                                <wm-picture width="34px" height="34px" name="Picture" shape="circle"
+                                                    class="media-object"
+                                                    picturesource="resources/images/logos/avtar.png"
+                                                    show="bind:Widgets.conversationList.currentItem.promptBy =='User'">
+                                                </wm-picture>
+                                            </wm-container>
+                                        </wm-listtemplate>
+                                    </wm-list>
+                                </wm-container>
+                            </wm-container>
                             <div id="typewriter"></div>
-                            <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-10 ask-anything-content" id="assistant_content-642175832" horizontalalign="left" name="containerDefaultData" show="bind:!chatInitiated">
-                                <wm-container class="flex-column align-items-center align-self-stretch d-flex gap-4" id="assistant_prompt_container-642175833" horizontalalign="center" name="container7">
-                                    <wm-picture resizemode="cover" picturesource="resources/images/logos/Assistant_Icon-642175834.png" width="32.5" height="36.5" name="picture2"></wm-picture>
-                                    <wm-label padding="unset" caption="Ask our AI anything" class="on-surface-variant line-24px font-size-16 fst fw-500" name="label2"></wm-label></wm-container>
-                                <wm-container class="flex-column align-items-start align-self-stretch d-flex custom-gap-12 bottom-50" id="suggestions_container-642175836" horizontalalign="left" name="container8">
-                                    <wm-container class="flex-column align-items-start align-self-stretch d-flex gap-2" id="frame_2147211224-642175837" horizontalalign="left" name="container9">
+                            <wm-container
+                                class="flex-column align-items-start align-self-stretch d-flex custom-gap-10 ask-anything-content"
+                                id="assistant_content-642175832" horizontalalign="left" name="containerDefaultData"
+                                show="bind:!chatInitiated">
+                                <wm-container class="flex-column align-items-center align-self-stretch d-flex gap-4"
+                                    id="assistant_prompt_container-642175833" horizontalalign="center"
+                                    name="container7">
+                                    <wm-picture resizemode="cover"
+                                        picturesource="resources/images/logos/Assistant_Icon-642175834.png" width="32.5"
+                                        height="36.5" name="picture2"></wm-picture>
+                                    <wm-label padding="unset" caption="Ask our AI anything"
+                                        class="on-surface-variant line-24px font-size-16 fst fw-500" name="label2">
+                                    </wm-label>
+                                </wm-container>
+                                <wm-container
+                                    class="flex-column align-items-start align-self-stretch d-flex custom-gap-12 bottom-50"
+                                    id="suggestions_container-642175836" horizontalalign="left" name="container8">
+                                    <wm-container class="flex-column align-items-start align-self-stretch d-flex gap-2"
+                                        id="frame_2147211224-642175837" horizontalalign="left" name="container9">
                                         <wm-container name="container23" class="ai-item-bg-img p-relative-container">
-                                            <wm-container class="flex-column align-items-start align-self-stretch d-flex gap-1 pb-3 custom-padding-left-21 custom-padding-right-25 pt-3 p-absolute-container" id="frame_2147211208-642175838" horizontalalign="left" name="container10" on-click="container10Click($event, widget)">
-                                                <wm-label padding="unset" caption="Monitor Microsoft Stock" class="app-label on-primary line-20px font-size-14 fst fw-500 op-08" name="label3"></wm-label>
-                                                <wm-label padding="unset" caption="Explore Microsoft’s latest financial data" class="on-primary line-16px font-size-12 fst op-06" name="label4"></wm-label></wm-container>
-                                            <wm-picture resizemode="cover" name="picture5" picturesource="resources/images/imagelists/frame_2147211208-642175838.png" shape="rounded"></wm-picture></wm-container>
-                                        <wm-container direction="column" id="artificialgroup0-id0" horizontalalign="left" class="align-items-start align-self-stretch d-flex flex-column gap-2" name="container11">
-                                            <wm-container class="flex-column align-items-start align-self-stretch d-flex gap-1 pb-3 custom-padding-left-21 custom-padding-right-25 pt-3" id="frame_2147211209-642175841" horizontalalign="left" name="container12" on-click="container12Click($event, widget)">
-                                                <wm-label padding="unset" caption="Analyze Apple Performance" class="on-surface line-20px font-size-14 fst fw-500 op-08" name="label5"></wm-label>
-                                                <wm-label padding="unset" caption="Get insights on Apple’s trends" class="on-surface line-16px font-size-12 fst op-06" name="label6"></wm-label></wm-container>
-                                            <wm-container class="flex-column align-items-start align-self-stretch d-flex gap-1 pb-3 custom-padding-left-21 custom-padding-right-25 pt-3" id="frame_2147211210-642175844" horizontalalign="left" name="container13" on-click="container13Click($event, widget)">
-                                                <wm-label padding="unset" caption="Track Tesla Movement" class="on-surface line-20px font-size-14 fst fw-500 op-08" name="label7"></wm-label>
-                                                <wm-label padding="unset" caption="View Tesla’s recent market activity" class="on-surface line-16px font-size-12 fst op-06" name="label8"></wm-label></wm-container></wm-container></wm-container></wm-container></wm-container>
-                            <wm-form errormessage="" captionposition="floating" title="" enctype="application/x-www-form-urlencoded" method="post" dataset="bind:Variables.stvPrompt.dataSet" captionalign="left" name="promptForm" postmessage="" on-beforesubmit="promptFormBeforesubmit($event, widget, $data)">
+                                            <wm-container
+                                                class="flex-column align-items-start align-self-stretch d-flex gap-1 pb-3 custom-padding-left-21 custom-padding-right-25 pt-3 p-absolute-container"
+                                                id="frame_2147211208-642175838" horizontalalign="left"
+                                                name="container10" on-click="container10Click($event, widget)">
+                                                <wm-label padding="unset" caption="Monitor Microsoft Stock"
+                                                    class="app-label on-primary line-20px font-size-14 fst fw-500 op-08"
+                                                    name="label3"></wm-label>
+                                                <wm-label padding="unset"
+                                                    caption="Explore Microsoft’s latest financial data"
+                                                    class="on-primary line-16px font-size-12 fst op-06" name="label4">
+                                                </wm-label>
+                                            </wm-container>
+                                            <wm-picture resizemode="cover" name="picture5"
+                                                picturesource="resources/images/imagelists/frame_2147211208-642175838.png"
+                                                shape="rounded"></wm-picture>
+                                        </wm-container>
+                                        <wm-container direction="column" id="artificialgroup0-id0"
+                                            horizontalalign="left"
+                                            class="align-items-start align-self-stretch d-flex flex-column gap-2"
+                                            name="container11">
+                                            <wm-container
+                                                class="flex-column align-items-start align-self-stretch d-flex gap-1 pb-3 custom-padding-left-21 custom-padding-right-25 pt-3"
+                                                id="frame_2147211209-642175841" horizontalalign="left"
+                                                name="container12" on-click="container12Click($event, widget)">
+                                                <wm-label padding="unset" caption="Analyze Apple Performance"
+                                                    class="on-surface line-20px font-size-14 fst fw-500 op-08"
+                                                    name="label5"></wm-label>
+                                                <wm-label padding="unset" caption="Get insights on Apple’s trends"
+                                                    class="on-surface line-16px font-size-12 fst op-06" name="label6">
+                                                </wm-label>
+                                            </wm-container>
+                                            <wm-container
+                                                class="flex-column align-items-start align-self-stretch d-flex gap-1 pb-3 custom-padding-left-21 custom-padding-right-25 pt-3"
+                                                id="frame_2147211210-642175844" horizontalalign="left"
+                                                name="container13" on-click="container13Click($event, widget)">
+                                                <wm-label padding="unset" caption="Track Tesla Movement"
+                                                    class="on-surface line-20px font-size-14 fst fw-500 op-08"
+                                                    name="label7"></wm-label>
+                                                <wm-label padding="unset" caption="View Tesla’s recent market activity"
+                                                    class="on-surface line-16px font-size-12 fst op-06" name="label8">
+                                                </wm-label>
+                                            </wm-container>
+                                        </wm-container>
+                                    </wm-container>
+                                </wm-container>
+                            </wm-container>
+                            <wm-form errormessage="" captionposition="floating" title=""
+                                enctype="application/x-www-form-urlencoded" method="post"
+                                dataset="bind:Variables.stvPrompt.dataSet" captionalign="left" name="promptForm"
+                                postmessage="" on-beforesubmit="promptFormBeforesubmit($event, widget, $data)">
                                 <wm-layoutgrid columns="1" name="layoutgrid1">
                                     <wm-gridrow name="gridrow1">
                                         <wm-gridcolumn columnwidth="12" name="gridcolumn1" class="pl-0 pr-0">
-                                            <wm-form-field name="prompt" displayname="Prompt" show="true" type="string" key="prompt" widget="textarea" placeholder="Type your prompt" on-keydown="promptKeydown($event, widget)" updateon="default" on-change="promptChange($event, widget, newVal, oldVal)"></wm-form-field>
-                                            <wm-button class="btn-default enter-btn" caption="" type="button" margin="unset" id="buttonSend" name="buttonSend" iconclass="wi wi-send" on-click="buttonSendClick($event, widget)"></wm-button></wm-gridcolumn></wm-gridrow></wm-layoutgrid></wm-form></wm-container>
-                        <wm-picture resizemode="cover" name="picture6" picturesource="resources/images/imagelists/sidebar_image-642175828.png" class="w-500"></wm-picture></wm-container>
+                                            <wm-form-field name="prompt" displayname="Prompt" show="true" type="string"
+                                                key="prompt" widget="textarea" placeholder="Type your prompt"
+                                                on-keydown="promptKeydown($event, widget)" updateon="default"
+                                                on-change="promptChange($event, widget, newVal, oldVal)">
+                                            </wm-form-field>
+                                            <wm-button class="btn-default enter-btn" caption="" type="button"
+                                                margin="unset" id="buttonSend" name="buttonSend" iconclass="wi wi-send"
+                                                on-click="buttonSendClick($event, widget)"></wm-button>
+                                        </wm-gridcolumn>
+                                    </wm-gridrow>
+                                </wm-layoutgrid>
+                            </wm-form>
+                        </wm-container>
+                        <wm-picture resizemode="cover" name="picture6"
+                            picturesource="resources/images/imagelists/sidebar_image-642175828.png" class="w-500">
+                        </wm-picture>
+                    </wm-container>
                     <wm-container name="container21" class="ai-right-content">
-                        <wm-container class="flex-column align-items-center d-flex flex-fill-item justify-content-between custom-padding-bottom-17 custom-padding-left-18 pe-0 custom-padding-top-28 first-loading-container" id="dashboard_container-642175848" name="loadingContainer">
-                            <wm-container class="flex-row align-items-center align-self-stretch d-flex gap-2 left-14 right-first-container" id="dashboard_header-642175849" verticalalign="center" on-click="Actions.goToPage_Dashboard.invoke()" name="container15">
-                                <wm-button class="btn-default btn-transparent" caption="" type="button" margin="unset" iconclass="mi mi-arrow-back" name="button3"></wm-button>
-                                <wm-label padding="unset" caption="Back to Dashboard" class="on-surface-variant line-16px font-size-12 fst cursor-pointer" name="label9" on-click="Actions.goToPage_Dashboard.invoke();label9Click($event, widget)"></wm-label></wm-container>
-                            <wm-container class="flex-column align-items-center d-flex custom-gap-11" id="prompt_container-642175852" horizontalalign="center" name="container16">
-                                <wm-picture resizemode="cover" picturesource="resources/images/logos/image_55-642175853.png" width="150" height="161" name="picture3"></wm-picture>
-                                <wm-label padding="unset" caption="Type in your prompt to generate preview" class="on-surface line-20px font-size-14 fst op-06" name="label10"></wm-label></wm-container></wm-container>
-                        <wm-container name="aiDashboardContainer" content="AI_Dashboard" show="false" class="right-dashboard-container">
-                            <wm-param name="cleanedDataTableArr" value="bind:cleanedDataTableArr" type="string"></wm-param>
-                            <wm-param name="nestedDefaultTableArr" value="bind:nestedDefaultTableArr" type="string"></wm-param>
-                            <wm-param name="cleanedDefaultTableArr" value="bind:cleanedDefaultTableArr" type="string"></wm-param>
-                            <wm-param name="nestedDataTableArr" value="bind:nestedDataTableArr" type="string"></wm-param>
-                            <wm-param name="defaultTableCaption" value="bind:defaultTableCaption" type="string"></wm-param>
-                            <wm-param name="dataTableCaption" value="bind:dataTableCaption" type="string"></wm-param></wm-container></wm-container></wm-container></wm-container></wm-page-content></wm-content></wm-page>
+                        <wm-container
+                            class="flex-column align-items-center d-flex flex-fill-item justify-content-between custom-padding-bottom-17 custom-padding-left-18 pe-0 custom-padding-top-28 first-loading-container"
+                            id="dashboard_container-642175848" name="loadingContainer">
+                            <wm-container
+                                class="flex-row align-items-center align-self-stretch d-flex gap-2 left-14 right-first-container"
+                                id="dashboard_header-642175849" verticalalign="center"
+                                on-click="Actions.goToPage_Main.invoke()" name="container15">
+                                <wm-button class="btn-default btn-transparent" caption="" type="button" margin="unset"
+                                    iconclass="mi mi-arrow-back" name="button3"></wm-button>
+                                <wm-label padding="unset" caption="Back to Dashboard"
+                                    class="on-surface-variant line-16px font-size-12 fst cursor-pointer" name="label9"
+                                    on-click="label9Click($event, widget);Actions.goToPage_Main.invoke()"></wm-label>
+                            </wm-container>
+                            <wm-container class="flex-column align-items-center d-flex custom-gap-11"
+                                id="prompt_container-642175852" horizontalalign="center" name="container16">
+                                <wm-picture resizemode="cover"
+                                    picturesource="resources/images/logos/image_55-642175853.png" width="150"
+                                    height="161" name="picture3"></wm-picture>
+                                <wm-label padding="unset" caption="Type in your prompt to generate preview"
+                                    class="on-surface line-20px font-size-14 fst op-06" name="label10"></wm-label>
+                            </wm-container>
+                        </wm-container>
+                        <wm-container name="aiDashboardContainer" content="AI_Dashboard" show="false"
+                            class="right-dashboard-container">
+                            <wm-param name="cleanedDataTableArr" value="bind:cleanedDataTableArr" type="string">
+                            </wm-param>
+                            <wm-param name="nestedDefaultTableArr" value="bind:nestedDefaultTableArr" type="string">
+                            </wm-param>
+                            <wm-param name="cleanedDefaultTableArr" value="bind:cleanedDefaultTableArr" type="string">
+                            </wm-param>
+                            <wm-param name="nestedDataTableArr" value="bind:nestedDataTableArr" type="string">
+                            </wm-param>
+                            <wm-param name="defaultTableCaption" value="bind:defaultTableCaption" type="string">
+                            </wm-param>
+                            <wm-param name="dataTableCaption" value="bind:dataTableCaption" type="string"></wm-param>
+                        </wm-container>
+                    </wm-container>
+                </wm-container>
+            </wm-container>
+        </wm-page-content>
+    </wm-content>
+</wm-page>
